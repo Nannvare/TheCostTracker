@@ -1,0 +1,253 @@
+/* ---------------------------------------------------------
+   Responsive Documenter CSS – Clean, Corrected, Modern
+--------------------------------------------------------- */
+
+/* ------------------------------ */
+/* GLOBAL RESET & BASE STYLES     */
+/* ------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  color: #666;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #26a1f0;
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+/* ------------------------------ */
+/* SIDEBAR                        */
+/* ------------------------------ */
+
+/* Logo Background Image */
+#documenter_sidebar #documenter_logo {
+  background-image: url(../images/PurchaseTracker.png);
+}
+
+
+#documenter_sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 320px;
+  height: 100vh;
+  background: #181819;
+  color: #7f7f81;
+  padding-top: 40px;
+  overflow-y: auto;
+  box-shadow: 0 0 6px rgba(0,0,0,0.6);
+}
+
+#documenter_logo {
+  width: 260px;
+  height: 160px;
+  margin: 0 auto 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#documenter_nav {
+  list-style: none;
+  font-size: 18px;
+}
+
+#documenter_nav li a {
+  display: block;
+  padding: 12px 25px;
+  border-bottom: 1px solid #353535;
+  color: #7f7f81;
+}
+
+#documenter_nav li a:hover,
+#documenter_nav li a.current {
+  background: #748a86;
+  color: white;
+}
+
+#documenter_copyright {
+  text-align: left;
+  font-size: 11px;
+  padding: 20px;
+}
+
+/* ------------------------------ */
+/* CONTENT AREA                   */
+/* ------------------------------ */
+
+#documenter_content {
+  position: relative;
+  margin-left: 320px;
+  padding: 40px 40px 200px;
+  width: calc(100% - 320px);
+}
+
+#documenter_content .content {
+  padding: 0 40px;
+  border-top: 1px solid #e4e4e4;
+  margin-top: 30px;
+}
+
+/* Headings */
+#documenter_content h1 {
+  color: #0A4C8A; /* Updated */
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+#documenter_content h1::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #f03333;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#documenter_content h2 {
+  color: #C92A2A; /* Updated */
+  font-size: 16px;
+  margin: 10px 0 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#documenter_content h3 {
+  font-size: 15px;
+  margin: 15px 0 10px;
+  font-weight: 700;
+}
+
+#documenter_content p,
+#documenter_content ul {
+  margin: 18px 0;
+  line-height: 1.6;
+}
+
+#documenter_content ul li {
+  list-style: square;
+  margin-left: 20px;
+}
+
+/* ------------------------------ */
+/* IMAGES                         */
+/* ------------------------------ */
+#documenter_content img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 0 21px rgba(0,0,0,0.25);
+}
+
+/* ------------------------------ */
+/* RESPONSIVE BREAKPOINTS         */
+/* ------------------------------ */
+
+/* Large Laptops */
+@media (max-width: 1280px) {
+  #documenter_sidebar {
+    width: 260px;
+  }
+  #documenter_content {
+    margin-left: 260px;
+    width: calc(100% - 260px);
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  #documenter_sidebar {
+    width: 220px;
+  }
+  #documenter_content {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #documenter_sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  #documenter_content {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  #documenter_content .content {
+    padding: 0 15px;
+  }
+
+  #documenter_nav {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+}
+
+/* Very Small Screens */
+@media (max-width: 480px) {
+  #documenter_content {
+    padding: 15px;
+  }
+  #documenter_content h1 {
+    font-size: 18px;
+  }
+}
+
+/* ------------------------------ */
+/* OPTIONAL SIDEBAR LOGO IMG BLOCK
+   (Not used by your HTML, but kept if needed)
+------------------------------ */
+
+.sidebar-logo-container {
+  width: 100%;
+  padding: 40px 15px 25px;
+  text-align: center;
+  background-color: #181819;
+}
+
+.sidebar-logo-img {
+  width: 200px;
+  max-width: 85%;
+  height: auto;
+  opacity: 0.95;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sidebar-logo-img {
+    width: 140px;
+    max-width: 70%;
+  }
+  .sidebar-logo-container {
+    padding: 20px 0;
+  }
+}
+
+
+
