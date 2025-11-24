@@ -251,3 +251,31 @@ a:hover { text-decoration: underline; }
 
 
 
+/* Sidebar Logo Container */
+.sidebar-logo-container {
+    width: 100%;
+    padding: 35px 0 25px;
+    text-align: center;
+    background-color: #181819; 
+}
+
+/* Sidebar Logo Image */
+.sidebar-logo-img {
+    width: 210px;
+    max-width: 85%;
+    height: auto;
+    display: block;
+    opacity: 0.95;
+    margin: 0 auto;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .sidebar-logo-container {
+        padding: 20px 0;
+    }
+    .sidebar-logo-img {
+        width: 160px;
+        max-width: 75%;
+    }
+}
