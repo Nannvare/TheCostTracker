@@ -251,7 +251,610 @@
 					</ul>
 					<hr>
 			</section>
+			
+			<section id="Step3">
+				<h1>Step 3 : Packing Style Name</h1>
+				<p>
+					The <strong>Packing Style Name</strong> module is used to define various packing styles
+					that combine different packing materials and methods for finished products.
+					These styles are essential for accurate costing and production planning.
+				</p>
+				<h2>1. Purpose of Packing Style Name</h2>
+				<p>The Packing Style Name module helps users:</p>
+				<ul>
+					<li>Create standardized packing style names (e.g., Bottle + Roll Label + Shrink).</li>
+					<li>Facilitate selection of packing styles in costing modules.</li>
+					<li>Ensure consistency in packing definitions across the system.</li>
+				</ul>
+				<hr>
+									
+					<h2>Adding a New Packing Style</h2>
+					<ul>
+						<li>Navigate to <strong> Masters → Packing Style Name</strong>.
+						</li>
+						<li>Enter the <strong>Packing Style Name</strong> (e.g., “Bottle + Roll Label + Shrink”).</li>
+						<li>Click the <b>Add</b> button to save the new packing style.</li>
+						<li>The new record will appear in the list below.</li>
+					</ul>
+					<h3><a href="assets/images/Master/6.Packing_Style_Name.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Packing Style Name</a></h3>
+					<img src="assets/images/Master/6.Packing_Style_Name.jpg" alt="Packing Style Name">
+
+					<h3>Actions Available</h3>
+				    <ul>
+				        <li><strong>Edit</strong> – Modify an existing packing style name.</li>
+				        <li><strong>Delete</strong> – Remove the packing style name permanently.</li>
+				        <li><strong>Search</strong> – Find packing style names quickly using the search box.</li>
+				    </ul>
+					<hr>
+
+			</section>
+
+			<section id="Step4">
+				<h1>
+					Step 4 : Cost Variable Master
+				</h1>
+				 <p>
+					The <strong>Cost Variable Master</strong> stores all the standard cost inputs used across costing and pricing
+					calculations. Maintain these values centrally so costing reports and BOM calculations stay accurate and consistent.
+				</p>
+
+			
+
+				<h2>Purpose</h2>
+				<p>
+					The Cost Variable Master is used to define and manage recurring cost parameters such as:
+				</p>
+				<ul>
+					<li>Shift timings, break times and net shift hours</li>
+					<li>Power unit price (per hour)</li>
+					<li>Labour and supervisor charges (per day / per shift)</li>
+					<li>Machine maintenance, loading/unloading, admin, and other overheads</li>
+					<li>Default packing loss or extra expenses used by costing formulas</li>
+				</ul>
+				<hr>
+				
+				<h2>How to Update Cost Variables</h2>
+				<ul>
+					<li>From the top menu choose <strong>Cost &raquo; Cost Variable Master</strong>.</li>
+					<li>Change the numeric values in the appropriate fields (for example update Power Unit Price or Labour Charge).</li>
+					<li>Check calculated fields like <em>Net Shift Hours</em> (they update automatically after edits).</li>
+					<li>Click the green <strong>Update</strong> button to save changes.</li>
+					<li>After update, new values are used in all costing calculations (BulkRecipe, BOM, Formulation, Finish Good Pricing reports).</li>
+				</ul>
+
+				<h3><a href="assets/images/Cost/1.Cost_Variable_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Cost Variable Master</a></h3>
+				<img src="assets/images/Cost/1.Cost_Variable_Master.jpg" alt="Cost Variable Master">
+				<hr>
+			</section>
+
+			<section id="Step5">
+				<h1>Step 5 : Bulk Formulation Category Master</h1>
+				 <p>
+					The <strong>Bulk Formulation Category Master</strong> is used to manage all formulation types 
+					used in the manufacturing and costing process. These categories help classify different 
+					forms of bulk products such as liquids, powders, and granules. 
+					Once created, these categories are used in the <strong>Formulation Master</strong> and 
+					other costing modules.
+				</p>
+				 
+				<h2>How to Add a Bulk Formulation Category</h2>
+				<ul>
+					<li>Navigate to <strong>Master ➜ Bulk Formulation Category Master</strong>.</li>
+					<li>Enter the <strong>Formulation Category Name</strong> (Example: SL, WP, WG).</li>
+					<li>Click the <strong>Add</strong> button to save the new category.</li>
+					<li>The new category will appear in the list below.</li>
+				</ul>
+				<h3>Actions Available</h3>
+				    <ul>
+				        <li><strong>Edit</strong> – Modify an existing formulation category.</li>
+				        <li><strong>Delete</strong> – Remove the formulation category permanently.</li>
+				        <li><strong>Search</strong> – Find formulation categories quickly using the search box.</li>
+				    </ul>
+				<hr>
+				<h3><a href="assets/images/Master/10.Bulk_Formulation_Categ_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Bulk Formulation Category Master</a></h3>
+				<img src="assets/images/Master/10.Bulk_Formulation_Categ_Master.jpg" alt="Bulk Formulation Category Master">
+
+			</section>
+			
+			<section id="Step6">
+				<h1>
+					Step 6 : Formulation Master
+				</h1>
+				 <p>
+					The <strong>Formulation Master</strong> is used to define the complete cost structure of a finished formulation. 
+					This includes labour cost, power consumption, maintenance, other expenses, and buffer cost. 
+					Based on the entered values, the system automatically calculates the <strong>Total Cost</strong> and 
+					<strong>Final Cost per Liter/KG</strong> depending on the chosen measurement.
+				</p>
+				<h2>How to Add a Formulation</h2>
+				<ul>
+					<li><strong>Formulation Name:</strong> Select the formulation type (EC, SC, SG, GR, etc.).</li>
+
+				<li><strong>Batch Size:</strong> Total production quantity (KG/LTR) of one manufacturing batch.</li>
+
+				<li><strong>Measurement:</strong> Unit of batch (KG or LTR).</li>
+
+				<li><strong>No of Labours:</strong> Total number of labours working for this formulation batch.</li>
+
+				<li><strong>Supervisors:</strong> Count of supervisors assigned to this batch.</li>
+
+				<li><strong>Labour Charge:</strong> Auto-calculated based on number of labour × labour rate 
+					(from Cost Variable Master).</li>
+
+				<li><strong>Labour Cost:</strong> Per labour cost (10-hour or 12-hour shift rate).</li>
+
+				<li><strong>Power (Unit):</strong> Total power units consumed during production.</li>
+
+				<li><strong>PowerCharge (Unit):</strong> Power price per unit taken from 
+					<strong>Cost Variable Master</strong>.</li>
+
+				<li><strong>Total Power Cost (Unit):</strong> Auto-calculated as:
+					<br><em>Power Units × Power Charge</em></li>
+
+				<li><strong>Maintenance:</strong> Any machinery maintenance cost for the batch.</li>
+
+				<li><strong>Other Cost:</strong> Additional miscellaneous expenses.</li>
+
+				<li><strong>Total Cost:</strong> Total production cost of one entire batch.</li>
+
+				<li><strong>CostPerLiter/BatchSize:</strong> Auto-calculated as:
+					<br><em>Total Cost ÷ Batch Size</em></li>
+
+				<li><strong>Add Buffer:</strong> Optional additional cost percentage or fixed amount.</li>
+
+				<li><strong>Final Cost/Ltr BatchSize:</strong> Final production cost after adding buffer.</li>
+				</ul>
+				<h3>Actions Available</h3>
+				    <ul>
+				        <li><strong>Edit</strong> – Modify an existing formulation.</li>
+				        <li><strong>Delete</strong> – Remove the formulation permanently.</li>
+				        <li><strong>Search</strong> – Find formulations quickly using the search box.</li>
+				    </ul>
+
+
+				<h3><a href="assets/images/Master/Formulation_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – RM Master</a></h3>
+				<img src="assets/images/Master/Formulation_Master.jpg" alt="RM Master">
+				<hr>
+
+			</section>
+
+			<section id="Step7">
+				<h1>
+					Step 7 : RM Master
+				</h1>
+				 <p>
+					The <strong>RM Master (Raw Material Master)</strong> is used to maintain the complete list of raw materials 
+					required for production, along with their measurement units and optional purity details. 
+					This master ensures that all production and costing modules use standardized and accurate RM information.
+				</p>
+				<h2>How to Add RM Master</h2>
+				<ul>
+					<li>Navigate to <strong>Master ➜ RM Master</strong>.</li>
+					<li>Select <strong>RM Category</strong>  (Technical, Solvent, Emulsifier, Other, etc.).</li>
+					<li>Enter the <strong>RM Name</strong> (e.g., Emulsifier X).</li>
+					<li> Select the unit of measurement (KG, LTR, GM, etc.).</li>
+					<li>Check this if the RM purity percentage is mandatory (mainly for Technical materials).</li>
+					<li>Enter the purity percentage (e.g., 95%, 70%). Field becomes mandatory only when “IsPurity Required” is checked.</li>
+					<li>Click the <strong>Add</strong> button to save the new RM item.</li>
+					<li>The new RM item will appear in the list below.</li>
+				</ul>
+				<h3>Actions Available</h3>
+				    <ul>
+				        <li><strong>Edit</strong> – Modify an existing RM item.</li>
+				        <li><strong>Delete</strong> – Remove the RM item permanently.</li>
+				        <li><strong>Search</strong> – Find RM items quickly using the search box.</li>
+				    </ul>
+				<h3><a href="assets/images/Master/RM_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – RM Master</a></h3>
+				<img src="assets/images/Master/RM_Master.jpg" alt="RM Master">
+				<hr>
+
+			</section>
+
+			<section id="Step8">
+				<h1>
+					Step 8 : Bulk Product Master
+				</h1>
+								
+				<p>
+					The <strong>Bulk Product Master</strong> is used to define finished bulk products (in-house or outsource) along with their
+					measurement units, taxation and formulation category.
+				</p>
+	
 		
+				<h2>2. How to Add a Bulk Product</h2>
+				<p>To add a new bulk product:</p>
+				
+              <ul>
+                  <li>Select the  <strong>Main Category</strong>.</li>
+                  <li>Enter a <strong>Bulk Product Name</strong>.</li>
+                  <li>Select <strong>Measurement</strong> and <strong>GST%</strong>.</li>
+                  <li>Choose whether the source is <strong>Inhouse</strong> or <strong>Outsource</strong>.</li>
+                 <li>Select the correct <strong>Formulation Category</strong> (EC, WG, SC, etc.).</li>
+                 <li>If required, enable <strong>NRV Calculation</strong> and <strong>Combo Product</strong>.</li>
+                 <li>Click <strong>Add</strong> to save.</li>
+             </ul>
+		      <h3>Actions Available</h3>
+				    <ul>
+				        <li><strong>Edit</strong> – Modify an existing formulation.</li>
+				        <li><strong>Delete</strong> – Remove the formulation permanently.</li>
+				        <li><strong>Search</strong> – Find formulations quickly using the search box.</li>
+				    </ul>
+
+				<h3><a href="assets/images/Master/Bulk_Product_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Bulk Product Master</a></h3>
+				<img src="assets/images/Master/Bulk_Product_Master.jpg" alt="Bulk Product Master">
+				<hr>			
+
+			</section>
+
+
+			<section id="Step9">
+				<h1>Step 9 : Price Master </h1>
+				 <p>
+                    The <strong>Price Master</strong> module is used to define and manage the pricing details for Bulk Products and Raw Materials. 
+                    This pricing is used across cost calculations, NRV calculations, purchase comparisons, and production costing.
+                </p>
+				
+				
+				<div class="section">
+				    <h2>1. RM Price Master</h2>
+				    <p>
+                       The <strong>RM Price Master</strong> is used to record and manage the purchase prices of raw materials (RM). 
+					   This information is essential for accurate cost calculations in the BOM and other reports.
+                    </p>
+				    <h3>How to Add an RM Price Entry</h3>
+				    <ul>
+				        <li>Go to <strong>Price Master ➜ RM Price Master</strong>.</li>
+				        <li><strong>RM Category:</strong> Select the category of the raw material (e.g., Emulsifier, Solvent).</li>
+						 <li><strong>Date of Purchase:</strong> Select the date when the material was purchased.</li>
+				        <li><strong>RM Name:</strong> Choose the specific raw material from the list.</li>
+				       
+				        <li><strong>Rate/Kg-Ltr(Rs):</strong> Enter the base price per unit (Kg or Ltr) of the material.</li>
+						<li><strong>Rate Full Purity:</strong> Check this box if the entered rate corresponds to 100% purity of the material. If the material has a lower purity, the system will adjust the price accordingly.</li>
+				        <li><strong>Purity(%):</strong> Enter the actual purity of the material if it's less than 100%.</li>
+						<li><strong>Actual Price/Kg-Ltr:</strong> This field is auto-calculated based on the rate and purity.</li>
+				        <li><strong>Quantity:</strong> Enter the total quantity purchased.</li>
+				        <li><strong>Transport:</strong> Add any transportation costs associated with the purchase.</li>
+						<li><strong>Total Rate/Ltr:</strong> This is the final calculated cost per unit, including transportation.</li>
+				        <li>Click the <strong>Add</strong> button to save the price entry.</li>
+				    </ul>
+					<h3><a href="assets/images/Price_Master/1.RM_Price_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – RM Price Master</a></h3>
+					<img src="assets/images/Price_Master/1.RM_Price_Master.jpg" alt="RM Price Master">
+				    <hr>
+				</div>
+
+				
+				<div class="section">
+				    <h2>2. PMRM Price Master</h2>
+				    <p>
+                       The <strong>PMRM Price Master</strong> is used to record and manage the purchase prices of packing materials (PM) and raw materials (RM). 
+					   This is crucial for accurate costing of finished goods.
+                    </p>
+				    <h3>How to Add a PMRM Price Entry</h3>
+				    <ul>
+				        <li>Go to <strong>Price Master ➜ PMRM Price Master</strong>.</li>
+				        <li><strong>PMRM Category:</strong> Select the category of the packing or raw material (e.g., Bottle, Shipper).</li>
+						<li><strong>PMRM Name:</strong> Choose the specific item from the list (e.g., Bottle 500 ML).</li>
+						<li><strong>Date of Purchase:</strong> Select the date when the material was purchased.</li>
+				        <li><strong>Price:</strong> Enter the base price of the material.</li>
+				        <li><strong>Transportation:</strong> Add any transportation costs associated with the purchase.</li>
+				        <li><strong>No. of Units/KG:</strong> Enter the number of units per kilogram, if applicable.</li>
+				        <li><strong>Loss (%):</strong> Specify any expected loss percentage during handling or production.</li>
+						<li><strong>Price/Unit:</strong> This field displays the final calculated price per unit, considering all inputs.</li>
+				        <li>Click the <strong>Add</strong> button to save the price entry.</li>
+				    </ul>
+					<h3><a href="assets/images/Price_Master/2.PMRM_Price_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – PMRM Price Master</a></h3>
+					<img src="assets/images/Price_Master/2.PMRM_Price_Master.jpg" alt="PMRM Price Master">
+				    <hr>
+				</div>
+
+				<div class="section">
+				    <h2>3. RM Price Estimate</h2>
+				    <p>
+                       The <strong>RM Price Estimate</strong> module allows you to record estimated or provisional prices for raw materials. 
+					   This is useful for budgeting and forecasting before the final prices are available. The fields are similar to the RM Price Master.
+                    </p>
+				    <h3>How to Add an RM Price Estimate</h3>
+				    <ul>
+				        <li>Go to <strong>Price Master ➜ RM Price Estimate</strong>.</li>
+				        <li><strong>RM Category:</strong> Select the category of the raw material.</li>
+				        <li><strong>RM Name:</strong> Choose the specific raw material.</li>
+				        <li><strong>Date of Purchase:</strong> Select the estimated date of purchase.</li>
+				        <li><strong>Estimate Rate/Kg-Ltr(Rs):</strong> Enter the estimated price per unit.</li>
+						<li><strong>Rate Full Purity:</strong> Check this box if the estimated rate is for 100% purity.</li>
+				        <li><strong>Purity(%):</strong> Enter the expected purity of the material.</li>
+						<li><strong>Actual Price/Kg-Ltr:</strong> This is auto-calculated based on the estimated rate and purity.</li>
+				        <li><strong>Quantity:</strong> Enter the estimated quantity to be purchased.</li>
+				        <li><strong>Transport:</strong> Add any estimated transportation costs.</li>
+						<li><strong>Total Rate/Ltr:</strong> This is the final estimated cost per unit, including transportation.</li>
+				        <li>Click the <strong>Add</strong> button to save the price estimate.</li>
+				    </ul>
+					<h3><a href="assets/images/Price_Master/3.RM_Price_Estimate.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – RM Price Estimate</a></h3>
+					<img src="assets/images/Price_Master/3.RM_Price_Estimate.jpg" alt="RM Price Estimate">
+				    <hr>
+				</div>
+
+			</section>
+
+			<section id="Step10">
+				<h1>Step 10 : BOM (Bill of Material) Module</h1>
+
+				<p>
+					The <strong>BOM (Bill of Material)</strong> module, also known as <strong>Bulk Recipe</strong>, is where you define the raw material composition 
+					and formulation costs for each bulk product. This is a critical step for accurate cost calculation.
+				</p>
+			
+				<h2>1. How to Create a Bulk Recipe</h2>
+				<p>First, you need to create a new recipe entry for a bulk product.</p>
+				<ul>
+					<li>Navigate to <strong>Cost ➜ BulkRecipe (BOM)</strong>.</li>
+					<li>Select the <strong>Main Category</strong> for the product (e.g., Pesticides).</li>
+					<li>Choose the <strong>Bulk Product</strong> you want to create a recipe for (e.g., ABAMECTIN 1.9%).</li>
+					<li>Enter the standard <strong>Batch Size</strong> for production (e.g., 1000).</li>
+					<li>Select the <strong>Measurement</strong> unit (e.g., LTR).</li>
+					<li>Click the <strong>Add</strong> button to create the recipe entry. It will appear in the table below.</li>
+				</ul>
+				<h3><a href="assets/images/Cost/2.BOM2.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Bulk Recipe (BOM)</a></h3>
+				<img src="assets/images/Cost/2.BOM2.jpg" alt="Bulk Recipe (BOM)">
+			
+				<hr>
+			
+				<h2>2. Input Technical Details (Adding Ingredients)</h2>
+				<p>
+					After creating the recipe entry, you must add the technical ingredients and their quantities.
+				</p>
+				<ul>
+					<li>Find your product in the list and click the <strong>Input Technical</strong> button.</li>
+					<li>On the new screen, you will add each raw material (RM) that makes up the bulk product.</li>
+					<li><strong>Search RM:</strong> Select a raw material from the dropdown (e.g., ABAMECTIN TECH).</li>
+					<li><strong>Formulation %:</strong> Enter the percentage of this RM in the formulation (e.g., 1.90).</li>
+					<li>Click <strong>Add</strong> to include the ingredient in the recipe.</li>
+					<li>The ingredient will be added to the table below, showing its name, quantity, rate, and total amount.</li>
+					<li>Continue adding all necessary ingredients (like solvents, fillers, etc.).</li>
+				</ul>
+			
+				<h3>Understanding the Calculation</h3>
+				<p>
+					The bottom section of this screen calculates the final cost based on the ingredients and other formulation charges.
+				</p>
+				<ul>
+					<li><strong>Formulation Charges:</strong> These are pulled from the Formulation Master based on the formulation type (e.g., EC).</li>
+					<li><strong>Total Amount:</strong> The sum of all ingredient costs plus formulation charges.</li>
+					<li><strong>Output/Ltr:</strong> The expected final quantity of the batch.</li>
+					<li><strong>Lost Amount:</strong> Any expected loss during production.</li>
+					<li><strong>Cost/Ltr:</strong> The cost per liter before accounting for the bulk cost.</li>
+					<li><strong>Cost Bulk/Ltr:</strong> The final calculated cost per liter for the bulk product.</li>
+					<li>Click the <strong>Update</strong> button to save all technical details and the final cost.</li>
+				</ul>
+				<h3><a href="assets/images/Cost/2.BOM3.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Input Technical Details</a></h3>
+				<img src="assets/images/Cost/2.BOM3.jpg" alt="Input Technical Details">
+				<hr>
+			</section>		
+
+			<section id="Step11">
+				<h1>Step 11 : Product Packing Material Master </h1>
+							
+				<p>
+					The <strong>Product Packing Material Master</strong> is used to define the complete packing configuration for a finished product. 
+					This includes the primary packing, shipper (outer box), and inner components, along with their respective costs.
+				</p>
+			
+				<h2>1. How to Define a Product's Packing Configuration</h2>
+				<p>This screen allows you to associate a bulk product with its specific packing materials and generate a unique Part Code.</p>
+				<ul>
+					<li>Navigate to <strong>Master ➜ Product Packing Material Master</strong>.</li>
+					<li><strong>Bulk Product:</strong> Select the finished bulk product.</li>
+					<li><strong>Packing Name:</strong> Choose the primary packing size (e.g., 1 LTR).</li>
+					<li><strong>Shipper Detail:</strong> Check the "Shipper" box if an outer box is used. Select the shipper size and the number of units it holds (e.g., 20 units per shipper).</li>
+					<li><strong>Inner Detail:</strong> Similarly, configure if there is an inner packing component.</li>
+					<li><strong>Part Code:</strong> A unique code is generated based on your selections.</li>
+					<li>Click <strong>Add</strong> to save this packing configuration.</li>
+				</ul>
+				<h3><a href="assets/images/Master/7.Product_Packing_MaterialMaster.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Product Packing Material Master</a></h3>
+				<img src="assets/images/Master/7.Product_Packing_MaterialMaster.jpg" alt="Product Packing Material Master">
+			
+				<hr>
+			
+				<h2>2. Editing Packing Material Costs</h2>
+				<p>
+					After defining the configuration, you must specify the cost for each packing component.
+				</p>
+				<ul>
+					<li>In the product list, find the item you want to price and click the <strong>Edit</strong> button in the <strong>Total Cost/Ltr</strong> column.</li>
+					<li>A new window will open. Here, you will add the costs for the Primary Material (PM), Shipper, and any Inner packaging.</li>
+					<li><strong>Type:</strong> Select PM, Shipper, or Inner.</li>
+					<li><strong>PM Type / PM Name:</strong> Choose the specific packing material (e.g., Pouch).</li>
+					<li><strong>PM Price (Cost/Unit):</strong> Enter the cost for a single unit of this material.</li>
+					<li>Click <strong>Add</strong>. The material and its cost will appear in the table.</li>
+					<li>Add all packing components for the product (e.g., the Pouch itself and the Shipper Box).</li>
+					<li>The <strong>Total</strong> and <strong>Final Pack/Unit</strong> costs are calculated automatically.</li>
+				</ul>
+				<h3><a href="assets/images/Master/7.Carbendazim_12% .jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Packing Material Costing</a></h3>	
+				<img src="assets/images/Master/7.Carbendazim_12% .jpg" alt="Packing Material Costing">
+				<hr>
+				
+			</section>
+
+			<section id="Step12">
+				<h1>Step 12 : Packing Style Labour Costing Master</h1>				
+				<p>
+					The <strong>Packing Style Labour Costing Master</strong> is a detailed module for defining the specific labour tasks and power consumption associated with different packing styles. This allows for highly accurate cost calculations for the packing process.
+				</p>
+			
+				<h2>How to Configure Packing Style Labour and Power Costs</h2>
+				<ul>
+					<li>Navigate to <strong>Master ➜ Packing Style Labour Costing Master</strong>.</li>
+					<li><strong>Packing Category & Size:</strong> Select the packing category and size you want to configure (e.g., GM, 250.00).</li>
+					<li><strong>Packing Style Name:</strong> Choose the specific packing style (e.g., Bottle + Manual Label + Shrink).</li>
+					<li>The <strong>Packing Size</strong> and <strong>Measurement</strong> will be auto-filled based on your selection.</li>
+				</ul>
+
+				<h3>Add Labour Task</h3>
+				<p>
+					In this section, you select all the individual labour activities required for the chosen packing style.
+				</p>
+				<ul>
+					<li>Check the boxes next to each applicable task (e.g.,Bulk Charge, Pouch Filling, Labeling, Capping, Inner Box Cello Tape).</li>
+					<li>The system will sum up the costs associated with each selected task to calculate the <strong>Total Labour / Task</strong> cost.</li>
+				</ul>
+
+				<h3>Add Power Details / Hour</h3>
+				<p>
+					This section is for specifying the power consumed by machinery during the packing process.
+				</p>
+				<ul>
+					<li>Check the boxes for all relevant power-consuming activities (e.g., Filling, Capping, Shrinking).</li>
+					<li>The system sums the power consumption of each activity to determine the <strong>Total Power</strong> cost.</li>
+				</ul>
+
+				<p>Once all details are selected, click the <strong>Add</strong> button to save the configuration. It will then appear in the list at the bottom, showing the total task and power costs for that specific packing style and size.</p>
+
+				<h3><a href="assets/images/Master/8.PackingStyle_ Labour_CostingMaster.png" target="_blank"  title="Click to view the image">📸 Screenshot – Packing Style Labour Costing Master</a></h3>
+				<img src="assets/images/Master/8.PackingStyle_ Labour_CostingMaster.png" alt="Packing Style Labour Costing Master">
+				<hr>
+
+			</section>
+
+			<section id="Step13">
+				<h1>Step 13 : Product wise Labour Cost</h1>
+				<p>
+					The <strong>Product wise Labour Cost</strong> module is a comprehensive calculator that brings together all cost elements—labour, machine output, power, and other expenses—to determine the final per-unit production cost for a specific product.
+				</p>
+			
+				<h2>How to Calculate Product wise Labour Cost</h2>
+				<p>Navigate to <strong>Cost ➜ Product wise Labour Cost</strong> and fill out the form with the following details:</p>
+
+				<h3>1. Add Labour Task</h3>
+				<ul>
+					<li><strong>Bulk Product:</strong> Select the product you are costing.</li>
+					<li><strong>Packing Size:</strong> Choose the corresponding packing size and packing style category.</li>
+					<li><strong>Packing Style:</strong> Select the packing style used for the product.</li>
+				</ul>	
+
+				<h3>2. Filling Machine Output</h3>
+				<ul>
+					<li><strong>Storck / Nosel:</strong> Enter the number of nozzles on the filling machine.</li>
+					<li><strong>Total Output/Minut/Filling Line:</strong> Specify the machine's output per minute.</li>
+					<li>The <strong>Total out Put in Liter Or KG/ Shift</strong> and <strong>Total out put Bottels in Net Shift Hours</strong> are calculated automatically based on machine output and shift timings.</li>
+				</ul>
+
+				<h3>3. Total Labour Costing</h3>
+				<ul>
+					<li><strong>No of workers:</strong> Enter the number of workers assigned.</li>
+					<li><strong>Supervisor:</strong> Enter the number of supervisors.</li>
+					<li>The <strong>Total Labour & Supervisor Costing</strong> is calculated based on rates from the Cost Variable Master.</li>
+				</ul>
+
+				<h3>4. Total Power & Other Costing</h3>
+				<ul>
+					<li><strong>Total packing Style Power Units X Unit Cost:</strong> This is the total power cost for the packing style, pulled from previous masters.</li>
+					<li><strong>Other Costing:</strong> Input any additional costs such as <strong>Unloading</strong>, <strong>Loading</strong>, <strong>Machinary Maintatnce</strong>, <strong>Admin Expence</strong>, and other <strong>Extra Expence</strong>.</li>
+				</ul>
+
+				<h3>5. Final Costing & Buffer</h3>
+				<ul>
+					<li>The system calculates the <strong>Total Costing</strong> and <strong>Final per liter labour costing</strong>.</li>
+					<li><strong>Additional Cost (Buffer) /Ltr:</strong> You can add an optional buffer cost per liter.</li>
+					<li>The <strong>Final Per Unit Labour Cost</strong> shows the definitive cost for one unit of the finished product.</li>
+				</ul>
+
+				<p>After filling all the fields, click <strong>Add</strong> to save the calculation. The results will be stored and displayed in the table below for future reference.</p>
+
+				<h3><a href="assets/images/Cost/3.Productwise_Labour_Cost.png" target="_blank"  title="Click to view the image">📸 Screenshot – Product wise Labour Cost</a></h3>
+				<img src="assets/images/Cost/3.Productwise_Labour_Cost.png" alt="Product wise Labour Cost">
+				<hr>
+			</section>
+
+			<section id="Step14">
+				<h1>Step 14 : Finished Goods Pricing Report</h1>
+				<p>
+					The <strong>Finished Good Pricing Report</strong> is the final reporting module where all the costs entered throughout the system come together. It provides a summarized and a detailed breakdown of the total cost for each finished product, giving you a clear picture of your final Net Asset Value (NAV).
+				</p>
+			
+				<h2>1. Finished Good Pricing Summary</h2>
+				<p>Navigate to <strong>Reporting ➜ Finish GoodPricing Report</strong>. This screen shows a summary of all your finished products.</p>
+				<ul>
+					<li>You can filter the list by selecting a specific <strong>Bulk Product</strong> and clicking <strong>Get Data</strong>.</li>
+					<li>The table provides a high-level overview of the costs for each product:
+						<ul>
+							<li><strong>Bulk Cost (with Interest):</strong> The total cost of the raw materials and formulation.</li>
+							<li><strong>PM Cost/Unit:</strong> The cost of all packing materials for one unit.</li>
+							<li><strong>Labour Cost/Unit:</strong> The per-unit labour cost.</li>
+							<li><strong>Packing Loss:</strong> The cost associated with any packing loss.</li>
+							<li><strong>Total Amount /Unit:</strong> The sum of all the above costs for a single unit.</li>
+							<li><strong>Final NAV:</strong> The final Net Asset Value of the product.</li>
+						</ul>
+					</li>
+					<li>Click the <strong>Report</strong> button on any row to see a detailed breakdown.</li>
+				</ul>
+				<h3><a href="assets/images/Reporting/Finish_GoodPricing_Report.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Finished Good Pricing Report Summary</a></h3>
+				<img src="assets/images/Reporting/Finish_GoodPricing_Report.jpg" alt="Finished Good Pricing Report">
+
+				<hr>
+			
+				<h2>2. Detailed Cost Breakdown Report</h2>
+				<p>
+					When you click the <strong>Report</strong> button, a detailed view opens, showing every component of the product's cost.
+				</p>
+				<h3>Ingredient & Bulk Cost</h3>
+				<p>This section shows the recipe, including each <strong>Ingredient</strong>, its formulation percentage, quantity, rate, and total amount. It then summarizes the <strong>Final Bulk Cost/Ltr or Kg</strong>.</p>
+				<h3><a href="assets/images/Reporting/ABAMECTIN 1.9% [ 1.00-LTR(1ltr) ]-1.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Detailed Report (Part 1)</a></h3>
+				<img src="assets/images/Reporting/ABAMECTIN 1.9% [ 1.00-LTR(1ltr) ]-1.jpg" alt="Detailed Report Part 1">
+
+				<h3>Packing, Labour & Final Cost</h3>
+				<p>This section breaks down the remaining costs:</p>
+				<ul>
+					<li><strong>PM Costing/Unit:</strong> Lists the cost of each individual packing material (e.g., Pouch, Shipper).</li>
+					<li><strong>Other Costing/Unit:</strong> Shows costs for <strong>Labour</strong> and <strong>Packing Loss</strong>.</li>
+					<li><strong>Final Cost Packing Wise:</strong> This is the grand total, combining the bulk cost with packing and other costs to give you the final <strong>Per Unit Costing</strong>.</li>
+				</ul>
+				<h3><a href="assets/images/Reporting/ABAMECTIN 1.9% [ 1.00-LTR(1ltr) ]-2.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Detailed Report (Part 2)</a></h3>
+				<img src="assets/images/Reporting/ABAMECTIN 1.9% [ 1.00-LTR(1ltr) ]-2.jpg" alt="Detailed Report Part 2">
+				<hr>
+			</section>
+			<section id="Step15">
+				<h1>Step 15 : Actual vs. Estimate Report</h1>
+				<p>
+					The <strong>Actual vs. Estimate Report</strong> provides a comparative analysis between the estimated costs and the actual costs of a finished product. This allows you to track cost variations, identify reasons for differences, and refine future estimations for better accuracy.
+				</p>
+			
+				<h2>1. Comparison View</h2>
+				<p>
+					To access the report, navigate to <strong>Reporting ➜ Finish GoodPricing Report</strong> and check the <strong>View Estimate Detail?</strong> checkbox. The report will then display both "Actual" and "Estimate" rows for each product.
+				</p>
+				<ul>
+					<li><strong>Actual:</strong> Shows the final cost based on the confirmed prices from the RM Price Master.</li>
+					<li><strong>Estimate:</strong> Shows the projected cost based on the provisional prices from the RM Price Estimate master.</li>
+					<li>You can click the <strong>Actual Report</strong> or <strong>Estimate Report</strong> button to see the detailed breakdown for each.</li>
+				</ul>
+				<h3><a href="assets/images/Reporting/Estimate_list.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Comparison View</a></h3>
+				<img src="assets/images/Reporting/Estimate_list.jpg" alt="Actual vs. Estimate Comparison View">
+				<hr>
+			
+				<h2>2. Estimated Cost Breakdown Report</h2>
+				<p>
+					The estimate report is generated based on the prices entered in the <strong>RM Price Estimate</strong> master. It follows the same detailed breakdown structure as the actual cost report but uses provisional data for forecasting and budgeting.
+				</p>
+				<h3>Ingredient & Bulk Cost (Estimate)</h3>
+				<p>This section shows the estimated recipe cost, including each <strong>Ingredient</strong>, its formulation percentage, quantity, estimated rate, and total estimated amount. It summarizes the <strong>Final Bulk Cost/Ltr or Kg (Estimate)</strong>.</p>
+				<h3><a href="assets/images/Reporting/ABAMECTIN 1.9% [ 1.00-LTR(1ltr)(Estimate) ]-1.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Estimate Report (Part 1)</a></h3>
+				<img src="assets/images/Reporting/ABAMECTIN 1.9% [ 1.00-LTR(1ltr)(Estimate) ]-1.jpg" alt="Estimate Report Part 1">
+
+				<h3>Packing, Labour & Final Cost (Estimate)</h3>
+				<p>This section breaks down the remaining estimated costs:</p>
+				<ul>
+					<li><strong>PM Costing/Unit:</strong> Lists the estimated cost of each individual packing material.</li>
+					<li><strong>Other Costing/Unit:</strong> Shows estimated costs for <strong>Labour</strong> and <strong>Packing Loss</strong>.</li>
+					<li><strong>Final Cost Packing Wise:</strong> This is the grand total, combining the estimated bulk cost with packing and other costs to give you the final <strong>Per Unit Costing (Estimate)</strong>.</li>
+				</ul>
+				<h3><a href="assets/images/Reporting/ABAMECTIN 1.9% [ 1.00-LTR(1ltr) ]-21.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Estimate Report (Part 2)</a></h3>
+				<img src="assets/images/Reporting/ABAMECTIN 1.9% [ 1.00-LTR(1ltr) ]-21.jpg" alt="Estimate Report Part 2">
+				<hr>
+			</section>
+			
+
+		<div class="footer">
+			<p>&copy; 2025 Costing Software Guide. All rights reserved.</p>	
+		</div>
 
 			
 		</div>
