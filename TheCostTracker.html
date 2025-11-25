@@ -32,8 +32,32 @@
 			</a>		
 		</div>		
 
+		
+
 		<ul id="documenter_nav">
 			<li><a href="#">The Cost Tracker</a></li>
+			<li class="accordion">
+				<a href="#" title="Payment"> Master Setup <i class="feather-chevron-down"></i></a>
+				<ul>
+					<li data-menuid="58"><a href="#Outstanding_Report">Outstanding Report</a></li>
+					<li data-menuid="53"><a href="#NCR_Due_Report">NCR Due Report</a></li>
+					<li data-menuid="54"><a href="#NCR_DueCount_Report">NCR Due Count Report</a></li>
+					<li data-menuid="52"><a href="#PaymentCollection_Report">Payment Collection Report</a></li>
+					<li data-menuid="51"><a href="#Dealer_Payment">Dealer Payment</a></li>
+					<li data-menuid="228"><a href="#">Payment Transactions<i class="feather-chevron-down"></i></a>
+						<ul>
+							<li data-menuid="55"><a href="#Payment_Receipt">View Payment Receipt</a></li>
+							<li data-menuid="56"><a href="#View_OS_Bill">View Payment Collection Plan Outstanding Bills</a></li>
+							<li data-menuid="57"><a href="#Opening/Closing_Summary">View Payment Collection Plan Partywise Opening/Closing Balance Summary</a></li>
+							<li data-menuid="59"><a href="#Current_OS_Bill">Current Outstanding Bills</a></li>
+							<li data-menuid="60"><a href="#Partywise_summary">Current Partywise Opening/Closing Balance Summary</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>	
+
+
+
 			<li><a href="#Step1">Step1</a></li>
 			<li><a href="#Step2">Step2</a></li>
 			<li><a href="#Step3">Step3</a></li>
@@ -107,12 +131,7 @@
 				    </ul>
 					<h3><a href="assets/images/Categories/RM_Category.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – RM Categories</a></h3>
 					<img src="assets/images/Categories/RM_Category.jpg" alt="RM Categories">
-				    <h3>Actions Available</h3>
-				    <ul>
-				        <li><strong>Edit</strong> – Modify category name.</li>
-				        <li><strong>Delete</strong> – Remove category.</li>
-				        <li><strong>Search</strong> – Locate items quickly.</li>
-				    </ul>
+				    
 				</div>
 
 
@@ -137,12 +156,7 @@
 				    </ul>
 					<h3><a href="assets/images/Categories/PM_RM_Category.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – PM RM Categories</a></h3>
 					<img src="assets/images/Categories/PM_RM_Category.jpg" alt="PM RM Categories">
-				    <h3>Actions Available</h3>
-				    <ul>
-				        <li><strong>Edit</strong> – Change the name or type.</li>
-				        <li><strong>Delete</strong> – Remove a PM/RM category.</li>
-				        <li><strong>Search</strong> – Filter the list easily.</li>
-				    </ul>
+				    
 				</div>
 
 				
@@ -160,13 +174,7 @@
 				        <li>Enter the packing category (Example: ML).</li>
 				        <li>Click <strong>Add</strong> to save.</li>
 				    </ul>
-					
-				    <h3>Available Actions</h3>
-				    <ul>
-				        <li><strong>Edit</strong> – Update the packing category name.</li>
-				        <li><strong>Delete</strong> – Remove the packing category.</li>
-				        <li><strong>Search</strong> – Use search bar to filter list.</li>
-				    </ul>
+									    
 					<h3><a href="assets/images/Categories/Packing_Category.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Packing Categories</a></h3>
 					<img src="assets/images/Categories/Packing_Category.jpg" alt="Packing Categories">
 				</div>
@@ -185,13 +193,7 @@
 				        <li>Select the <strong>Measurement Unit</strong>.</li>
 				        <li>Click <strong>Update</strong> to save the changes.</li>
 				    </ul>
-				
-				    <h3>Actions Available</h3>
-				    <ul>
-				        <li><strong>Edit</strong> – Modify category, size, or measurement.</li>
-				        <li><strong>Delete</strong> – Remove a packing size entry.</li>
-				        <li><strong>Search</strong> – Quickly locate entries using search.</li>
-				    </ul>
+								  
 					<h3><a href="assets/images/Categories/Packing_Size_Category.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Packing Size Categories</a></h3>
 					<img src="assets/images/Categories/Packing_Size_Category.jpg" alt="Packing Size Categories">
 
@@ -235,13 +237,6 @@
 					<h3><a href="assets/images/Master/PM_RM_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – PM RM Master</a></h3>
 					<img src="assets/images/Master/PM_RM_Master.jpg" alt="PM RM Master">
 
-				<h3>Actions Available</h3>
-				    <ul>
-				        <li><strong>Edit</strong> – Modify an existing PM/RM item.</li>
-				        <li><strong>Delete</strong> – Remove the PM/RM item permanently.</li>
-				        <li><strong>Search</strong> – Find PM/RM items quickly using the search box.</li>
-				    </ul>
-
 					<h3>Where PMRM Master Is Used</h3>
 					<p>This master is used in:</p>
 					<ul>
@@ -279,12 +274,7 @@
 					<h3><a href="assets/images/Master/6.Packing_Style_Name.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Packing Style Name</a></h3>
 					<img src="assets/images/Master/6.Packing_Style_Name.jpg" alt="Packing Style Name">
 
-					<h3>Actions Available</h3>
-				    <ul>
-				        <li><strong>Edit</strong> – Modify an existing packing style name.</li>
-				        <li><strong>Delete</strong> – Remove the packing style name permanently.</li>
-				        <li><strong>Search</strong> – Find packing style names quickly using the search box.</li>
-				    </ul>
+					
 					<hr>
 
 			</section>
@@ -297,8 +287,6 @@
 					The <strong>Cost Variable Master</strong> stores all the standard cost inputs used across costing and pricing
 					calculations. Maintain these values centrally so costing reports and BOM calculations stay accurate and consistent.
 				</p>
-
-			
 
 				<h2>Purpose</h2>
 				<p>
@@ -344,13 +332,7 @@
 					<li>Click the <strong>Add</strong> button to save the new category.</li>
 					<li>The new category will appear in the list below.</li>
 				</ul>
-				<h3>Actions Available</h3>
-				    <ul>
-				        <li><strong>Edit</strong> – Modify an existing formulation category.</li>
-				        <li><strong>Delete</strong> – Remove the formulation category permanently.</li>
-				        <li><strong>Search</strong> – Find formulation categories quickly using the search box.</li>
-				    </ul>
-				<hr>
+				
 				<h3><a href="assets/images/Master/10.Bulk_Formulation_Categ_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Bulk Formulation Category Master</a></h3>
 				<img src="assets/images/Master/10.Bulk_Formulation_Categ_Master.jpg" alt="Bulk Formulation Category Master">
 
@@ -404,15 +386,8 @@
 
 				<li><strong>Final Cost/Ltr BatchSize:</strong> Final production cost after adding buffer.</li>
 				</ul>
-				<h3>Actions Available</h3>
-				    <ul>
-				        <li><strong>Edit</strong> – Modify an existing formulation.</li>
-				        <li><strong>Delete</strong> – Remove the formulation permanently.</li>
-				        <li><strong>Search</strong> – Find formulations quickly using the search box.</li>
-				    </ul>
-
-
-				<h3><a href="assets/images/Master/Formulation_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – RM Master</a></h3>
+				
+				<h3><a href="assets/images/Master/Formulation_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Formulation Master</a></h3>
 				<img src="assets/images/Master/Formulation_Master.jpg" alt="RM Master">
 				<hr>
 
@@ -430,7 +405,7 @@
 				<h2>How to Add RM Master</h2>
 				<ul>
 					<li>Navigate to <strong>Master ➜ RM Master</strong>.</li>
-					<li>Select <strong>RM Category</strong>  (Technical, Solvent, Emulsifier, Other, etc.).</li>
+					<li>Select <strong>RM Category</strong> (Technical, Solvent, Emulsifier, Other, etc.).</li>
 					<li>Enter the <strong>RM Name</strong> (e.g., Emulsifier X).</li>
 					<li> Select the unit of measurement (KG, LTR, GM, etc.).</li>
 					<li>Check this if the RM purity percentage is mandatory (mainly for Technical materials).</li>
@@ -438,12 +413,7 @@
 					<li>Click the <strong>Add</strong> button to save the new RM item.</li>
 					<li>The new RM item will appear in the list below.</li>
 				</ul>
-				<h3>Actions Available</h3>
-				    <ul>
-				        <li><strong>Edit</strong> – Modify an existing RM item.</li>
-				        <li><strong>Delete</strong> – Remove the RM item permanently.</li>
-				        <li><strong>Search</strong> – Find RM items quickly using the search box.</li>
-				    </ul>
+				
 				<h3><a href="assets/images/Master/RM_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – RM Master</a></h3>
 				<img src="assets/images/Master/RM_Master.jpg" alt="RM Master">
 				<hr>
@@ -473,13 +443,7 @@
                  <li>If required, enable <strong>NRV Calculation</strong> and <strong>Combo Product</strong>.</li>
                  <li>Click <strong>Add</strong> to save.</li>
              </ul>
-		      <h3>Actions Available</h3>
-				    <ul>
-				        <li><strong>Edit</strong> – Modify an existing formulation.</li>
-				        <li><strong>Delete</strong> – Remove the formulation permanently.</li>
-				        <li><strong>Search</strong> – Find formulations quickly using the search box.</li>
-				    </ul>
-
+		      
 				<h3><a href="assets/images/Master/Bulk_Product_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Bulk Product Master</a></h3>
 				<img src="assets/images/Master/Bulk_Product_Master.jpg" alt="Bulk Product Master">
 				<hr>			
@@ -654,7 +618,7 @@
 			
 				<hr>
 			
-				<h2>2. Editing Packing Material Costs</h2>
+				<h2>2. Adding Packing Material Costs</h2>
 				<p>
 					After defining the configuration, you must specify the cost for each packing component.
 				</p>
