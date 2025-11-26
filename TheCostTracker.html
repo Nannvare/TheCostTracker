@@ -32,47 +32,54 @@
 			</a>		
 		</div>		
 
-		
-
 		<ul id="documenter_nav">
 			<li><a href="#">The Cost Tracker</a></li>
 			<li class="accordion">
-				<a href="#" title="Payment"> Master Setup <i class="feather-chevron-down"></i></a>
+				<input type="checkbox" id="master_setup_toggle" class="accordion-toggle" />
+				<label for="master_setup_toggle" class="accordion-title" title="Master Setup"> Master Setup <i class="feather-chevron-down"></i></label>
 				<ul>
-					<li data-menuid="58"><a href="#Outstanding_Report">Outstanding Report</a></li>
-					<li data-menuid="53"><a href="#NCR_Due_Report">NCR Due Report</a></li>
-					<li data-menuid="54"><a href="#NCR_DueCount_Report">NCR Due Count Report</a></li>
-					<li data-menuid="52"><a href="#PaymentCollection_Report">Payment Collection Report</a></li>
-					<li data-menuid="51"><a href="#Dealer_Payment">Dealer Payment</a></li>
-					<li data-menuid="228"><a href="#">Payment Transactions<i class="feather-chevron-down"></i></a>
-						<ul>
-							<li data-menuid="55"><a href="#Payment_Receipt">View Payment Receipt</a></li>
-							<li data-menuid="56"><a href="#View_OS_Bill">View Payment Collection Plan Outstanding Bills</a></li>
-							<li data-menuid="57"><a href="#Opening/Closing_Summary">View Payment Collection Plan Partywise Opening/Closing Balance Summary</a></li>
-							<li data-menuid="59"><a href="#Current_OS_Bill">Current Outstanding Bills</a></li>
-							<li data-menuid="60"><a href="#Partywise_summary">Current Partywise Opening/Closing Balance Summary</a></li>
-						</ul>
-					</li>
+					<li><a href="#Categories_Module">Step1</a></li>
+					<li><a href="#PM_RM_Master">Step2</a></li>
+					<li><a href="#Packing_Style_Name">Step3</a></li>
+					<li><a href="#Cost_Variable_Master">Step4</a></li>
+					<li><a href="#Formulation_Category_Master">Step5</a></li>
+					<li><a href="#Formulation_Master">Step6</a></li>
+					<li><a href="#RM_Master">Step7</a></li>
+					<li><a href="#Bulk_Product_Master">Step8</a></li>
+					<li><a href="#Price_Master">Step9</a></li>
+						
 				</ul>
 			</li>	
-
-
-
-			<li><a href="#Step1">Step1</a></li>
-			<li><a href="#Step2">Step2</a></li>
-			<li><a href="#Step3">Step3</a></li>
-			<li><a href="#Step4">Step4</a></li>
-			<li><a href="#Step5">Step5</a></li>
-			<li><a href="#Step6">Step6</a></li>
-			<li><a href="#Step7">Step7</a></li>
-			<li><a href="#Step8">Step8</a></li>
-			<li><a href="#Step9">Step9</a></li>
-			<li><a href="#Step10">Step10</a></li>
-			<li><a href="#Step11">Step11</a></li>
-			<li><a href="#Step12">Step12</a></li>
-			<li><a href="#Step13">Step13</a></li>
-			<li><a href="#Step14">Step14</a></li>
-			<li><a href="#Step15">Step15</a></li>
+			<li class="accordion">
+				<input type="checkbox" id="finish_good_toggle" class="accordion-toggle" />
+				<label for="finish_good_toggle" class="accordion-title" title="Finish Good">How to Make Finish Good <i class="feather-chevron-down"></i></label>
+				<ul>
+					<li><a href="#BOM">Step10</a></li>
+					<li><a href="#Product_Packing_Material_Master">Step11</a></li>
+					<li><a href="#PackingStyle_LabourCosting_Master">Step12</a></li>
+					<li><a href="#Productwise_Labour_Cost">Step13</a></li>
+				</ul>
+			</li>
+			<li class="accordion">
+				<input type="checkbox" id="finish_good_report_toggle" class="accordion-toggle" />
+				<label for="finish_good_report_toggle" class="accordion-title" title="Finish Good Report">Finish Good Report <i class="feather-chevron-down"></i></label>
+				<ul>
+					<li><a href="#Finished_Goods_PricingReport">Step14</a></li>
+					<li><a href="#Actual_vs_Estimate_Report">Step15</a></li>
+				</ul>
+			</li>		
+			<li class="accordion">
+				<input type="checkbox" id="others_master_toggle" class="accordion-toggle" />
+				<label for="others_master_toggle" class="accordion-title" title="Others Master">Others Master<i class="feather-chevron-down"></i></label>
+				<ul>
+					<li><a href="#Product_Interest_Master">Product Interest Master</a></li>
+					<li><a href="#Packing_Difference_Master">Packing Difference Master</a></li>
+					<li><a href="#MRP_Price">MRP Price</a></li>
+					<li><a href="#Supervisor_Master">Supervisor Master</a></li>
+					<li><a href="#Price_List_Terms_&_Conditions">Price List Terms & Conditions - Other Company Master</a></li>
+				</ul>
+			</li>		
+			
 				
 		</ul>
 		<div id="documenter_copyright">
@@ -84,7 +91,7 @@
 		<div class="content">
 			
 			
-			<section id="Step1">
+			<section id="Categories_Module">
 				<h1>Step 1 : Categories Module </h1>
 				<p>
 					<strong>Purpose:</strong>  
@@ -204,7 +211,7 @@
 
 			</section>
 
-			<section id="Step2">
+			<section id="PM_RM_Master">
 				<h1>Step 2 : PM RM Master</h1>
 				<p>
 					The <strong>PMRM Master (Packing Material & Raw Material Master)</strong> module is used to store and manage all packing material and raw material items used in production.
@@ -247,7 +254,7 @@
 					<hr>
 			</section>
 			
-			<section id="Step3">
+			<section id="Packing_Style_Name">
 				<h1>Step 3 : Packing Style Name</h1>
 				<p>
 					The <strong>Packing Style Name</strong> module is used to define various packing styles
@@ -279,7 +286,7 @@
 
 			</section>
 
-			<section id="Step4">
+			<section id="Cost_Variable_Master">
 				<h1>
 					Step 4 : Cost Variable Master
 				</h1>
@@ -315,7 +322,7 @@
 				<hr>
 			</section>
 
-			<section id="Step5">
+			<section id="Formulation_Category_Master">
 				<h1>Step 5 : Bulk Formulation Category Master</h1>
 				 <p>
 					The <strong>Bulk Formulation Category Master</strong> is used to manage all formulation types 
@@ -338,62 +345,42 @@
 
 			</section>
 			
-			<section id="Step6">
-				<h1>
-					Step 6 : Formulation Master
-				</h1>
-				 <p>
-					The <strong>Formulation Master</strong> is used to define the complete cost structure of a finished formulation. 
-					This includes labour cost, power consumption, maintenance, other expenses, and buffer cost. 
-					Based on the entered values, the system automatically calculates the <strong>Total Cost</strong> and 
-					<strong>Final Cost per Liter/KG</strong> depending on the chosen measurement.
-				</p>
-				<h2>How to Add a Formulation</h2>
-				<ul>
-					<li><strong>Formulation Name:</strong> Select the formulation type (EC, SC, SG, GR, etc.).</li>
+				<section id="Formulation_Master">
+					<h1>
+						Step 6 : Formulation Master
+					</h1>
+					<p>
+						The <strong>Formulation Master</strong> is a crucial module used to define the comprehensive cost structure of a finished product formulation. It integrates various cost components such as labor, power consumption, maintenance, and other overheads to calculate the total production cost and the final cost per unit (Liter/KG).
+					</p>
 
-				<li><strong>Batch Size:</strong> Total production quantity (KG/LTR) of one manufacturing batch.</li>
-
-				<li><strong>Measurement:</strong> Unit of batch (KG or LTR).</li>
-
-				<li><strong>No of Labours:</strong> Total number of labours working for this formulation batch.</li>
-
-				<li><strong>Supervisors:</strong> Count of supervisors assigned to this batch.</li>
-
-				<li><strong>Labour Charge:</strong> Auto-calculated based on number of labour × labour rate 
-					(from Cost Variable Master).</li>
-
-				<li><strong>Labour Cost:</strong> Per labour cost (10-hour or 12-hour shift rate).</li>
-
-				<li><strong>Power (Unit):</strong> Total power units consumed during production.</li>
-
-				<li><strong>PowerCharge (Unit):</strong> Power price per unit taken from 
-					<strong>Cost Variable Master</strong>.</li>
-
-				<li><strong>Total Power Cost (Unit):</strong> Auto-calculated as:
-					<br><em>Power Units × Power Charge</em></li>
-
-				<li><strong>Maintenance:</strong> Any machinery maintenance cost for the batch.</li>
-
-				<li><strong>Other Cost:</strong> Additional miscellaneous expenses.</li>
-
-				<li><strong>Total Cost:</strong> Total production cost of one entire batch.</li>
-
-				<li><strong>CostPerLiter/BatchSize:</strong> Auto-calculated as:
-					<br><em>Total Cost ÷ Batch Size</em></li>
-
-				<li><strong>Add Buffer:</strong> Optional additional cost percentage or fixed amount.</li>
-
-				<li><strong>Final Cost/Ltr BatchSize:</strong> Final production cost after adding buffer.</li>
-				</ul>
+					<h2>How to Add/Update a Formulation</h2>
+					<p>To add a new formulation or update an existing one, follow these steps:</p>
+					<ul>
+						<li><strong>Formulation Name:</strong> Enter the type of formulation (e.g., EC, SC, SG, GR).</li>
+						<li><strong>Measurement:</strong> Select the unit of measurement for the batch (e.g., KG or LTR).</li>
+						<li><strong>Batch Size:</strong> Enter the total production quantity (in KG or LTR, based on the selected Measurement) for one manufacturing batch.</li>
+						<li><strong>No of Labours:</strong> Input the total number of laborers assigned to work on this specific formulation batch.</li>
+						<li><strong>Supervisors:</strong> Enter the count of supervisors overseeing this batch.</li>
+						<li><strong>Labour Charge:</strong> This field reflects the per-labor cost and is *auto-calculated* based on the number of laborers and the labor rate defined in the <strong>Cost Variable Master</strong>.</li>
+						<li><strong>Labour Cost:</strong> This represents the total calculated labor cost for the batch (e.g., 10-hour or 12-hour shift rate applied per labor).</li>
+						<li><strong>Power (Unit):</strong> Enter the total power units (e.g., KWH) estimated to be consumed during the production of this batch.</li>
+						<li><strong>PowerCharge (Unit):</strong> This field displays the price per power unit, sourced automatically from the <strong>Cost Variable Master</strong>.</li>
+						<li><strong>Total Power Cost (Unit):</strong> This is an *auto-calculated* field, representing the total power expense for the batch (<em>Power Units × Power Charge</em>).</li>
+						<li><strong>Maintenance:</strong> Input any specific machinery maintenance costs associated with this particular batch production.</li>
+						<li><strong>Other Cost:</strong> Enter any additional miscellaneous expenses or overheads for the batch.</li>
+						<li><strong>Total Cost:</strong> This is an *auto-calculated* field, summing up all ingredient costs (from BOM, if applicable), labor costs, power costs, maintenance, and other expenses for one entire batch.</li>
+						<li><strong>Add Buffer:</strong> You can enter an optional additional cost, either as a percentage or a fixed amount, to account for unforeseen expenses or profit margins.</li>
+						<li><strong>CostPerLiter/BatchSize:</strong> An *auto-calculated* field that shows the cost per liter or KG before adding any buffer (<em>Total Cost ÷ Batch Size</em>).</li>
+						<li><strong>Final Cost/Ltr BatchSize:</strong> This is the *final auto-calculated production cost* per liter or KG, after the 'Add Buffer' amount has been applied.</li>
+					</ul>
+					<p>After entering all the required details, click the <strong>Add</strong> button to save the new formulation. To discard changes, click <strong>Cancel</strong>.</p>					
 				
 				<h3><a href="assets/images/Master/Formulation_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Formulation Master</a></h3>
 				<img src="assets/images/Master/Formulation_Master.jpg" alt="RM Master">
 				<hr>
-
 			</section>
 
-			<section id="Step7">
+			<section id="RM_Master">
 				<h1>
 					Step 7 : RM Master
 				</h1>
@@ -408,10 +395,11 @@
 					<li>Select <strong>RM Category</strong> (Technical, Solvent, Emulsifier, Other, etc.).</li>
 					<li>Enter the <strong>RM Name</strong> (e.g., Emulsifier X).</li>
 					<li> Select the unit of measurement (KG, LTR, GM, etc.).</li>
-					<li>Check this if the RM purity percentage is mandatory (mainly for Technical materials).</li>
+					<li>Check this box if a purity percentage is mandatory for this raw material. This is typically required for technical materials where concentration affects usage and costing.</li>
 					<li>Enter the purity percentage (e.g., 95%, 70%). Field becomes mandatory only when “IsPurity Required” is checked.</li>
 					<li>Click the <strong>Add</strong> button to save the new RM item.</li>
 					<li>The new RM item will appear in the list below.</li>
+				
 				</ul>
 				
 				<h3><a href="assets/images/Master/RM_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – RM Master</a></h3>
@@ -420,7 +408,7 @@
 
 			</section>
 
-			<section id="Step8">
+			<section id="Bulk_Product_Master">
 				<h1>
 					Step 8 : Bulk Product Master
 				</h1>
@@ -451,7 +439,7 @@
 			</section>
 
 
-			<section id="Step9">
+			<section id="Price_Master">
 				<h1>Step 9 : Price Master </h1>
 				 <p>
                     The <strong>Price Master</strong> module is used to define and manage the pricing details for Bulk Products and Raw Materials. 
@@ -490,19 +478,19 @@
 				<div class="section">
 				    <h2>2. PMRM Price Master</h2>
 				    <p>
-                       The <strong>PMRM Price Master</strong> is used to record and manage the purchase prices of packing materials (PM) and raw materials (RM). 
+                       The <strong>PMRM Price Master</strong> is used to record and manage the purchase prices of packing materials (PM). 
 					   This is crucial for accurate costing of finished goods.
                     </p>
 				    <h3>How to Add a PMRM Price Entry</h3>
 				    <ul>
 				        <li>Go to <strong>Price Master ➜ PMRM Price Master</strong>.</li>
-				        <li><strong>PMRM Category:</strong> Select the category of the packing or raw material (e.g., Bottle, Shipper).</li>
+				        <li><strong>PMRM Category:</strong> Select the category of the packing material (e.g., Bottle, Shipper).</li>
 						<li><strong>PMRM Name:</strong> Choose the specific item from the list (e.g., Bottle 500 ML).</li>
 						<li><strong>Date of Purchase:</strong> Select the date when the material was purchased.</li>
 				        <li><strong>Price:</strong> Enter the base price of the material.</li>
-				        <li><strong>Transportation:</strong> Add any transportation costs associated with the purchase.</li>
+				        <li><strong>Transportation:</strong> Add any transportation costs per unit associated with the purchase.</li>
 				        <li><strong>No. of Units/KG:</strong> Enter the number of units per kilogram, if applicable.</li>
-				        <li><strong>Loss (%):</strong> Specify any expected loss percentage during handling or production.</li>
+				        <li><strong>Loss (%):</strong> Specify any expected loss percentage during handling.</li>
 						<li><strong>Price/Unit:</strong> This field displays the final calculated price per unit, considering all inputs.</li>
 				        <li>Click the <strong>Add</strong> button to save the price entry.</li>
 				    </ul>
@@ -512,24 +500,24 @@
 				</div>
 
 				<div class="section">
-				    <h2>3. RM Price Estimate</h2>
-				    <p>
-                       The <strong>RM Price Estimate</strong> module allows you to record estimated or provisional prices for raw materials. 
-					   This is useful for budgeting and forecasting before the final prices are available. The fields are similar to the RM Price Master.
-                    </p>
-				    <h3>How to Add an RM Price Estimate</h3>
+				    <h2>3. RM Price Estimate</h2>				    
+					<p>The <strong>RM Price Estimate</strong> page is used to record and manage estimated and actual prices for raw materials. 
+						This helps in tracking price variations and forecasting before the final prices are available.</p>
+				   
+					<h3>How to Add an RM Price Estimate</h3>
 				    <ul>
 				        <li>Go to <strong>Price Master ➜ RM Price Estimate</strong>.</li>
-				        <li><strong>RM Category:</strong> Select the category of the raw material.</li>
-				        <li><strong>RM Name:</strong> Choose the specific raw material.</li>
-				        <li><strong>Date of Purchase:</strong> Select the estimated date of purchase.</li>
-				        <li><strong>Estimate Rate/Kg-Ltr(Rs):</strong> Enter the estimated price per unit.</li>
+				        <li>Select the <strong>RM Category</strong> from the dropdown menu (e.g., Technical).</li>
+				        <li>Choose the specific <strong>RM Name</strong> from the list.</li>
+						<li>The system  display the  <strong>actual rate and quantity</strong> for selected raw material name.</li>
+				        <li>Select the date of purchase.</li>
+
+				        <li>Enter the <strong>Estimate Rate/Kg-Ltr(Rs)</strong> for the material.</li>
 						<li><strong>Rate Full Purity:</strong> Check this box if the estimated rate is for 100% purity.</li>
 				        <li><strong>Purity(%):</strong> Enter the expected purity of the material.</li>
 						<li><strong>Actual Price/Kg-Ltr:</strong> This is auto-calculated based on the estimated rate and purity.</li>
-				        <li><strong>Quantity:</strong> Enter the estimated quantity to be purchased.</li>
-				        <li><strong>Transport:</strong> Add any estimated transportation costs.</li>
-						<li><strong>Total Rate/Ltr:</strong> This is the final estimated cost per unit, including transportation.</li>
+				
+						<li><strong>Total Rate/Ltr:</strong> This is the final estimated cost per ltr/kg, including transportation.</li>
 				        <li>Click the <strong>Add</strong> button to save the price estimate.</li>
 				    </ul>
 					<h3><a href="assets/images/Price_Master/3.RM_Price_Estimate.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – RM Price Estimate</a></h3>
@@ -539,62 +527,59 @@
 
 			</section>
 
-			<section id="Step10">
-				<h1>Step 10 : BOM (Bill of Material) Module</h1>
-
+			<section id="BOM">
+				<h1>Step 10 : BOM (Bulk Recipe)</h1>
 				<p>
-					The <strong>BOM (Bill of Material)</strong> module, also known as <strong>Bulk Recipe</strong>, is where you define the raw material composition 
-					and formulation costs for each bulk product. This is a critical step for accurate cost calculation.
+					The <strong>BOM (Bulk Recipe) Module</strong> is where you define the precise formulation for each of your bulk products. This involves selecting ingredients, specifying their quantities and costs, and calculating the final cost of the bulk material before it goes into packaging.
 				</p>
 			
-				<h2>1. How to Create a Bulk Recipe</h2>
-				<p>First, you need to create a new recipe entry for a bulk product.</p>
+				<h2>1. How to Create a BOM</h2>
+				<p>First, you need to link a bulk product to a batch size and measurement unit.</p>
 				<ul>
 					<li>Navigate to <strong>Cost ➜ BulkRecipe (BOM)</strong>.</li>
-					<li>Select the <strong>Main Category</strong> for the product (e.g., Pesticides).</li>
+					<li>Select the <strong>Main Category</strong> (e.g., Pesticides).</li>
 					<li>Choose the <strong>Bulk Product</strong> you want to create a recipe for (e.g., ABAMECTIN 1.9%).</li>
-					<li>Enter the standard <strong>Batch Size</strong> for production (e.g., 1000).</li>
+					<li>Enter the standard <strong>Batch Size</strong> (e.g., 1000).</li>
 					<li>Select the <strong>Measurement</strong> unit (e.g., LTR).</li>
-					<li>Click the <strong>Add</strong> button to create the recipe entry. It will appear in the table below.</li>
+					<li>Click the <strong>Add</strong> button to create the BOM entry. It will then appear in the list below.</li>
 				</ul>
-				<h3><a href="assets/images/Cost/2.BOM2.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Bulk Recipe (BOM)</a></h3>
-				<img src="assets/images/Cost/2.BOM2.jpg" alt="Bulk Recipe (BOM)">
-			
+				<h3><a href="assets/images/Cost/2.BOM2.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – BOM Creation</a></h3>
+				<img src="assets/images/Cost/2.BOM2.jpg" alt="BOM Creation">
 				<hr>
 			
 				<h2>2. Input Technical Details (Adding Ingredients)</h2>
 				<p>
-					After creating the recipe entry, you must add the technical ingredients and their quantities.
+					Once the BOM entry is created, click the <strong>Input Technical</strong> button for that product to open the recipe definition screen.
 				</p>
+				<h3>Adding Ingredients</h3>
 				<ul>
-					<li>Find your product in the list and click the <strong>Input Technical</strong> button.</li>
-					<li>On the new screen, you will add each raw material (RM) that makes up the bulk product.</li>
-					<li><strong>Search RM:</strong> Select a raw material from the dropdown (e.g., ABAMECTIN TECH).</li>
-					<li><strong>Formulation %:</strong> Enter the percentage of this RM in the formulation (e.g., 1.90).</li>
+					<li>Use the <strong>Search RM</strong> dropdown to find and select an ingredient (e.g., ABAMECTIN TECH).</li>
+					<li>If it's an Technical, check the <strong>Formulation?</strong> box and enter the required purity percentage (e.g., 1.90). The system will calculate the required quantity based on the batch size.</li>
+					<li>For other ingredients like solvents, enter their quantity(ltr/kg) directly.</li>
+					<li>The <strong>Rate</strong> and <strong>Transportation</strong> costs are automatically fetched from the price masters.</li>
 					<li>Click <strong>Add</strong> to include the ingredient in the recipe.</li>
-					<li>The ingredient will be added to the table below, showing its name, quantity, rate, and total amount.</li>
-					<li>Continue adding all necessary ingredients (like solvents, fillers, etc.).</li>
+					<li>Repeat this process for all ingredients in the formula. The system will display the total amount at the bottom.</li>
 				</ul>
-			
-				<h3>Understanding the Calculation</h3>
+				<h3><a href="assets/images/Cost/2.BOM3.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Recipe Definition</a></h3>	
+				<img src="assets/images/Cost/2.BOM3.jpg" alt="Recipe Definition">
+
+				<h3>Final Cost Calculation</h3>
 				<p>
-					The bottom section of this screen calculates the final cost based on the ingredients and other formulation charges.
+					After adding all ingredients, configure the final costing details at the bottom of the screen:
 				</p>
 				<ul>
-					<li><strong>Formulation Charges:</strong> These are pulled from the Formulation Master based on the formulation type (e.g., EC).</li>
-					<li><strong>Total Amount:</strong> The sum of all ingredient costs plus formulation charges.</li>
-					<li><strong>Output/Ltr:</strong> The expected final quantity of the batch.</li>
-					<li><strong>Lost Amount:</strong> Any expected loss during production.</li>
-					<li><strong>Cost/Ltr:</strong> The cost per liter before accounting for the bulk cost.</li>
-					<li><strong>Cost Bulk/Ltr:</strong> The final calculated cost per liter for the bulk product.</li>
-					<li>Click the <strong>Update</strong> button to save all technical details and the final cost.</li>
+					<li>Select the <strong>Formulation</strong> type (e.g., EC), which add formulation charges.</li>
+					<li>Enter the <strong>SPGR</strong> (Specific Gravity) and any <strong>Form. Lost (%)</strong>.</li>
+					<li>The system calculates the final <strong>Cost/Ltr</strong> and <strong>Cost Bulk/Ltr</strong> based on all inputs.</li>
+					<li>Click the <strong>Update</strong> button to save the complete recipe and its final cost.</li>
 				</ul>
-				<h3><a href="assets/images/Cost/2.BOM3.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Input Technical Details</a></h3>
-				<img src="assets/images/Cost/2.BOM3.jpg" alt="Input Technical Details">
+				<h3><a href="assets/images/Cost/2.BOM3.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Recipe Definition</a></h3>	
+				<img src="assets/images/Cost/2.BOM3.jpg" alt="Recipe Definition">
 				<hr>
+				
 			</section>		
 
-			<section id="Step11">
+			<section id="Product_Packing_Material_Master">
 				<h1>Step 11 : Product Packing Material Master </h1>
 							
 				<p>
@@ -610,7 +595,7 @@
 					<li><strong>Packing Name:</strong> Choose the primary packing size (e.g., 1 LTR).</li>
 					<li><strong>Shipper Detail:</strong> Check the "Shipper" box if an outer box is used. Select the shipper size and the number of units it holds (e.g., 20 units per shipper).</li>
 					<li><strong>Inner Detail:</strong> Similarly, configure if there is an inner packing component.</li>
-					<li><strong>Part Code:</strong> A unique code is generated based on your selections.</li>
+					<li><strong>Part Code:</strong> A unique code is generated based on your selections(If Availables).</li>
 					<li>Click <strong>Add</strong> to save this packing configuration.</li>
 				</ul>
 				<h3><a href="assets/images/Master/7.Product_Packing_MaterialMaster.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Product Packing Material Master</a></h3>
@@ -638,7 +623,7 @@
 				
 			</section>
 
-			<section id="Step12">
+			<section id="PackingStyle_LabourCosting_Master">
 				<h1>Step 12 : Packing Style Labour Costing Master</h1>				
 				<p>
 					The <strong>Packing Style Labour Costing Master</strong> is a detailed module for defining the specific labour tasks and power consumption associated with different packing styles. This allows for highly accurate cost calculations for the packing process.
@@ -678,60 +663,56 @@
 
 			</section>
 
-			<section id="Step13">
+			<section id="Productwise_Labour_Cost">
 				<h1>Step 13 : Product wise Labour Cost</h1>
 				<p>
-					The <strong>Product wise Labour Cost</strong> module is a comprehensive calculator that brings together all cost elements—labour, machine output, power, and other expenses—to determine the final per-unit production cost for a specific product.
+					The <strong>Product wise Labour Cost</strong> module is where you calculate the final per-unit cost for a product by combining labor, power, machine output, and other overheads. 
+					This screen brings together various master settings to determine the total cost of the packing process for a specific product configuration.
 				</p>
-			
-				<h2>How to Calculate Product wise Labour Cost</h2>
-				<p>Navigate to <strong>Cost ➜ Product wise Labour Cost</strong> and fill out the form with the following details:</p>
 
-				<h3>1. Add Labour Task</h3>
+				<h2>How to Add a Product wise Labour Cost Entry</h2>
+				<p>To calculate the labour and other costs for a product, you need to fill in the details based on its packing style and production line output.</p>
 				<ul>
-					<li><strong>Bulk Product:</strong> Select the product you are costing.</li>
-					<li><strong>Packing Size:</strong> Choose the corresponding packing size and packing style category.</li>
-					<li><strong>Packing Style:</strong> Select the packing style used for the product.</li>
-				</ul>	
+					<li>Navigate to <strong>Cost ➜ Product wise Labour Cost</strong>.</li>
+					<li><strong>Bulk Product:</strong> Select the bulk product (e.g., ABAMECTIN 1.9%).</li>
+					<li><strong>Packing Size:</strong> Choose the packing size for the product (e.g., 1.00-LTR).</li>
+					<li><strong>Packing Style:</strong> Select the packing style (e.g., Bottle + Manual Label +Shrink + Shipper). 
+						This is pre-configured in the Packing Style Name.</li>
+				</ul>
 
-				<h3>2. Filling Machine Output</h3>
+				<h3>1. Filling Machine Output</h3>
 				<ul>
 					<li><strong>Storck / Nosel:</strong> Enter the number of nozzles on the filling machine.</li>
 					<li><strong>Total Output/Minut/Filling Line:</strong> Specify the machine's output per minute.</li>
-					<li>The <strong>Total out Put in Liter Or KG/ Shift</strong> and <strong>Total out put Bottels in Net Shift Hours</strong> are calculated automatically based on machine output and shift timings.</li>
+					<li><strong>Total Out Put In Liter Or KG/Shift and Total out put Bottels in Net Shift Hours :</strong> The system auto-calculates the total production output in Liters or KG per shift based on the machine's output rate.</li>
 				</ul>
 
-				<h3>3. Total Labour Costing</h3>
+				<h3>2. Total Labour Costing</h3>
 				<ul>
-					<li><strong>No of workers:</strong> Enter the number of workers assigned.</li>
-					<li><strong>Supervisor:</strong> Enter the number of supervisors.</li>
-					<li>The <strong>Total Labour & Supervisor Costing</strong> is calculated based on rates from the Cost Variable Master.</li>
+					<li><strong>Supervisor:</strong> Enter the number of supervisors assigned to this packing line. <br>
+						The <strong>Total Labour & Supervisior Costing</strong> is auto-calculated based on rates from the Cost Variable Master.</li>
+					<li><strong>Total Power Cost:</strong> The total power consumption cost is automatically calculated based on the power units defined in the <strong>Packing Style Labour Costing Master</strong> 
+						and the power rate from the <strong>Cost Variable Master</strong>.</li>
 				</ul>
 
-				<h3>4. Total Power & Other Costing</h3>
+				<h3>3. Other & Final Costing</h3>
 				<ul>
-					<li><strong>Total packing Style Power Units X Unit Cost:</strong> This is the total power cost for the packing style, pulled from previous masters.</li>
-					<li><strong>Other Costing:</strong> Input any additional costs such as <strong>Unloading</strong>, <strong>Loading</strong>, <strong>Machinary Maintatnce</strong>, <strong>Admin Expence</strong>, and other <strong>Extra Expence</strong>.</li>
+					<li><strong>Other Costing:</strong> Enter any additional overheads such as <strong>Unloading, Loading, Machinary Maintatnce,</strong> and <strong>Admin Expence</strong>.</li>
+					<li><strong>Final Costing:</strong> The system calculates the <strong>Total Costing</strong> by summing up all labor, power, and other expenses. Based on the <strong>Total Output in Liter</strong>, it provides a <strong>Final per liter labour costing</strong>.</li>
+					<li><strong>Additional Cost (Buffer):</strong> You can add an optional buffer amount per liter to get the final <strong>Net Labour Cost/Ltr</strong> and <strong>Final Per Unit Labour Cost</strong>.</li>
+					<li>Click <strong>Add</strong> to save the entry.</li>
 				</ul>
-
-				<h3>5. Final Costing & Buffer</h3>
-				<ul>
-					<li>The system calculates the <strong>Total Costing</strong> and <strong>Final per liter labour costing</strong>.</li>
-					<li><strong>Additional Cost (Buffer) /Ltr:</strong> You can add an optional buffer cost per liter.</li>
-					<li>The <strong>Final Per Unit Labour Cost</strong> shows the definitive cost for one unit of the finished product.</li>
-				</ul>
-
-				<p>After filling all the fields, click <strong>Add</strong> to save the calculation. The results will be stored and displayed in the table below for future reference.</p>
 
 				<h3><a href="assets/images/Cost/3.Productwise_Labour_Cost.png" target="_blank"  title="Click to view the image">📸 Screenshot – Product wise Labour Cost</a></h3>
 				<img src="assets/images/Cost/3.Productwise_Labour_Cost.png" alt="Product wise Labour Cost">
 				<hr>
 			</section>
 
-			<section id="Step14">
+			<section id="Finished_Goods_PricingReport">
 				<h1>Step 14 : Finished Goods Pricing Report</h1>
 				<p>
-					The <strong>Finished Good Pricing Report</strong> is the final reporting module where all the costs entered throughout the system come together. It provides a summarized and a detailed breakdown of the total cost for each finished product, giving you a clear picture of your final Net Asset Value (NAV).
+					The <strong>Finished Good Pricing Report</strong> is the final reporting module where all the costs entered throughout the system come together.
+					 It provides a summarized and a detailed breakdown of the total cost for each finished product, giving you a clear picture of your final (NAV).
 				</p>
 			
 				<h2>1. Finished Good Pricing Summary</h2>
@@ -775,7 +756,7 @@
 				<img src="assets/images/Reporting/ABAMECTIN 1.9% [ 1.00-LTR(1ltr) ]-2.jpg" alt="Detailed Report Part 2">
 				<hr>
 			</section>
-			<section id="Step15">
+			<section id="Actual_vs_Estimate_Report">
 				<h1>Step 15 : Actual vs. Estimate Report</h1>
 				<p>
 					The <strong>Actual vs. Estimate Report</strong> provides a comparative analysis between the estimated costs and the actual costs of a finished product. This allows you to track cost variations, identify reasons for differences, and refine future estimations for better accuracy.
@@ -814,6 +795,31 @@
 				<img src="assets/images/Reporting/ABAMECTIN 1.9% [ 1.00-LTR(1ltr) ]-21.jpg" alt="Estimate Report Part 2">
 				<hr>
 			</section>
+
+			<section id="Product_Interest_Master">
+				<h1>Product Interest Master</h1>
+			</section>
+
+			<section id="Packing_Difference_Master">
+				<h1>Packing Difference Master</h1>
+			</section>
+
+
+			<section id="MRP_Price">
+				<h1>MRP Price</h1>
+			</section>
+
+
+			<section id="Supervisor_Master">
+				<h1>Supervisor Master</h1>
+			</section>
+
+
+			<section id="Price_List_Terms_&_Conditions">
+				<h1>Price List Terms & Conditions - Other Company Master	</h1>
+			</section>
+			
+			
 			
 
 		<div class="footer">

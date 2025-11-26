@@ -63,17 +63,38 @@ a:hover { text-decoration: underline; }
   font-size: 18px;
 }
 
-#documenter_nav li a {
+#documenter_nav li a,
+#documenter_nav li .accordion-title {
   display: block;
   padding: 12px 25px;
   border-bottom: 1px solid #353535;
   color: #7f7f81;
+  cursor: pointer;
 }
 
 #documenter_nav li a:hover,
+#documenter_nav li .accordion-title:hover,
 #documenter_nav li a.current {
   background: #748a86;
   color: white;
+}
+
+#documenter_nav .accordion .accordion-toggle {
+  display: none;
+}
+
+#documenter_nav .accordion ul {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+#documenter_nav .accordion .accordion-toggle:checked + .accordion-title + ul {
+  max-height: 500px; /* Adjust as needed */
+}
+
+#documenter_nav .accordion .accordion-toggle:checked + .accordion-title .feather-chevron-down {
+  transform: rotate(180deg);
 }
 
 #documenter_copyright {
@@ -149,7 +170,6 @@ a:hover { text-decoration: underline; }
 /* ------------------------------ */
 #documenter_content img {
   width: 100%;
-  max-width: 100%;
   height: auto;
   margin: 20px auto;
   display: block;
@@ -293,7 +313,7 @@ a:hover { text-decoration: underline; }
 
 .feather-chevron-down {
   font-family: 'feather' !important;
-  speak: none;
+  /*speak: none;*/
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -303,6 +323,7 @@ a:hover { text-decoration: underline; }
   -moz-osx-font-smoothing: grayscale;
   float: right;
   margin-left: 10px;
+  transition: transform 0.3s ease;
 }
 
 .feather-chevron-down:before {
