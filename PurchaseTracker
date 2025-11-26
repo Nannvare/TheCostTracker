@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>ThePurchaserTracker</title>
+	<meta name="description" content="ThePurchaserTracker Documentation">
+	<meta name="author" content="Wpbingo">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2024-03-24T00:00:00+01:00">
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+	<script src="assets/js/jquery.scrullTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+	<style>
+		h1, h2, h3 {
+      color: #00695c;
+    }
+	</style>
+</head>
+
+<body class="documenter-project-wpbingo-guide">
+	<div id="documenter_sidebar">
+
+		<a href="#intro" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a href="#getting-started">Getting Started</a></li>
+			<li><a href="#intro">Introduction</a></li>
+			<li><a href="#registration">Registration</a></li>
+			
+			<li class="accordion">
+				<a href="#admin-panel">Admin Panel <i class="feather-chevron-down"></i></a>
+				<ul class="panel">
+					<li class="accordion">
+						<a href="#main-product-master">Masters <i class="feather-chevron-down"></i></a>
+						<ul class="panel">
+							<li><a href="#main-product-master">Main Product Master</a></li>
+							<li><a href="#request-main-product-master">Request Main Product Master</a></li>
+							<li><a href="#category-master">Category Master</a></li>
+							<li><a href="#subcategory-master">Sub Category Master</a></li>
+							<li><a href="#company-master">Company Master</a></li>
+							<li><a href="#user-master">User Master</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+
+			<li class="accordion">
+				<a href="#purchaser-panel">Purchaser Panel <i class="feather-chevron-down"></i></a>
+				<ul class="panel">
+					<li class="accordion">
+						<a href="#purchaser-product-master">Masters <i class="feather-chevron-down"></i></a>
+						<ul class="panel">
+							<li><a href="#company-profile-purchaser"> Company Profile</a></li>
+						</ul>
+					</li>
+					<li class="accordion">
+						<a href="#Purchaser_Seller">Inquiry <i class="feather-chevron-down"></i></a>
+						<ul class="panel">
+							<li><a href="#Inquiry_Purchaser"> Inquiry-Purchaser</a></li>
+							<li><a href="#Finaldeal-report"> Final Deal Report</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+
+
+			<li class="accordion">
+				<a href="#seller-panel">Seller Panel <i class="feather-chevron-down"></i></a>
+				<ul class="panel">
+					<li class="accordion">
+						<a href="#seller-product-master">Masters <i class="feather-chevron-down"></i></a>
+						<ul class="panel">
+							<li><a href="#company-profile-seller">Company Profile</a></li>
+							<li><a href="#request-my-product-master">Request Main Product Master</a></li>
+							<li><a href="#terms-conditions">Terms & Conditions</a></li>
+							<li><a href="#my-product-master">My Product Master</a></li>
+							<li><a href="#AutoInquiry_ReplyMaster">Auto Inquiry Reply Master</a></li>
+							<li><a href="#warehouse-location">Warehouse Location</a></li>
+						</ul>
+					</li>
+					<li class="accordion">
+						<a href="#Seller_Purchaser">Inquiry <i class="feather-chevron-down"></i></a>
+						<ul class="panel">
+							<li><a href="#Seller_Inquiry"> Inquiry-Seller</a></li>
+
+						</ul>
+					</li>
+				</ul>
+			</li>
+
+
+
+		</ul>
+		<div id="documenter_copyright">
+			&copy; The Purchaser Tracker 2025
+		</div>
+	</div>
+
+	<div id="documenter_content">
+		<div class="content">
+
+			<section id="getting-started">
+				<h2>🚀 Getting Started with The Purchaser Tracker</h2>
+				<p>Welcome to <strong>The Purchaser Tracker</strong> – a digital platform to streamline B2B inquiries between purchasers and sellers of Raw and Packing Materials.</p>
+				
+				<p>To begin using the system:</p>
+				<ul>
+					<li>🌐 Visit the official website: 
+					<a href="https://thetracker.in" target="_blank">https://thetracker.in</a>
+					</li>
+					<li>📝 If you're a new company, register here:
+					<a href="https://thepurchasetracker.com/Login" target="_blank">https://thepurchasetracker.com/Login</a>
+					</li>
+					<li>🔐 Note: All companies must receive <strong>Admin approval</strong> before participating in inquiries.</li>
+				</ul>
+			</section>
+
+			<section id="intro">
+				<h2>📘 Introduction to The Purchaser Tracker</h2>			
+				<p>
+				<strong>The Purchaser Tracker</strong> is a cloud-based procurement and inquiry management system designed to streamline the sourcing of Raw Materials (RM) and Packing Materials (PM) by connecting purchasers and sellers in real time.
+				</p>
+				 <p>
+					This system allows purchasers to raise product inquiries to multiple sellers, and enables sellers to respond with price quotations, terms, and delivery timelines. It simplifies the negotiation workflow, allows for revision handling, and supports final deal confirmation through purchase order generation.
+				</p>
+				<p>
+					The system ensures traceability, speed, and accuracy at every stage of procurement while reducing manual coordination. Features like auto-reply configuration, product-wise terms & conditions, warehouse dispatch management, and real-time notifications make this system scalable for manufacturers, traders, and distributors.
+				</p>
+				
+				<h3>🎯 Key Objectives:</h3>
+				<ul>
+					<li>Standardize and digitize purchaser-to-seller inquiry workflows</li>
+					<li>Enable multi-seller quotations for transparent pricing</li>
+					<li>Support negotiation with revision and final pricing flows</li>
+					<li>Automate purchase order creation post-final deal</li>
+					<li>Provide reports for performance tracking and price analytics</li>
+				</ul>
+
+				<h3>👥 Who Uses This System?</h3>
+				<ul>
+					<li><strong>Purchasers:</strong> Create inquiries, compare seller replies, submit revised offers, and generate POs</li>
+					<li><strong>Sellers:</strong> Receive inquiries, reply with offers, handle negotiations, and finalize quotes</li>
+					<li><strong>Admins:</strong> To manage master data (products, categories), product approvals and workflow configurations</li>
+				</ul>
+
+				
+				<p><strong>Ready to get started?</strong> 
+					<a href="https://thepurchasetracker.com/Login" target="_blank">Click here to register your company</a> and begin your journey.
+				</p>
+			</section>
+
+			<section id="registration">
+  			<h2>📝 Registration Information</h2>
+
+			<p>
+				The <strong>Registration Information</strong> form is used by companies to register themselves on the platform. Users must choose whether they intend to <strong>purchase</strong> or <strong>sell</strong> products and fill out the relevant business and contact information.
+			</p>
+
+			<h3>🔄 Step-by-Step Instructions</h3>
+			<ul>
+				<li>
+				Select your business role:
+				<ul>
+					<li>🔘 <strong>Do you want to purchase products?</strong> (For Buyers)</li>
+					<li>🔘 <strong>Do you want to sell your products?</strong> (For Sellers)</li>
+				</ul>
+				</li>
+
+				<li>
+				Fill in <strong>Company Information</strong>:
+				<ul>
+					<li><strong>Company Name</strong> – Enter the legal name of your business.</li>
+					<li><strong>Company Email</strong> – Used for communication and alerts.</li>
+					<li><strong>Company Phone Number</strong> – Primary contact number.</li>
+					<li><strong>State</strong> – Select your business operating state.</li>
+				</ul>
+				</li>
+
+				<li>
+					Based on role selection:
+				<ul>
+					<li><strong>If Purchaser:</strong> Choose Type of Business from the dropdown:
+     				 <ul>
+						<li>Manufacturer</li>
+						<li>Trading</li>
+					</ul>
+					</li>
+				
+					<li><strong>If Seller:</strong> Select:
+					<ul>
+						<li>Select the appropriate product category your business falls under (e.g. Packing Material or Raw Material).</li>
+						<li>
+     						 Based on your Category selection, the <strong>Sub Category</strong> dropdown will be populated.</li>
+      
+        				<li>Select the most accurate sub-category (e.g., HDPE Bottle, Solvent, etc.).</li>
+					
+					</li>
+				</ul>
+				</li>
+				
+				
+
+				<li>
+				Fill in <strong>Contact Person Information</strong>:
+				<ul>
+					<li><strong>Name</strong> – Contact person’s full name.</li>
+					<li><strong>Mobile</strong> – Active mobile number for verification and contact.</li>
+					<li><strong>Additional Notes</strong> – (Optional) Add comments or specifications.</li>
+				</ul>
+				</li>
+
+				<li>
+				 Click <strong>Register</strong> to submit your form, or <strong>Close</strong> to cancel.
+				</li>
+				<li>
+					<h3><a href="assets/images/Registration/Registration.jpg" target="_blank">📸 Screenshot – Registration Information Form"</a></h3>											
+					<img src="assets/images/Registration/Registration.jpg"  alt="Registration Information Form">									
+				</li>
+				
+				
+ 			 </ul> 
+			 
+			
+				<h3>📩 Credential Popup After Registration</h3>
+				<p>
+					Once you successfully register as a <strong>Seller</strong> or <strong>Buyer</strong>, a popup will appear showing your system-generated <strong>Username</strong> and <strong>Password</strong>.
+				</p>
+				<ul>
+					<li>Click the <strong>Copy</strong> button to save your login credentials.</li>
+					<li><span style="color:red;"><strong>Note:</strong> Please save these credentials securely. You’ll need them to log in.</span></li>
+					<li>
+						<h3><a href="assets/images/Registration/Creditional.jpg" target="_blank">📸 Screenshot – Credential Popup</a></h3>											
+						<img src="assets/images/Registration/Creditional.jpg"  alt="Credential Popup">									
+					</li>					
+				</ul>
+
+				
+				<h3>🔑 Change Password on First Login</h3>
+				<p>
+					After your first login using the provided credentials, you will be prompted to change your password.
+				</p>
+				<ul>
+					<li><strong>New Password:</strong> Enter a secure password of your choice.</li>
+					<li><strong>Confirm Password:</strong> Re-enter the same password for verification.</li>
+					<li>Click <strong>Save</strong> to update your password.</li>
+					<li>If you don’t want to proceed, click <strong>Close</strong>.</li>
+					<li>
+						<h3><a href="assets/images/Registration/Change_Password.jpg" target="_blank">📸 Screenshot – Change Password Screen</a></h3>											
+						<img src="assets/images/Registration/Change_Password.jpg"  alt="Auto Reply History Screen">									
+					</li>
+				</ul>
+								
+			</section>
+
+			
+			<section id="admin-panel">
+				<h2>⚙️ Admin Panel</h2>
+				<p>Admin users have access to the full backend management system. They can approve product and company
+					requests, configure master settings, and manage users. This includes activating/deactivating users,
+					assigning rules, and overseeing inquiry workflows.</p>
+
+
+				<section id="main-product-master">
+					<h2>📦 Master Module – Main Product Master</h2>
+					<p>The <strong>Main Product Master</strong> section allows Admin users to manage primary product
+						entries. This includes categorizing materials, assigning technical names, and uploading
+						product-related details.</p>
+
+					<h3>🔹 Features:</h3>
+					<ul>
+						<li>Add New Product</li>
+						<li>Edit Existing Product</li>
+						<li>Activate or Inactivate Product</li>
+						<li>Upload Product Images</li>
+					</ul>
+
+					<h3>📥 Add New Product</h3>
+					<ul>
+						<li>Navigate to the <strong>Main Product Master</strong> page.</li>
+						<li>Click the <strong>“New”</strong> button on the top-right corner.</li>
+						<li>
+							<h3><a href="assets/images/New/MainProductMaster/NavigationMaster.jpg" target="_blank">📸 Screenshot – New Product Button</a></h3>								
+							<img src="assets/images/New/MainProductMaster/NavigationMaster.jpg" alt="New Product Button Screenshot">
+						</li>
+							
+						<li>Fill in required fields:
+							<ul>
+								<li>Material Type</li>
+								<li>Category & Subcategory</li>
+								<li>Unit of Measurement</li>
+								<li>Technical/Specification Name</li>
+								<li>Status (Active/Inactive)</li>
+							</ul>
+						</li>
+						<li>Optional: Enter Common Name and Short Description.</li>
+						<li>Click <strong>“Save”</strong> to submit or <strong>“Close”</strong> to cancel.</li>
+						<li>
+							<h3><a href="assets/images/New/MainProductMaster/Add.jpg" target="_blank">📸 Screenshot – Add Product</a></h3>								
+							<img src="assets/images/New/MainProductMaster/Add.jpg" alt="Add Product Screenshot">
+						</li>
+					</ul>
+
+					<h3>📝 Edit & Update</h3>
+					<ul>
+						<li>Click <strong>“Edit”</strong> next to the product you want to modify.</li>
+						<li>Update fields such as name, category, or unit.</li>
+						<li>Click <strong>Update</strong> to apply changes.</li>
+					</ul>
+
+					<h3>🚫 Inactivate Product</h3>
+					<p>To inactivate a product, set its Status to Inactive. It will no longer appear in seller or
+						purchaser modules.</p>
+
+					<section id="upload-product-images">
+						<h2>🖼️ Upload Main Product Images</h2>
+						<p>This feature allows users to upload representative images for each main product. Uploaded
+							images help sellers and purchasers visually identify products.</p>
+
+						<h3>🔧 Steps to Upload Product Images:</h3>
+						<ul>
+							<li>Navigate to the <strong>Main Product Master</strong> page.</li>
+							<li>Locate the product you wish to upload an image for.</li>
+							<li>Click the image icon or designated image culumn.</li>
+							<li>The <strong>Upload Image</strong> popup will appear.</li>
+							<li>Click <strong>“Choose File”</strong> to select an image from your device.</li>
+							<li>Click <strong>“Upload Image”</strong> to save the image.</li>
+							<li>Click <strong>“Close”</strong> to exit the dialog.</li>
+							<li>
+								<h3><a href="assets/images/New/MainProductMaster/Upload_produtimage.jpg" target="_blank"> 📸 Screenshot – Upload Image Dialog</a></h3>									
+								<img src="assets/images/New/MainProductMaster/Upload_produtimage.jpg" alt="Upload Product Image Dialog Screenshot" style="border:1px sulid #ccc; max-width:100%;">
+														
+							</li>
+						</ul>
+
+						<p><strong>Note:</strong> Supported formats usually include .jpg, .jpeg, .png. Please ensure
+							image size does not exceed system upload limits.</p>
+					</section>
+
+				</section>
+				
+				<section id="request-main-product-master">
+					<h2>📦 Request Main Product Master</h2>
+					<p>
+						This module allows Admins to manage product creation requests submitted by sellers. Admins can review, approve, or reject these requests after verifying category mappings and product details.
+					</p>
+
+					<h3>🖥 Grid View Overview</h3>
+					<p>The grid lists all requested products with the following columns:</p>
+					<ul>
+						<li><strong>Material Type:</strong> Raw Material/Packing Material</li>
+						<li><strong>Category/Sub Category</strong></li>
+						<li><strong>Technical or Specification Name</strong></li>
+						<li><strong>Measurement Unit</strong></li>
+						<li><strong>Remark (optional)</strong></li>
+						<li><strong>Status:</strong> Pending/Approved/Rejected</li>
+						<li><strong>Actions:</strong> Edit | Approve | Reject</li>
+					</ul>
+
+					<h3>🛠 Step-by-Step Approval Process</h3>
+					<ul>
+						
+						<li>Use filters to narrow the list:
+						<ul>
+							<li>Material Type</li>
+							<li>Category / Sub Category</li>
+							<li>Technical or Specification Name</li>
+							<li>Status: Pending / Approved / Rejected</li>
+						</ul>
+						</li>
+						<li>Click <strong>Edit</strong> to review product request details.</li>
+						<li>Verify:
+						<ul>
+							<li>If the <strong>Category</strong> and <strong>Sub Category</strong> are valid and selected from dropdown.</li>
+							<li>If either says <em>"Other"</em>, you need to add it first (<a href="#NewCategory">see below</a>).</li>
+							<li>Check for duplicate product names or incorrect spelling.</li>
+						</ul>
+						</li>
+						<li>If the data is valid, click <strong>Approve</strong> to add the main product master.</li>
+						<li>If the data is incorrect or invalid, click <strong>Reject</strong> and enter a <em>Rejection Remark</em>.</li>
+						<li>
+								<h3><a href="assets/images/New/RequestProductMaster/Approve_Product.jpg" target="_blank">📸 Screenshot – Approve Product Request</a></h3>
+										
+								<img src="assets/images/New/RequestProductMaster/Approve_Product.jpg" alt="Approve Product Request Screenshot">
+						</li>
+					</ul>
+
+					<h3 id="NewCategory">🔄 How to Approve “Other” Category/Sub Category Requests</h3>
+					<p>Some products may include new categories or subcategories not yet created in the system.</p>
+
+					<h4>Steps:</h4>
+					<ul>
+						<li>Check if the Category/Sub Category starts with <strong>“Other:”</strong>.</li>
+						
+						<li>Go to <strong><a href="#category-master" title="Navigate to the Category Master to add new categories.">Masters → Category Master</a></strong>.</li>
+						<li>Click <strong>New</strong>, enter the missing <strong>Category Name</strong>, set status to Active, and Save.</li>
+
+						<li>Next, go to<a href="#subcategory-master"> <strong>Masters → Sub Category Master</strong> </a> and add the missing subcategory under the newly added category.</li>
+						<li>Return to <strong>Request Main Product Master</strong>.</li>
+						<li>Click <strong>Edit</strong> on the request → now select the updated Category and Sub Category from dropdown.</li>
+						<li>Click <strong>Save</strong>. The <strong>Approve</strong> button will now appear.</li>
+						<li>Click <strong>Approve</strong> to finalize.</li>
+						<li>
+							<h3><a href="assets/images/New/RequestProductMaster/Add_NewCategory.jpg" target="_blank">📸 Screenshot – Add New Category or Sub-Category</a></h3>										
+							<img src="assets/images/New/RequestProductMaster/Add_NewCategory.jpg" alt="Approve Product Request Screenshot">
+						</li>
+						<li>
+							<h3><a href="assets/images/New/RequestProductMaster/Approve_NewCategory.jpg" target="_blank">📸 Screenshot – Approve Product Request with New Category</a></h3>
+										
+							<img src="assets/images/New/RequestProductMaster/Approve_NewCategory.jpg" alt="Approve Product Request Screenshot">
+						</li>
+					</ul>
+
+					<h3>📌 Notes:</h3>
+					<ul>
+						<li>You can only approve a request when the Category and Sub Category are selected from the dropdown list (not marked as “Other”).</li>
+						<li>Use <strong>Edit</strong> to clean up any input errors submitted by the seller.</li>
+						<li>Always include a <strong>Rejection Remark</strong> to inform users why the request was rejected.</li>
+					</ul>
+								
+				</section>
+
+				<section id="category-master">
+					<h2>📂 Category Master – User Manual</h2>
+
+					<p>
+						The <strong>Category Master</strong> module allows admin users to define categories under <strong>Raw Materials (RM)</strong> and <strong>Packing Materials (PM)</strong>. Categories organize products during creation, inquiry, and inquiry workflows.
+					</p>
+
+					<h3>🎯 Purpose</h3>
+					<p>
+						Categories group related items under a common classification, such as Solvents, Bottles, or Active Ingredients. These appear in dropdowns when creating or importing products.
+					</p>
+
+					<h3>➕ How to Add a New Category</h3>
+					<ol>
+						<li>Click the <strong>New</strong> button at the top-right of the screen.</li>
+						<li>In the <strong>Category Information</strong> pop-up, fill in the following fields:
+						<ul>
+							<li>
+							<strong>Material Type:</strong>
+							Select either <em>Raw Material</em> or <em>Packing Material</em>.
+							</li>
+							<li>
+							<strong>Category Name:</strong>
+							Enter the unique category name (e.g., Bottle, Solvent).
+							</li>
+							<li>
+							<strong>Is Add Common Name:</strong>
+							
+								Checkbox to show 'Common Name' field in Main product Master.<br>
+								If Checkbox is enabled or Tick, the 'Common Name' field will be shown during new product creation under this category.
+							
+							</li>
+							<li>
+							<strong>Is Multi Trade Name:</strong>
+							
+								Checkbox to allow multiple trade names in seller My Product Master.<br>
+								If Checkbox is checked, sellers can add multiple trade names per product when importing product under this category.
+							
+							</li>
+							<li><strong>Status:</strong> Set to <em>Active</em> to make it usable across modules.</li>
+						</ul>
+						</li>
+						<li>Click <strong>Save</strong> to create the category or <strong>Clear</strong> to reset the form.</li>
+					</ol>
+
+					<h3>📝 Example Entry</h3>
+					<ul>
+						<li><strong>Material Type:</strong> Packing Material</li>
+						<li><strong>Category Name:</strong> Bottle</li>
+						<li><strong>Is Add Common Name:</strong> ✔️ Enabled</li>
+						<li><strong>Is Multi Trade Name:</strong> ❌ Disabled</li>
+						<li><strong>Status:</strong> Active</li>
+						<li>
+								<h3><a href="assets/images/Category/Category.jpg" target="_blank">📸 Screenshot – Category Master</a></h3>								
+								<img src="assets/images/Category/Category.jpg" alt="Request New Product Screenshot">
+						</li>
+					</ul>
+
+					<h3>🔍 Viewing & Editing Categories</h3>
+					<ul>
+						<li>Use the filters to search by Material Type or Status.</li>
+						<li>Click the <strong>Edit</strong> button to update a category’s name, checkboxes, or status.</li>
+						<li>Deactivated categories will not appear in dropdowns during product creation.</li>
+					</ul>
+
+					<h3>📌 Note:</h3>
+					<ul>
+						 <li>Only <strong>Active</strong> categories appear in the dropdowns on related forms like “My Product Master” and “Inquiry”.</li>
+    					<li>Status change (to Deactive) will hide the category from future use without deleting existing records.</li>
+											
+					</ul>
+				</section>
+
+		
+				<section id="subcategory-master">
+					<h2>📂 Sub Category Master</h2>
+					
+					<h4>➕ Step to Add New Subcategory</h4>
+					<ul>
+						<li>Navigate to Masters → Subcategory Master.</li>
+					  	<li>Fill the following mandatory fields in the popup form:
+							<ul>
+								<li><strong>Material Type:</strong> Choose "Packing Material" or "Raw Material".</li>
+								<li><strong>Category:</strong> Select the main category from the dropdown (e.g., Bottle).</li>
+								<li><strong>Sub Category Name:</strong> Enter a unique name (e.g., Pet Bottle).</li>
+								<li><strong>Status:</strong> Choose Active or Deactive.</li>
+							</ul>
+						</li>
+						<li>Click <strong>Save</strong> to create the new entry.</li>
+						<li>
+							<h3><a href="assets/images/Category/SubCategory.jpg" target="_blank">📸 Screenshot – Sub-Category</a></h3>							
+							<img src="assets/images/Category/SubCategory.jpg" alt="Add New Sub-Category">
+						</li>
+					</ul>
+
+
+			 		<h4>✏️ Edit Sub Category</h4>
+					<ul>
+						<li>Click the <strong>Edit</strong> button from the list next to the sub-category.</li>
+						<li>Update the name or change the status.</li>
+						<li>Save your changes.</li>
+					</ul>
+
+					<h3>📌 Important Notes</h3>
+					<ul>
+							
+						<li>Inactive sub categories are not shown during product creation by sellers.</li>
+						<li>Ensure correct mapping between Material Type, Category, and Sub Category.</li>
+    					<li>Inactive sub-categories are excluded from inquiry forms or dropdowns.</li>
+					</ul>
+				</section>
+
+							
+
+				<section id="company-master">
+					<h2>🏢 Company Master – Admin Panel</h2>
+					<p>
+						The <strong>Company Master</strong> module allows Admin users to manage seller and buyer
+						companies. This includes adding new companies, editing existing details, reviewing registration
+						documents, and approving or rejecting company access to the platform.
+					</p>
+
+					<h3>📋 Key Functions for Admin</h3>
+					<ul>
+						<li>Register a new company</li>
+						<li>View and edit existing company details</li>
+						<li>Review and manage uploaded documents</li>
+						<li>Approve or reject company status</li>
+					</ul>
+
+					<h3>🆕 Register a New Company</h3>
+					<ul>
+						<li>Go to <strong>Masters ➝ Company Master</strong>.</li>
+						<li>Click the <strong>“New”</strong> button on the top-right corner.</li>
+						<li>Fill in all required company details:
+							<ul>
+								<li>Company Name and Code</li>
+								<li>Mobile Number, Email, PAN, GST</li>
+								<li>Company Type (Buyer / Seller)</li>
+								<li>Category and Subcategory</li>
+								<li>Industry Type, Address, and Pincode</li>
+							</ul>
+						</li>
+						<li>Click <strong>Save</strong> to register the company.</li>
+					</ul>
+
+					<h3>✏️ Edit Company Details</h3>
+					<ul>
+						<li>Locate the company in the list view.</li>
+						<li>Click the <strong>“Edit”</strong> button beside the company name.</li>
+						<li>Update any field as required (email, contact info, etc.).</li>
+						<li>Click <strong>Update</strong> to apply changes.</li>
+					</ul>
+
+					<h3>📂 Review and Manage Company Documents</h3>
+					<ul>
+						<li>Click the <strong>“Document”</strong> button beside the company record.</li>
+						<li>The document viewer popup will open displaying uploaded GST, PAN, licenses, etc.</li>
+						<li>Admin can also upload missing documents from this window.</li>
+						<li>To proceed:
+							<ul>
+								<li>Click <strong>Approve</strong> to validate the documents and allow company access.
+								</li>
+								<li>Click <strong>Reject</strong> to deny access and optionally add a remark.</li>
+							</ul>
+						</li>
+
+
+						<h3><a href="assets/images/New/RequestProductMaster/Approve_company.jpg" target="_blank">📸 Screenshot – Document Approval Window</a></h3>								
+						<img src="assets/images/New/RequestProductMaster/Approve_company.jpg" alt="Document Upload Modal Screenshot">
+							
+					</ul>
+
+					<h3>✅ After Approval</h3>
+					<p>
+						Once the company is approved:
+					</p>
+					<ul>
+						<li>The company becomes <strong>Active</strong> in the system.</li>
+						<li>Registered users can now:
+							<ul>
+								<li>Create and respond to inquiries</li>
+								<li>Manage their product catalog</li>
+								<li>Use platform modules based on their company type</li>
+							</ul>
+						</li>
+					</ul>
+
+					<h3>📌 Notes</h3>
+					<ul>
+						<li>Inactive or Rejected companies cannot log in or perform actions.</li>
+						<li>Admin must verify that all legal documents are uploaded and accurate.</li>
+						<li>Multiple contact persons can be recorded, but one must be marked as primary.</li>
+						<li>
+							<h3><a href="assets/images/New/RequestProductMaster/company_master.jpg" target="_blank">📸 Screenshot – Company Master List</a></h3>									
+							<img src="assets/images/New/RequestProductMaster/company_master.jpg" alt="Company Master Screenshot">
+								
+						</li>
+					</ul>
+				</section>
+
+				<section id="user-master">
+					<h2>👤 User Master </h2>
+					<p>
+						The <strong>User Master</strong> module enables Admin users to view, filter, and manage user
+						accounts
+						for all registered companies. Each user is linked to a company and has assigned rules and login
+						access rights.
+					</p>
+
+					<h3>🔹 Key Functions:</h3>
+					<ul>
+						<li>View all registered users (Sellers and Purchasers)</li>
+						<li>Filter by Company, User Type, Name, or Status</li>
+						<li>Manage user rules and access rights</li>
+						<li>Reset passwords</li>
+						<li>Activate or deactivate user accounts</li>
+					</ul>
+
+					<h3>📋 User Listing</h3>
+					<p>The user table shows key details:</p>
+					<ul>
+						<li><strong>User Type:</strong> Seller or Purchaser</li>
+						<li><strong>Company Name</strong></li>
+						<li><strong>User Info:</strong> Name, Mobile, Email</li>
+						<li><strong>Rule Rights:</strong> (e.g., Purchaser, Seller, Admin)</li>
+						<li><strong>Status:</strong> Active / Inactive</li>
+						<li>
+							<h3><a href="assets/images/New/RequestProductMaster/User_Master.jpg" target="_blank">Screenshot – User Master List</a> </h3>
+									
+							<img src="assets/images/New/RequestProductMaster/User_Master.jpg" alt="User Master List Screenshot">
+								
+						</li>
+					</ul>
+
+					<h3>✏️ View or Edit User</h3>
+					<ul>
+						<li>Click the <strong>Edit</strong> icon next to a user.</li>
+						<li>Update user details such as name, loginid, mobile, assigned rules.</li>
+						<li>Click <strong>Update</strong> to apply changes.</li>
+					</ul>
+
+					<h3>🔐 Reset Password</h3>
+					<ul>
+						<li>Click the <strong>Reset Password</strong> button next to the user.</li>
+						<li>The system will auto-generate a temporary password or open a reset form.</li>
+						<li>The user can use this password to log in and reset later.</li>
+					</ul>
+
+					<h3>🛑 Activate/Deactivate Users</h3>
+					<ul>
+						<li>Click on the user status to toggle between <strong>Active</strong> and
+							<strong>Inactive</strong>.
+						</li>
+						<li>Inactive users cannot log in or perform actions.</li>
+					</ul>
+
+					<h3>📌 Notes:</h3>
+					<ul>
+						<li>Each company can have multiple users (e.g., Area Manager, Purchase Head).</li>
+						<li>Only <strong>Active companies</strong> can have users that access the platform.</li>
+						<li>Rule-based access defines what features a user can see or modify.</li>
+					</ul>
+				</section>
+
+			</section>
+				
+
+			<section id="purchaser-panel">
+				<h2>📨 Inquiry Management – Purchaser Panel</h2>
+				
+					
+				<section id="company-profile-purchaser">
+						<h3>🏢 Company Profile </h3>
+						<ul>
+							<li>Navigate to <strong>Masters → Company Profile</strong>.</li>
+							<li>Click on the <strong>Edit</strong> button.</li>
+							<li>Update GST, PAN, company address, phone, and contact person details.</li>
+							<li>Upload required licenses (e.g., Pesticide/Fertilizer/GST Certificate).</li>
+							<li>Admin approval is required before you can receive inquiries.</li>
+						</ul>
+						
+				</section>
+			
+								
+				<section id="Inquiry_Purchaser">
+					<h2>📘 Purchaser Inquiry Process</h2>
+					<p>    This module enables purchasers to raise inquiries for RM/PM materials, receive seller quotations, negotiate prices, and finalize deals. The flow ends with the purchaser generating a Purchase Order (PO) after comparison.</p>
+
+					<h3>🔰 Step 1: Create a New Inquiry</h3>
+					<ul>
+						<li>Go to <strong>Inquiry → New Inquiry</strong>.</li>
+						<li>Click on the New button.</li>
+						<li>Select the <strong>Product Type</strong>: RM (Raw Material) or PM (Packing Material).</li>
+						 <li>Choose the <strong>Product Name</strong> from the dropdown.
+							<ul>
+								<li><strong>Note:</strong> Only products already listed in sellers' My Product Master will be shown.</li>
+							</ul>
+						</li>
+						<li>Enter:
+							<ul>
+								<li><strong>Required Quantity</strong></li>
+								<li><strong>Requirement Duration</strong> (Immediate / 1 week / 1 month)</li>
+								<li><strong>Remarks</strong> (optional)</li>
+							</ul>
+						</li>
+						<li>Click <strong>Save & Submit</strong> to send the inquiry.</li>
+						<li>
+							<h3><a href="assets/images/Purchaser/1NewInquiry.jpg" target="_blank">📸 Screenshot –  New Inquiry Generated</a></h3>								
+							<img src="assets/images/Purchaser/1NewInquiry.jpg" alt="New Inquiry Generated">
+
+						</li>
+					</ul>
+
+					<h3>📊 Step 2: Track Inquiry – Inquiry Master</h3>
+					
+					<ul>
+						<li>Navigate to <strong>Inquiry → Inquiry Master</strong>.</li>
+						<li>Each record shows:
+						<ul>
+							<li>Inquiry ID, Inquiry Date, Product, Quantity</li>
+							<li>Inquiry Sent to Sellers (Count)</li>
+							<li>Reply Count</li>
+							<li>Actions: <strong>View Replies</strong>, <strong>Compare</strong></li>
+						</ul>
+						</li>
+						<li>
+							<h3><a href="assets/images/Purchaser/2InquiryList.jpg" target="_blank">📸 Screenshot –  Inquiry Master List</a></h3>								
+							<img src="assets/images/Purchaser/2InquiryList.jpg" alt="Inquiry List">
+						</li>
+					</ul>
+
+					<h3>🔔 Step 3: Receive Seller Quotations</h3>
+					<ul>
+						<li>Sellers respond with price offers, validity, and delivery timelines.</li>
+						<li>Each time a seller responds, <strong>Reply Count</strong> is updated automatically.</li>
+						<li>You will also get bell 🔔 notifications for each seller response.</li>
+						<li><strong>Example Notification:</strong><br>
+						<em>“Imidacloprid 17.8% SL – Price Quotation Received #INQ01072510109”</em>
+					</li>
+					<li>
+						<h3><a href="assets/images/Purchaser/3PriceReceived.jpg" target="_blank">📸 Screenshot –  Price Quotation Price Quotation</a></h3>								
+						<img src="assets/images/Purchaser/3PriceReceived.jpg" alt="Price Quotation Price Quotation">
+					</li>
+					</ul>
+
+					<h3>🔍 Step 4: View Seller Replies</h3>
+					<ul>
+						<li>Click <strong>View Replies</strong> for the corresponding inquiry.</li>
+						
+						<li>
+							<h3><a href="assets/images/Purchaser/4ViewReplies.jpg" target="_blank">📸 Screenshot –  Open New Inquiry</a></h3>								
+							<img src="assets/images/Purchaser/4ViewReplies.jpg" alt="View Replies">
+						</li>	
+						<li>
+							<h3><a href="assets/images/Purchaser/5OpenInquiry.jpg" target="_blank">📸 Screenshot –  Open New Inquiry</a></h3>								
+							<img src="assets/images/Purchaser/5OpenInquiry.jpg" alt="Open New Inquiry">
+						</li>
+						
+						
+						<li>Review each seller’s:
+						<ul>
+							<li>Offered Price</li>
+							<li>Validity Date</li>
+							<li>Delivery Days</li>
+							<li>Purity %</li>
+							<li>Warehouse</li>
+							<li>Terms & Conditions</li>
+						</ul>
+						</li>
+						<li>Enter a <strong>Revised Price</strong> with remarks (e.g., phone negotiation, counter offer).</li>
+						<li>Click <strong>Submit</strong> to send revised price to seller.</li>
+						<li>
+							<h3><a href="assets/images/Purchaser/6Review&RevisePrice.jpg" target="_blank">📸 Screenshot –  Send Revise Price</a></h3>								
+							<img src="assets/images/Purchaser/6Review&RevisePrice.jpg" alt="Send Revise Price">
+						</li>	
+					</ul>
+
+					
+					<h3>🔔 Step 5: Final Price Update (From Seller)</h3>
+					<ul>
+						<li>Seller reviews your revised offer and submits a <strong>Final Price</strong>.</li>
+						<li>You will receive another notification once Final Price is submitte:<br>
+							<em>“Final Price Updated #INQ03072510112”</em>
+						</li>
+						<li>
+							<h3><a href="assets/images/Purchaser/7FinalPriceNoti.jpg" target="_blank">📸 Screenshot –  Final Price Notification</a></h3>								
+							<img src="assets/images/Purchaser/7FinalPriceNoti.jpg" alt="Final Price Notification ">
+						</li>		
+					</ul>
+					
+					<h3>📊 Step 6: Compare Seller Quotations</h3>
+					<ul>
+						<li>Click the <strong>Compare</strong> button from the Inquiry Master.</li>
+						<li>View and compare:
+						<ul>
+							<li>Offered Price vs Final Price</li>
+							<li>Delivery Period</li>
+							<li>Dispatch Location</li>
+							<li>Negotiability</li>
+							<li>Purity %</li>
+						</ul>
+						</li>
+						<li>Select the best quote and click <strong>Finalize Deal</strong>.</li>
+						<li>
+							<h3><a href="assets/images/Purchaser/8Comparison.jpg" target="_blank">📸 Screenshot –  Comparison View</a></h3>								
+							<img src="assets/images/Purchaser/8Comparison.jpg" alt="Comparison View">
+						</li>
+					</ul>	
+					<h3>📄 Step 7: Generate Purchase Order (PO)</h3>
+					<ul>
+						<li>Enter delivery location details (state, city, PIN code).</li>
+						<li>Add optional notes or remarks.</li>
+						<li>Click <strong>Generate PO</strong>.</li>
+						
+						<li>
+								<h3><a href="assets/images/Purchaser/9FinalDeal.jpg" target="_blank">📸 Screenshot –  PO Generation</a></h3>								
+								<img src="assets/images/Purchaser/9FinalDeal.jpg" alt="PO Generation">
+								
+							</li>											
+								<li>Click the Download PO link in the status culumn.</li>
+								<li>The system will generate a downloadable PO PDF for the seller.</li>
+								<li>
+								<h3><a href="assets/images/Purchaser/8Comparison.jpg" target="_blank">📸 Screenshot –  PO Download</a></h3>								
+								<img src="assets/images/Purchaser/10DownloadPO.jpg" alt="PO Generation">
+								</li>
+							
+						</ul>				
+				</section>
+				
+
+				<section id="Finaldeal-report">
+					<h1> Final Deal Report</h1>
+						<p>
+							Navigate to <strong>Inquiry → Final Deal Report</strong> to view all confirmed deals and generated POs.
+						</p>
+						<ul>
+							<li>Track:
+							<ul>
+								<li>Inquiry ID</li>
+								<li>Final Price & Seller Info</li>
+								<li>Dispatch Location</li>
+								<li>PO Download Link</li>
+							</ul>
+							</li>
+							<li>
+								<h3><a href="assets/images/Purchaser/FinalDealReport.jpg" target="_blank">📸 Screenshot –  Final Deal Report</a></h3>								
+								<img src="assets/images/Purchaser/FinalDealReport.jpg" alt="Final Deal Report">
+						</li>
+						</ul>
+						
+				
+					
+				</section>
+				<h3>⚠️ Notes & Validation</h3>
+				<ul>
+					<li>Only products imported into sellers' catalogs can be selected for inquiry.</li>
+					<li>Final Price is non-editable after submission by seller.</li>
+					<li>Purchase Order is generated only after final deal is locked.</li>
+				</ul>
+
+			</section>	
+
+			<section id="seller-panel">
+					<section id="seller-product-master">
+						<h2>🧑‍💼 Seller Panel</h2>
+						
+						<p>The Seller Panel allows registered sellers to manage their company profile, product master, warehouse details, and respond to inquiries sent by purchasers. This panel is accessible after admin approval of the seller registration.</p>	
+						
+						<section id="company-profile-seller">
+							<h3>🏢 Company Profile </h3>
+							<ul>
+								<li>Navigate to <strong>Masters → Company Profile</strong>.</li>
+								<li>Click on the <strong>Edit</strong> button.</li>
+								<li>Update GST, PAN, company address, phone, and contact person details.</li>
+								<li>Upload required licenses (e.g., Pesticide/Fertilizer/GST Certificate).</li>
+								<li>Admin approval is required before you can receive inquiries.</li>
+							</ul>
+						</section>
+						
+						<section id="request-my-product-master">
+							<h2>📝 Request Main Product Information</h2>						  
+								<p>
+									This module allows users to request the creation of a new Raw Material (RM) or Packing Material (PM) product if it does not already exist in the master list.
+									This request is usually subject to approval by an admin.
+								</p>
+								<h3>➕ Request a New Product</h3>
+								<ul>
+									<li><strong>Select Material Type</strong>:  Choose Raw Material or Packing Material.</li>
+									<li><strong>Select Unit of Measurement</strong>: e.g., kg, ltr, etc.</li>
+									<li><strong>Enter Technical or Specification Name</strong>: e.g., Imidacloprid 17.8% SL.</li>
+									<li>
+										<strong>Category </strong>
+										<ul>
+											<li>If the category exists, select it.</li>
+											<li>Select Add new category from the Category dropdown.</li>
+											<li>If Category is not listed Enter your category  in the <strong>Other Category</strong> field.</li>
+										</ul>
+									</li>
+									<li><strong>Subcategory </strong>
+										<ul>
+											<li>If the subcategory exists, select it.</li>
+											<li>If not listed, select Add new subcategory and fill in <strong>Other SubCategory</strong>.</li>
+										</ul>
+									</li>
+
+									<li><strong> Common Name (Optional)</strong>
+										You may enter a commonly used trade name or brand name in the <strong>Common Name</strong> field.
+									</li>
+									
+									<li>Click <strong>Save</strong> to submit your product request to the admin team.</li>
+									<li>The product will be reviewed and added to the master list upon admin approval.</li>
+									<li>
+										<h3><a href="assets/images/New/Sellerlogin/Request_NewProduct.jpg" target="_blank">📸 Screenshot – Request New Product</a></h3>											
+										<img src="assets/images/New/Sellerlogin/Request_NewProduct.jpg"  alt="Request New Product Screenshot">									
+									</li>
+									<li>
+										<h3><a href="assets/images/New/Sellerlogin/Request_NewProduct.jpg" target="_blank">📸 Screenshot – Add New Category & Sub category</a></h3>										
+										<img src="assets/images/New/Sellerlogin/AddNewCategory.jpg"  alt=" Add New Category & Sub category">									
+									</li>
+
+								</ul>
+
+								<h3>📌 Tips</h3>
+								<ul>
+									<li>Only approved materials will be available in the inquiry form.</li>
+								</ul>
+
+								<h4>🔎 Fields Displayed in the Request Main Product Master</h4>
+								<ul>
+									<li><strong>Material Type:</strong> Raw Material (RM) or Packing Material (PM)</li>
+									<li><strong>Category/Sub Category:</strong> Assigned classification for the requested product</li>
+									<li><strong>Technical/Specification Name:</strong> Exact product name or chemical formulation</li>
+									<li><strong>Status:</strong> Indicates if your request is <em>Pending</em>, <em>Approved</em>, or <em>Rejected</em></li>
+									<li>
+										<h3><a href="assets/images/New/Sellerlogin/Request_NewProductview.jpg" target="_blank">📸 Screenshot – Request Product View</a></h3>											
+										<img src="assets/images/New/Sellerlogin/Request_NewProductview.jpg"  alt="Request New Product Screenshot">
+										
+									</li>
+								</ul>
+						</section>
+
+
+						<section id="terms-conditions">
+							<h2>📄 Terms & Conditions</h2>
+
+							<p>
+								The <strong>Terms & Conditions</strong> module enables sellers to define standard and product-wise conditions that apply during <strong>inquiry replies</strong> and <strong>final deals</strong>.
+							</p>
+							<h3>📦 Types of Terms & Conditions</h3>
+							<ul>
+								<li><strong>Common Terms</strong>: Automatically applied to all products (added by seller).</li>
+								<li><strong>Product-Wise Terms</strong>: Optional terms that the seller can select per product.</li>
+							</ul>
+							<h3>➕ Add New Terms & Conditions</h3>
+							<ul>
+								<li>Navigate to <strong>Masters → Terms & Conditions</strong></li>
+								<li>Click <strong>Add New</strong> button.</li>
+								<li>Enter Terms & Conditions description (e.g. "Product must not be used after expiry date")</li>
+								<li>Select:
+								<ul>
+									<li><strong>Type:</strong> Common / Product-Wise</li>
+									<li><strong>Status:</strong> Active / Inactive</li>
+								</ul>
+								</li>
+								<li>Click <strong>Save</strong></li>
+								<li>
+									<h3><a href="assets/images/New/Sellerlogin/Add_T&C.jpg" target="_blank">📸 Screenshot – Terms & Conditions</a></h3>								
+									<img src="assets/images/New/Sellerlogin/Add_T&C.jpg" alt="Terms and Conditions Form">
+								</li>
+							</ul>
+
+							<h4>📝 Edit or Deactivate Terms & Conditions</h4>
+							<ul>
+								<li>Use the <strong>Edit</strong> button from the Terms & Conditions listing table.</li>
+								<li>Change the text, type, or status and update.</li>
+								<li>Set Status = Deactive to temporarily remove the T&C from auto-attachment.</li>
+								<li>
+									<h3><a href="assets/images/New/Sellerlogin/View_T&C.jpg" target="_blank">📸 Screenshot – Terms & Conditions </a></h3>								
+									<img src="assets/images/New/Sellerlogin/View_T&C.jpg" alt="Terms and Conditions Form">
+								</li>
+							</ul>
+							
+
+							<h3>📌 Terms & Conditions in Inquiry Flow</h3>
+							<ul>
+								<li>Selected terms automatically attach during:
+								<ul>
+									<li><strong>Inquiry Reply</strong></li>
+									<li><strong>Auto Inquiry Reply</strong></li>
+									<li><strong>Purchase Order </strong></li>
+								</ul>
+								</li>
+								<li>Buyers can view all applied terms on downloaded PO.</li>
+							</ul>
+
+							<h4>📌 Notes:</h4>
+							<ul>
+								<li>Each seller can define multiple product-wise or general conditions.</li>
+								<li>Only Active terms are used in replies & PO documents.</li>
+								<li>Terms & Conditions give buyers legal and operational clarity before making a purchase.</li>
+								
+							</ul>
+						</section>
+
+
+						<section id="my-product-master">
+							<h2>📦 My Product Master – User Manual</h2>
+							<p>
+								The <strong>My Product Master</strong> module enables sellers to manage RM/PM products, assign trade names, upload images, configure packing sizes, and set auto inquiry replies.
+							</p>
+							
+							<h3>➕ Add a Product to My Product Master</h3>
+							<ul>
+								<li>Click the <strong>New</strong> button at the top-right.</li>
+								<li>Select <strong>Material Type</strong> (RM/PM) and search by name.</li>
+								<li>Product name, category,sub-category and unit auto-fill.</li>							
+								<li>Enter the Minimum Order Quantity and set Status as <strong>Active</strong>.</li>
+								<li>Click <strong>Save</strong> to add the product.</li>	
+								<li>
+									<h3><a href="assets/images/SellerInquiry/MyProduct/1Import_product.jpg" target="_blank"> Screenshot – Add New Product</a></h3>								
+									<img src="assets/images/SellerInquiry/MyProduct/1Import_product.jpg" alt="Warehouse Location Entry Form">
+								</li>
+							</ul>
+
+							<h3>🔍 Search & Filter Products</h3>
+								<ul>
+									<li>Use top filters: Material Type, Category, Trade Name, Status.</li>
+									<li>Click <strong>Edit</strong> to modify or deactivate a product.</li>
+									<li>Click image icon to <strong>upload product photos</strong>.</li>
+									<li>
+										<h3><a href="assets/images/SellerInquiry/MyProduct/MyView.jpg" target="_blank"> Screenshot – My Product Master View</a></h3>								
+										<img src="assets/images/SellerInquiry/MyProduct/My_ProductMasterView.jpg" alt="Warehouse Location Entry Form">
+									</li>
+								</ul>
+							<h3>🔁 Manage Trade Details</h3>
+								<ul>
+									<li>Click the <strong>expand (+)</strong> icon beside a product.</li>
+									<li>If <strong>Is Multi Trade Name</strong> is NOT checked:
+									<ul>
+										<li>System generates a default trade name (same as product name).</li>
+										<li>Click <strong>Edit</strong> to update fields:
+										<ul>
+											<li>Product Code/SKU</li>
+											<li>Trade Name (mandatory)</li>
+											<li>Manufacturer Name</li>
+											<li>HSN Code</li>
+											<li>Description (optional)</li>
+											<li>Status: Active/Inactive</li>
+											<li>Select one or more <strong>Product-Wise T&Cs</strong>.</li>
+										</ul>
+										</li>
+										<li>
+											<h3><a href="assets/images/SellerInquiry/MyProduct/Add_TradeName.jpg" target="_blank"> Screenshot – View Terms & Conditions</a></h3>								
+											<img src="assets/images/SellerInquiry/MyProduct/Add_TradeName.jpg" alt="Warehouse Location Entry Form">
+										</li>
+										<li>
+											<h3><a href="assets/images/SellerInquiry/MyProduct/Trade_Info.jpg" target="_blank"> Screenshot – Update Trade Info</a></h3>								
+											<img src="assets/images/SellerInquiry/MyProduct/Trade_Info.jpg" alt="Warehouse Location Entry Form">
+										</li>
+									</ul>
+									</li>
+
+									<li>If <strong>Is Multi Trade Name</strong> is checked:
+									<ul>
+										<li>Click <strong>Add Trade</strong> to add multiple trade names.</li>
+										<li>Enter:
+										<ul>
+											<li>Product Code / SKU</li>
+											<li>Trade Name</li>
+											<li>Manufacturer Name</li>
+											<li>HSN Code</li>
+										</ul>
+										</li>
+										<li>
+											<h3><a href="assets/images/SellerInquiry/MyProduct/Multiple_tradeName.jpg" target="_blank"> Screenshot –  Add Multiple Trade Names</a></h3>								
+											<img src="assets/images/SellerInquiry/MyProduct/Multiple_tradeName.jpg" alt="Add Multiple Trade Names">
+										</li>
+										
+									</ul>
+									</li>
+								</ul>		
+								<h3>📄 View Terms & Conditions</h3>
+								<ul>
+									<li>Click <strong>View</strong> next to any trade to see applied terms & conditions attach to each trade name.</li>
+									<li>Common Terms are always included and cannot be unselected.</li>
+									<li>
+										<h3><a href="assets/images/SellerInquiry/MyProduct/View_T&C.jpg" target="_blank"> Screenshot – View Terms & Conditions</a></h3>								
+										<img src="assets/images/SellerInquiry/MyProduct/View_T&C.jpg" alt="Warehouse Location Entry Form">
+									</li>
+								</ul>
+								<h3>📦 Manage Packing Sizes</h3>
+								<ul>
+									<li>Click <strong>Packing</strong> to add available packing options (e.g., 100ml, 250ml).</li>
+									<li>
+										<h3><a href="assets/images/SellerInquiry/MyProduct/Packing_Size.jpg" target="_blank"> Screenshot –  Add Packing Information</a></h3>								
+										<img src="assets/images/SellerInquiry/MyProduct/Packing_Size.jpg" alt=" Add Packing Information">			
+									</li>
+								</ul>
+
+								<h3>⚙️ Configure Auto Inquiry Reply</h3>
+								<ul>
+									<li>Click <strong>Configure</strong> next to a trade name.</li>
+									<li>Enter:
+									<ul>
+										<li>Offer Price</li>
+										<li>Price Valid Upto (Days)</li>
+										<li>Delivery Time (in Days)</li>
+										<li>Is Negotiable?</li>
+										<li>Warehouse</li>
+									</ul>
+									</li>
+									<li>
+										<h3><a href="assets/images/SellerInquiry/MyProduct/SetAuto_Reply.jpg" target="_blank"> Screenshot – Configure Auto Inquiry Reply </a></h3>								
+										<img src="assets/images/SellerInquiry/MyProduct/SetAuto_Reply.jpg" alt="Configure Auto Inquiry Reply">	
+									</li>
+								</ul>
+
+								<h3>🔘 Toggle Auto Reply</h3>
+								<ul>
+									<li>Enable or disable auto replies using the <strong>toggle switch</strong>.</li>
+									<li>
+										<h3><a href="assets/images/SellerInquiry/MyProduct/Multiple_tradeName.jpg" target="_blank"> Screenshot – Auto Reply Toggle</a></h3>								
+										<img src="assets/images/SellerInquiry/MyProduct/Multiple_tradeName.jpg" alt="Manage Auto Reply Toggle">
+									</li>
+								</ul>
+						</section>
+
+						<section id="AutoInquiry_ReplyMaster">
+							<h2> Auto Inquiry Reply Master</h2>
+							<p>The <strong>Auto Inquiry Reply Master</strong> allows sellers to pre-configure automatic responses to purchaser inquiries with trade-level precision.</p>
+
+							<h3>🎯 Purpose</h3>
+							<p>This module helps streamline repetitive replies by automatically sharing offer details such as price, delivery timeline, packing details, etc., based on configured trade-level data.</p>
+
+							<h3>📌 Steps to Use:</h3>
+							<ul>
+								<li>Navigate to <strong>Masters ➝ Auto Inquiry Reply Master</strong>.</li>
+								<li>Use filters at the top to narrow down by Material Type, RM/PM Name, Category, Trade Name, etc.</li>
+								<li>Locate the desired <strong>Trade Information</strong> row to edit.</li>
+								<li>Enter/update the following fields:
+								<ul>
+									<li><strong>Offer Price</strong></li>
+									<li><strong>Price Valid Upto (Days)</strong></li>
+									<li><strong>Delivery Time (Days)</strong></li>
+									<li><strong>Is Negotiable?</strong> – Yes / No</li>
+									<li><strong>Purity (%)</strong> (optional for Technical)</li>
+									<li><strong>Warehouse</strong> – Select warehouse location</li>
+									<li><strong>Packing Info:</strong> Size, Measure (e.g., ml/kg), and Type (e.g., Box, Bottle)</li>
+									<li><strong>Remark</strong> – Optional notes</li>
+								</ul>
+								</li>
+								<li>Use the <strong>Auto Reply toggle</strong> (green = enabled, red = disabled) to activate/deactivate automatic replies.</li>
+								<li>Click <strong>Save All</strong> to apply changes across rows.</li>
+								<li>
+										<h3><a href="assets/images/AutoInquiryReplyMaster.jpg" target="_blank">📸 Screenshot – Auto Inquiry Reply Master Screen</a></h3>											
+										<img src="assets/images/AutoInquiryReplyMaster.jpg"  alt="Request New Product Screenshot">									
+								</li>
+							</ul>
+
+							<h3>🕓 View Auto Reply Change History</h3>
+							<ul>
+								<li>Click the <strong>History</strong> button beside a trade entry to view a full log of changes.</li>
+								<li>It shows:
+								<ul>
+									<li>Offer Price, Validity Days, Delivery Days</li>
+									<li>Purity, Warehouse, Packing Info</li>
+									<li>Is Auto Reply On/Off</li>
+									<li>Updated By and Date-Time</li>
+								</ul>
+								</li>
+								<li>
+									<h3><a href="assets/images/History_AutoReplyMaster.jpg" target="_blank">📸 Screenshot – Auto Reply History Screen</a></h3>											
+									<img src="assets/images/History_AutoReplyMaster.jpg"  alt="Auto Reply History Screen">									
+								</li>
+							</ul>
+													
+						</section>
+						
+				
+						<section id="warehouse-location">
+							<h2>🏬 Warehouse Location Management</h2>
+
+							<p>
+								The <strong>Warehouse Location</strong> module allows Sellers to define storage points from which materials (RM/PM) are dispatched. These locations appear in seller inquiry replies, auto-replies, and purchase orders for tracking.
+							</p>
+
+							<h3>📌 Purpose</h3>
+							<ul>
+								<li>Used during inquiry reply and final deal confirmation</li>
+								<li>Links a product or seller with a physical location</li>
+								<li>Visible to purchasers on inquiry screens and PO generation</li>
+							</ul>							
+
+							<h3>📥 Add New Warehouse Location</h3>
+							<ul>
+								<li>Go to <strong>Masters → Warehouse</strong>.</li>
+								<li>Click the <strong>New</strong> button.</li>
+								<li>Fill in the fullowing fields:
+								<ul>
+									<li>Warehouse Name</li>
+									<li>GST Number</strong></li>
+									<li>Address</strong></li>
+									<li>State</strong></li>
+									<li>District</strong></li>
+									<li>City</strong></li>
+									<li>Pin Code</strong></li>
+									<li>Status</strong> (Active/Inactive)</li>
+								</ul>
+								</li>
+								<li>Click <strong>Save</strong> to submit.</li>
+								<li>
+									<h3><a href="assets/images/SellerInquiry/MyProduct/warehouselocation.jpg" target="_blank"> Screenshot – Warehouse Location Form</a></h3>								
+									<img src="assets/images/SellerInquiry/MyProduct/warehouselocation.jpg" alt="Warehouse Location Entry Form">
+								</li>
+							</ul>
+
+							<h3>📋 Warehouse List/Grid</h3>
+							<p>
+								The grid shows a list of added warehouse locations with the fullowing culumns:
+							</p>
+							<ul>
+								<li>Warehouse Name</li>
+								<li>Full Address</li>
+								<li>City, District, State, Pincode</li>
+								<li>Status (Active / Inactive)</li>
+								
+							</ul>
+
+							<h3>✏️ Edit or Update Warehouse Info</h3>
+							<ul>
+								<li>Click <strong>Edit</strong> next to the warehouse.</li>
+								<li>Update any field as needed (e.g. city, address, pin).</li>
+								<li>Click <strong>Save</strong> to apply changes.</li>
+							</ul>
+
+							<h3>📦 Warehouse in Inquiry Flow</h3>
+							<ul>
+								<li>Sellers must select one warehouse location per product during inquiry response or auto-reply setup.</li>
+								<li>Buyers will see this dispatch location when viewing seller quotes or generating PO.</li>
+								
+							</ul>
+
+							<h3>⚠️ Validations & Tips</h3>
+							<ul>						
+								<li><strong>Active status</strong> is required to show warehouse in seller flows</li>
+								<li><strong>Duplicate warehouse names</strong> should be avoided</li>
+							</ul>					
+						</section>
+
+
+					</section>
+
+				<section>
+
+					<section id="Seller_Purchaser">
+						<h2>📘 Seller to Purchaser – Inquiry Response Process</h2>
+						<p>
+							This module allows <strong>Sellers</strong> to view inquiries submitted by purchasers, respond with quotations, negotiate pricing, and submit final offers. The process supports both manual and automated replies.
+						</p>
+
+						<h3>🔔 Step 1: Receive Inquiry Notification</h3>
+						<ul>
+							<li>You will be notified via the 🔔 bell icon when a purchaser submits an inquiry for a product you have listed in your <strong>My Product Master</strong>.</li>
+							<li>Click the notification or go to <strong>Inquiry Reply Master</strong>.<br>
+								<em><strong>Example:</strong> "New Inquiry Received - Imidacloprid 17.8% SL"</em>
+							</li>
+							<li>Filter inquiries by RM/PM, Date, or Status.</li>
+							<li>
+								<h3><a href="assets/images/SellerInquiry/1.InquiryNotification.jpg" target="_blank"> Screenshot – New Inquiry Notification</a></h3>
+								<img src="assets/images/SellerInquiry/1.InquiryNotification.jpg" alt=" New Inquiry Notification">
+							</li>
+						</ul>
+
+						<h3>📋 Step 2: View Inquiry Details</h3>
+						<ul>
+							
+							<li>Details shown:
+								<ul>
+									<li>Inquiry Date, Inquiry Number</li>
+									<li>Purchaser Name, RM/PM Name</li>
+									<li>Required Quantity, Duration</li>							
+									<li>Purchaser Remarks (if any)</li>
+								</ul>
+							</li>
+							<li>Click <strong>View / Reply</strong> next to the inquiry.</li>
+							<li>
+								<h3><a href="assets/images/SellerInquiry/2ViewInquiry.jpg" target="_blank"> Screenshot – View Inquiry</a></h3>
+								<img src="assets/images/SellerInquiry/2ViewInquiry.jpg" alt=" View Inquiry">
+							</li>
+						</ul>
+						
+						<h3>✏️ Step 3: Submit Price Quotation</h3>
+						<ul>
+							<li>Select <strong>Product Code/SKU/Trade Name</strong>.</li>
+							<li>Enter:
+							<ul>
+								<li>Offer Price</li>
+								<li>Price Valid Upto</li>
+								<li>Delivery Time (days)</li>
+								<li>Purity %</li>
+								<li>Choose a Warehouse and specify the Packing details.</li>
+								<li>Terms & Conditions (auto-attached if mapped)</li>
+							
+								<li>Negotiable? (Yes/No)</li>
+							</ul>
+							</li>
+							<li>Click <strong> Submit Reply </strong> to respond to the purchaser.</li>
+							<li>
+								<h3><a href="assets/images/SellerInquiry/3SubmitReply.jpg" target="_blank"> Screenshot – Submit Reply</a></h3>
+								<img src="assets/images/SellerInquiry/3SubmitReply.jpg" alt=" Submit Reply">
+							</li>
+						</ul>
+						
+
+
+						<h3>🔄 Step 4: Handle Revised Price </h3>
+						<ul>
+							<li>If the purchaser proposes a revised price, you will receive another notification.<br>
+							<em>“Price revised #INQ03072510112 – Revised price based on an offline discussion.”</em></li>
+							<li>Click the bell icon to access the inquiry again and submit your final response.</li>
+							<li>
+								<h3><a href="assets/images/SellerInquiry/4RevisedPriceNotification.jpg" target="_blank"> Screenshot – Revised Price Notification</a></h3>
+								<img src="assets/images/SellerInquiry/4RevisedPriceNotification.jpg" alt="Revised Price Notification">
+							</li>
+						</ul>
+						
+
+						<h3>🔍 Step 5: View Revised Price </h3>
+						<ul>
+							<li>Click <strong>View/Reply</strong> to check the revised price and remarks.</li>
+							<li>Review the purchaser's revised price and any remarks.</li>
+							<li>
+								<h3><a href="assets/images/SellerInquiry/5ViewReply.jpg" target="_blank"> Screenshot – View Revised Price</a></h3>
+								<img src="assets/images/SellerInquiry/5ViewReply.jpg" alt="View Revised Price">
+							</li>
+						</ul>
+							
+
+						<h3>💼 Step 6: Submit Final Price</h3>
+						<ul>
+							<li>You can accept or provide a new <strong>Final Price</strong> and <strong>Final Quantity</strong>.</li>
+							<li>Click <strong>Submit Final Price</strong> to finalize your offer.</li>
+							<li>
+								<h3><a href="assets/images/SellerInquiry/6SubmitFinalPrice.jpg" target="_blank"> Screenshot – Submit Final Price</a></h3>
+								<img src="assets/images/SellerInquiry/6SubmitFinalPrice.jpg" alt="Submit Final Price">
+							</li>
+							
+						</ul>
+					
+
+						<h3>📌 Notes & Validation</h3>
+						<ul>
+							<li>Only <strong>Active products</strong> can be used to reply to inquiries.</li>
+							<li>Mapped Terms & Conditions are attached automatically.</li>
+							<li>Once <strong>Final Price</strong> is submitted, it cannot be edited.</li>
+						</ul>
+					</section>
+				
+				</section>
+								
+			</section>
+							
+		</div>
+	</div>
+</body>
+
+</html>
+
