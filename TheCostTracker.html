@@ -40,6 +40,7 @@
 				<ul>
 					<li><a href="#Categories_Module">Step1</a></li>
 					<li><a href="#PM_RM_Master">Step2</a></li>
+					<li><a href="#PMRM_API_History">PM RM Master API History</a></li>
 					<li><a href="#Packing_Style_Name">Step3</a></li>
 					<li><a href="#Cost_Variable_Master">Step4</a></li>
 					<li><a href="#Formulation_Category_Master">Step5</a></li>
@@ -79,6 +80,17 @@
 					<li><a href="#Price_List_Terms_&_Conditions">Price List Terms & Conditions - Other Company Master</a></li>
 				</ul>
 			</li>		
+
+			<li class="accordion">
+				<input type="checkbox" id="purchase_toggle" class="accordion-toggle" />
+				<label for="purchase_toggle" class="accordion-title" title="NRV Calculation">Purchase<i class="feather-chevron-down"></i></label>
+				<ul>
+					<li><a href="#purchase_workflow">Purchase workflow</a></li>
+					
+				</ul>
+			</li>
+
+			
 			
 				
 		</ul>
@@ -243,7 +255,7 @@
 				    </ul>
 					<h3><a href="assets/images/Master/PM_RM_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – PM RM Master</a></h3>
 					<img src="assets/images/Master/PM_RM_Master.jpg" alt="PM RM Master">
-
+					
 					<h3>Where PMRM Master Is Used</h3>
 					<p>This master is used in:</p>
 					<ul>
@@ -345,7 +357,7 @@
 
 			</section>
 			
-				<section id="Formulation_Master">
+			<section id="Formulation_Master">
 					<h1>
 						Step 6 : Formulation Master
 					</h1>
@@ -524,6 +536,7 @@
 					<img src="assets/images/Price_Master/3.RM_Price_Estimate.jpg" alt="RM Price Estimate">
 				    <hr>
 				</div>
+				
 
 			</section>
 
@@ -712,7 +725,7 @@
 				<h1>Step 14 : Finished Goods Pricing Report</h1>
 				<p>
 					The <strong>Finished Good Pricing Report</strong> is the final reporting module where all the costs entered throughout the system come together.
-					 It provides a summarized and a detailed breakdown of the total cost for each finished product, giving you a clear picture of your final (NAV).
+					 It provides a summarized and a detailed breakdown of the total cost for each finished product, giving you a clear picture of your final (NRV).
 				</p>
 			
 				<h2>1. Finished Good Pricing Summary</h2>
@@ -726,7 +739,7 @@
 							<li><strong>Labour Cost/Unit:</strong> The per-unit labour cost.</li>
 							<li><strong>Packing Loss:</strong> The cost associated with any packing loss.</li>
 							<li><strong>Total Amount /Unit:</strong> The sum of all the above costs for a single unit.</li>
-							<li><strong>Final NAV:</strong> The final Net Asset Value of the product.</li>
+							<li><strong>Final NRV:</strong> The final NRV of the product.</li>
 						</ul>
 					</li>
 					<li>Click the <strong>Report</strong> button on any row to see a detailed breakdown.</li>
@@ -798,26 +811,305 @@
 
 			<section id="Product_Interest_Master">
 				<h1>Product Interest Master</h1>
+				<p>
+					The <strong>Product Interest Master</strong> is used to apply an interest percentage to the cost of bulk products.
+					 					
+				</p>
+			
+				<h2>How to Add Product Interest</h2>
+				<ul>
+					<li>Navigate to <strong>Master ➜ Product Interest Master</strong>.</li>
+					<li>Select a <strong>Bulk Product</strong> from the dropdown list. The system will automatically fetch and display its <strong>Bulk Cost/Ltr</strong>.</li>
+					<li>Enter the desired <strong>Bulk Interest</strong> percentage (e.g., 5 for 5%).</li>
+					<li>The system will automatically calculate the <strong>Interest Amount</strong> and the new <strong>Total Amount</strong> (Bulk Cost + Interest Amount).</li>
+					<li>Click the <strong>Add</strong> button to save the record. The new entry will appear in the list below.</li>
+				</ul>			
+	
+				<h3><a href="assets/images/Others_Master/1.Product_Interest_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Product Interest Master</a></h3>
+				<img src="assets/images/Others_Master/1.Product_Interest_Master.jpg" alt="Product Interest Master">
+				<hr>
 			</section>
 
 			<section id="Packing_Difference_Master">
 				<h1>Packing Difference Master</h1>
+				<p>
+					The <strong>Packing Difference Master</strong> interface allows users to view and manage packing differences for bulk products. This screen enables the selection of a specific bulk product, retrieval of its packing data, and modification of associated packing difference values.
+				</p>
+			
+				<h2>How to Use</h2>
+				<ul>
+					<li>
+						<strong>Select Bulk Product:</strong>
+						
+							In the "Bulk Product" field, select the desired product (e.g., "ABAMECTIN 1.9%") from the dropdown list.
+						
+					</li>
+					<li>
+						<strong>Get Data:</strong>
+						
+							Click the <strong>Get Data</strong> button to retrieve the packing difference information for the selected bulk product. The system will populate the table below with relevant data.
+						
+					</li>
+					<li>
+						<strong>View and Edit Packing Differences:</strong>
+						<ul>
+							<li>The table displays the packing details for the selected product.</li>
+							<li>To modify the values, directly input the new numbers into the editable fields:
+								<ul>
+									<li><strong>Suggested Pack Diff Ltr</strong></li>
+									<li><strong>PCS Company</strong></li>
+									<li><strong>MHA</strong></li>
+									<li><strong>Bulk</strong></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<strong>Update Changes:</strong>
+						<ul>
+							<li>After making the necessary changes in the editable fields, click the blue <strong>Update</strong> button on the left side of the row to save your modifications.</li>
+						</ul>
+					</li>
+				</ul>
+						
+				<h3><a href="assets/images/Others_Master/2.Packing_Difference.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Packing Difference Master</a></h3>
+				<img src="assets/images/Others_Master/2.Packing_Difference.jpg" alt="Packing Difference Master">
+				<hr>
 			</section>
 
 
 			<section id="MRP_Price">
-				<h1>MRP Price</h1>
+				<h1>MRP Price Master</h1>
+				<p>
+					The <strong>MRP Price Master</strong> is a crucial module for setting and adjusting the Maximum Retail Price (MRP) for your finished products. 
+					This screen allows you to fetch cost-based suggested prices, apply margins, and set the final MRP along with other company-specific cost components.
+				</p>
+			
+				<h2>How to Set MRP</h2>
+				<ul>
+					<li>
+						<strong>Select Bulk Product:</strong>
+						From the "Bulk Product" dropdown menu, choose the product for which you want to set the MRP (e.g., ABAMECTIN 1.9%).
+					</li>
+					<li>
+						<strong>Get Data:</strong>
+						Click the <strong>Get Data</strong> button. The system will load a table with all available packing sizes for the selected product,
+						 populating it with suggested pricing information.
+					</li>
+					<li>
+						<strong>Adjust Margins and Final Prices:</strong>
+						<p>For each packing size in the table, you can adjust the following editable fields:</p>
+						<ul>
+							<li><strong>Percent Of Margin MRP (%):</strong> Enter a percentage value here to add a profit margin. This will dynamically adjust the "Suggested MRP."</li>
+							<li><strong>Final MRP:</strong> Manually enter the final MRP for the product. This can be the same as the "Suggested MRP" or a different value based on market strategy.</li>
+							<li><strong>PCS Company:</strong> Input the value for PCS (Printing, Capping, Sealing) for the company.</li>
+							<li><strong>MHA:</strong> Input the value for MHA (Material Handling & Administration).</li>
+							<li><strong>Bulk:</strong> Input any additional bulk-related costs or adjustments.</li>
+						</ul>
+					</li>
+					<li>
+						<strong>Update the Record:</strong>
+						<p>After entering the desired values, click the blue <strong>Update</strong> button on the left side of the row to save the changes for that specific product packing.</p>
+					</li>
+				</ul>
+									
+				<h3><a href="assets/images/Others_Master/3.MRP.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – MRP Price Master</a></h3>
+				<img src="assets/images/Others_Master/3.MRP.jpg" alt="MRP Price Master">
+				<hr>
 			</section>
 
 
 			<section id="Supervisor_Master">
 				<h1>Supervisor Master</h1>
+				<p>
+					The <strong>Supervisor Master</strong> module is used to create and manage a list of supervisors. This master list is utilized in other parts of the application where supervisor assignment is required, such as in the <strong>Product wise Labour Cost</strong> module to calculate labor and oversight costs.
+				</p>
+			
+				<h2>How to Use the Supervisor Master</h2>
+			
+				<h3>1. Adding a Supervisor</h3>
+				<ul>
+					<li>Navigate to <strong>Others Master ➜ Supervisor Master</strong>.</li>
+					<li>Enter the full name of the supervisor in the <strong>Supervisor Name</strong> input field.</li>
+					<li>Click the <strong>Add</strong> button to save the new supervisor.</li>
+					<li>Clicking <strong>Cancel</strong> will clear the input field.</li>
+				</ul>
+			
+				<h3>2. Managing Existing Supervisors</h3>
+				<p>The table below the input form lists all existing supervisors and provides several management options:</p>
+				<ul>
+					<li><strong>Search:</strong> Use the search box on the right to quickly find a supervisor by name.</li>
+					<li><strong>Edit:</strong> Click the <strong>Edit</strong> button on any row to modify the supervisor's name. The name will populate in the input field above for you to change and save.</li>
+					<li><strong>Delete:</strong> Click the <strong>Delete</strong> button to permanently remove a supervisor from the list. A confirmation prompt will appear before deletion.</li>
+					<li><strong>Pagination:</strong> Use the "Previous" and "Next" buttons to navigate through multiple pages of supervisor entries.</li>
+				</ul>
+			
+				<h3><a href="assets/images/Others_Master/4.Supervisor_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Supervisor Master</a></h3>
+				<img src="assets/images/Others_Master/4.Supervisor_Master.jpg" alt="Supervisor Master">
+				<hr>
 			</section>
-
 
 			<section id="Price_List_Terms_&_Conditions">
-				<h1>Price List Terms & Conditions - Other Company Master	</h1>
+			    <h1>Price List Terms & Conditions - Other Company Master</h1>
+			    <p>
+			        The <strong>Price List Terms & Conditions - Other Company Master</strong> module is used to define and associate specific terms and conditions with price lists for different external companies. This module allows you to input detailed clauses and optionally assign a color code for visual distinction, ensuring clarity and consistency in business agreements.
+			    </p>
+			
+			    <h2>How to Add Price List Terms & Conditions</h2>
+			
+			    <h3>1. Inputting New Terms & Conditions</h3>
+			    <ul>
+			        <li>Navigate to <strong>Others Master ➜ Price List Terms & Conditions - Other Company Master</strong>.</li>
+			        <li><strong>Terms & Condition:</strong> In the large text area labeled "Terms & Condition," enter the full text of the specific term or condition you wish to add (e.g., "Payment due within 30 days," "Minimum order quantity applies," "Freight charges extra").</li>
+			        <li><strong>Color Code:</strong> In the "Color Code" field, you can optionally enter a color code (e.g., a hexadecimal color code like #FF0000 for red) or select a color, which might be used to visually categorize or highlight these terms elsewhere in the system.</li>
+			        <li>Click the <strong>Add</strong> button to save the new term(s) and condition(s).</li>
+			        <li>Clicking <strong>Cancel</strong> will clear the input fields without saving.</li>
+			    </ul>
+			
+			    <p>*(Note: This screen is for adding new terms and conditions. Management (editing/deleting) of existing entries is likely handled in a separate interface.)*</p>
+			
+			    <h3><a href="assets/images/Others_Master/5. PriceList_Terms&Condition.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Price List Terms & Conditions Master</a></h3>
+			    <img src="assets/images/Others_Master/5. PriceList_Terms&Condition.jpg" alt="Price List Terms & Conditions - Other Company Master">
+			    <hr>
 			</section>
+
+			<br>
+
+
+			<section id="purchase_workflow">
+				<h1>Purchase Workflow: From Vendor to Final PO</h1>
+				<p>This section outlines the complete, sequential workflow for purchasing raw materials, starting from managing vendors to creating requirements and finalizing purchase orders.</p>
+				<hr />
+		
+				<h2>Step 1: Vendor Master</h2>
+				<p>
+					The <strong>Vendor Master</strong> is the first step, where you manage all supplier information. This is critical for the entire procurement workflow.
+				</p>
+				<h4>1. Managing Vendor Companies</h4>
+				<ul>
+					<li>Navigate to <strong>Purchase ➜ Vendor Master</strong>.</li>
+					<li>Fill in the vendor's details: <strong>Company Name</strong>, <strong>GST</strong>, <strong>Address</strong>, and <strong>Email</strong>.</li>
+					<li>Click <strong>Add</strong> to save the new vendor.</li>
+				</ul>
+		
+				<h3><a href="assets/images/Purchase/1.Company_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Vendor Company Master Screen</a></h3>
+				<img src="assets/images/Purchase/1.Company_Master.jpg" alt="Vendor Company Master Screen">
+				
+				<h4>2. Managing Contact Persons</h4>
+				<ul>
+					<li>In the vendor list, click the <strong>Contact Person</strong> button.</li>
+					<li>Add or manage contact details, including name, designation, and inquiry preferences.</li>
+				</ul>
+				<h3><a href="assets/images/Purchase/2.Add_ContactPerson.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Manage Contact Person Modal</a></h3>
+				<img src="assets/images/Purchase/2.Add_ContactPerson.jpg" alt="Manage Contact Person Modal" style="height: 500px;">
+				
+				<h4>3. Managing Vendor Supplies (Raw Materials)</h4>
+				<ul>
+					<li>Click <strong>Add Supply</strong> to associate a raw material with a vendor.</li>
+					<li>Click <strong>Manage Supply</strong> to view or remove existing associations.</li>
+				</ul>
+				<h3><a href="assets/images/Purchase/3.Add_Supply.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Add Supply Modal</a></h3>
+				<img src="assets/images/Purchase/3.Add_Supply.jpg" alt="Manage Contact Person Modal" style="height:	500px; width: 1350px;">
+				<hr />
+		
+				<h2>Step 2: Vendor/RM List</h2>
+				<p>This screen provides a flexible way to view the relationships between your vendors and the raw materials they supply.</p>
+				<h4>1. List of Supply By Company</h4>
+				<ul>
+					<li>Select the <strong>Company</strong> radio button, choose a vendor, and click <strong>Search</strong> to see all materials they supply.</li>
+				</ul>
+				
+				<h3><a href="assets/images/Purchase/11.List_Supply_ByCompany.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – List of supplies filtered by a specific company</a></h3>
+				<img src="assets/images/Purchase/11.List_Supply_ByCompany.jpg" alt="List of supplies filtered by a specific company">
+				
+				<h4>2. List of Supply By Product</h4>
+				<ul>
+					<li>Select the <strong>Product</strong> radio button, choose a material, and click <strong>Search</strong> to see all vendors who supply it.</li>
+				</ul>
+				<h3><a href="assets/images/Purchase/12.List_Supply_ByProduct.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – List of vendors filtered by a specific product</a></h3>
+				<img src="assets/images/Purchase/12.List_Supply_ByProduct.jpg" alt="List of vendors filtered by a specific product.">
+				<hr />
+		
+				<h2>Step 3: RM Requirement Master</h2>
+				<p>This is where the procurement cycle begins by logging a new requirement for a raw material.</p>
+				<ul>
+					<li>Navigate to <strong>Purchase ➜ RM Requirement Master</strong>.</li>
+					<li>Fill in the form: <strong>Date</strong>, <strong>Select RM</strong>, <strong>QTY</strong>, <strong>Standard Purity(%)</strong>, and <strong>Requirement By</strong>.</li>
+					<li>Click <strong>Add</strong> to create a new requirement with a unique <strong>Req No.</strong></li>
+				</ul>
+				<h3><a href="assets/images/Purchase/21.RM_Requirement_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – RM Requirement Master screen</a></h3>
+				<img src="assets/images/Purchase/21.RM_Requirement_Master.jpg" alt="RM Requirement Master screen.">
+				<hr />
+		
+				<h2>Step 4: Vendor RM Inquiry Master</h2>
+				<p>Log and track price inquiries for raw materials from your vendors.</p>
+				<ul>
+					<li>Navigate to <strong>Purchase ➜ Vendor RM Inquiry Master</strong>.</li>
+					<li>Fill in the inquiry details: <strong>Inquiry Date</strong>, <strong>Mode of Inquiry</strong>, <strong>Select Vendor</strong>, and <strong>Contact Person</strong>.</li>
+					<li>Enter the quoted price details for each listed raw material.</li>
+					<li>Click <strong>Add</strong> to save the inquiry record.</li>
+				</ul>
+				<h3><a href="assets/images/Purchase/41.RM_Inquiry_Master.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Vendor RM Inquiry Master screen</a></h3>
+				<img src="assets/images/Purchase/41.RM_Inquiry_Master.jpg" alt="Creating a new price inquiry for a vendor.">
+				<hr />
+		
+				<h2>Step 5: RM Price Inquiry List</h2>
+				<p>This report allows for easy price comparison of all vendor quotes for a specific raw material.</p>
+				<ul>
+					<li>Navigate to <strong>Purchase ➜ RM Price Inquiry List</strong>.</li>
+					<li>Find the desired material and click <strong>Inquiry Detail</strong>.</li>
+					<li>The subsequent screen shows a side-by-side comparison of all quotes received for that material.</li>
+				</ul>
+				<h3><a href="assets/images/Purchase/42.Price_Inquiry_ByRM.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – RM Price Inquiry List</a></h3>
+				<img src="assets/images/Purchase/42.Price_Inquiry_ByRM.jpg" alt="List of Raw Materials to view inquiries for.">
+				<br>
+				<h3><a href="assets/images/Purchase/43.Price_Inquiry_List.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Comparative Price Inquiry List</a></h3>
+				<img src="assets/images/Purchase/43.Price_Inquiry_List.jpg" alt="Comparative list of price inquiries from different vendors.">
+				<hr />
+		
+				<h2>Step 6: Company-wise Approved PO List</h2>
+				<p>After a price is approved in the Requirement Detail screen, you can review all items ready for a PO, grouped by vendor.</p>
+				<ul>
+					<li>Navigate to <strong>Purchase ➜ Companywise Approved PO List</strong>.</li>
+					<li>This screen summarizes companies with items ready for a PO.</li>
+					<li>Click <strong>Details</strong> to see all approved items for a specific vendor.</li>
+				</ul>
+				<h3><a href="assets/images/Purchase/25.Companywise_Approved_PO_List.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Company-wise Approved PO List</a></h3>
+				<img src="assets/images/Purchase/25.Companywise_Approved_PO_List.jpg" alt="List of companies with approved POs.">
+				<br>
+				<h3><a href="assets/images/Purchase/26.Approved_PO_Details.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Approved PO Details</a></h3>
+				<img src="assets/images/Purchase/26.Approved_PO_Details.jpg" alt="Details of products approved for a PO.">
+				<hr />
+		
+				<h2>Step 7: PO Request List</h2>
+				<p>This step formalizes the PO by assigning a PO number and attaching the official document.</p>
+				<ul>
+					<li>Navigate to <strong>Purchase ➜ PO Request List</strong>.</li>
+					<li>Find the approved PO, enter the official <strong>PO#</strong> and <strong>PO Date</strong>.</li>
+					<li>Upload the signed PO PDF document and click <strong>Save</strong>.</li>
+				</ul>
+				<h3><a href="assets/images/Purchase/27.PO_Request_List.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – PO Request List</a></h3>
+				<img src="assets/images/Purchase/27.PO_Request_List.jpg" alt="Finalizing the PO request with PO number and PDF.">
+				<hr />
+		
+				<h2>Step 8: Final PO List</h2>
+				<p>The final stage is to track the delivery and record the receipt of the purchased materials.</p>
+				<ul>
+					<li>Navigate to <strong>Purchase ➜ Final PO List</strong>.</li>
+					<li>This screen gives an overview of all finalized POs, showing <strong>PO QTY</strong>, <strong>Received QTY</strong>, and <strong>Pending QTY</strong>.</li>
+					<li>Click <strong>Receipt Detail</strong> to log the quantity of goods received against a PO.</li>
+				</ul>
+				<h3><a href="assets/images/Purchase/30.Final_PO_List.jpg" target="_blank"  title="Click to view the image">📸 Screenshot – Final PO List</a></h3>
+				<img src="assets/images/Purchase/30.Final_PO_List.jpg" alt="Tracking final POs and their receipt status.">
+				<br>
+				
+				<hr />
+			</section>
+
+
+			
+			
+			
 			
 			
 			

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RM Master — Quick User Guide (Compact)</title>
+  <style>
+    :root{--accent:#0b7763;--muted:#6b7280;--bg:#f7fafc;font-family:Inter,Segoe UI,Arial,sans-serif}
+    body{background:var(--bg);margin:0;padding:28px;color:#111}
+    .card{max-width:1000px;margin:0 auto;background:#fff;border-radius:10px;box-shadow:0 8px 40px rgba(20,30,50,.06);padding:22px}
+    h1{font-size:20px;margin:0 0 6px}
+    h2{color:var(--accent);font-size:15px;margin-top:18px}
+    p.lead{color:var(--muted);margin:4px 0 12px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    .panel{background:#fbfdfe;border:1px solid #eef4f2;padding:12px;border-radius:8px}
+    ul{margin:8px 0 12px;padding-left:18px}
+    .steps{padding-left:16px}
+    .example{background:#f0f9f8;border-left:4px solid var(--accent);padding:10px;border-radius:6px;margin:10px 0}
+    table{width:100%;border-collapse:collapse;margin-top:10px}
+    th,td{padding:8px 10px;border:1px solid #eef2f2;font-size:13px}
+    .muted{color:var(--muted)}
+    .kbd{background:#eef6f3;padding:4px 8px;border-radius:6px;font-family:monospace;font-size:12px}
+    .actions{display:flex;gap:8px}
+    .pill{display:inline-block;padding:6px 8px;border-radius:999px;background:#eef9f6;color:var(--accent);font-weight:600}
+    footer{margin-top:14px;font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>RM Master — Quick User Guide (Compact Version)</h1>
+    <p class="lead">A compact, task-oriented version of the RM Master manual — ideal for daily users and testers who need quick instructions and common troubleshooting steps.</p>
+
+    <div class="grid">
+      <div>
+        <h2>At-a-glance</h2>
+        <div class="panel">
+          <strong>Purpose:</strong> Manage raw material lookup data used by pricing, packing and procurement flows.
+          <ul>
+            <li><strong>Add / Edit / Delete</strong> RM records.</li>
+            <li><strong>View API history</strong> to confirm upstream integrations.</li>
+            <li>Units, purity flag and category directly impact price/packing processing.</li>
+          </ul>
+        </div>
+
+        <h2>Quick actions</h2>
+        <ol class="steps">
+          <li><strong>Add</strong> — Select Category & Unit, type RM Name, check <em>IsPurity</em> if needed, click <span class="kbd">Add</span>.</li>
+          <li><strong>Edit</strong> — Click <span class="pill">Edit</span> on row → update form → click <span class="kbd">Add</span> to save.</li>
+          <li><strong>Delete</strong> — Click <span class="pill">Delete</span> → confirm. System may block deletion if referenced.</li>
+        </ol>
+
+        <h2>Search & Pagination</h2>
+        <p class="muted">Use the search box to filter by name/category/unit. Page controls at the bottom allow fast navigation for large catalogs.</p>
+
+        <h2>API History — common scenarios</h2>
+        <table>
+          <thead><tr><th>Scenario</th><th>What to do</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Processed successfully</strong></td><td>Record accepted by API. No action required.</td></tr>
+            <tr><td><strong>Pending (Not Processed)</strong></td><td>Check the Processing Remarks for error details; fix source data and reprocess.</td></tr>
+            <tr><td><strong>Invalid Unit</strong></td><td>Open unit master, correct code and requeue record.</td></tr>
+            <tr><td><strong>Not Exists</strong></td><td>Create referenced packing/material first or correct PrimaryId reference.</td></tr>
+          </tbody>
+        </table>
+
+        <h2>Top 6 Test cases (smoke)</h2>
+        <ol>
+          <li>Create RM with minimum fields — expect success and API log entry.</li>
+          <li>Create duplicate RM name — system should warn or prevent duplicate.</li>
+          <li>Set IsPurity and leave purity blank — check API history for "Pending" remark.</li>
+          <li>Edit unit to unsupported value — expect API remark "Measurement Unit is Invalid".</li>
+          <li>Delete RM used by Price Master — verify block or appropriate error message.</li>
+          <li>Filter API History by Status = Pending and confirm the returned rows match expected errors.</li>
+        </ol>
+      </div>
+
+      <aside>
+        <h2>Quick reference</h2>
+        <div class="panel">
+          <strong>Field checklist</strong>
+          <ul>
+            <li>RM Category — required</li>
+            <li>Measurement Unit — required</li>
+            <li>RM Name — required, unique per category recommended</li>
+            <li>IsPurity Required — optional; affects downstream validation</li>
+          </ul>
+        </div>
+
+        <h2>Common API remarks</h2>
+        <div class="panel">
+          <ul>
+            <li><strong>Processed successfully.</strong></li>
+            <li><strong>Packing Material not Exists</strong> — create packing item first.</li>
+            <li><strong>Packing Material Measurement Unit is Invalid</strong> — correct measurement unit code.</li>
+            <li><strong>Packing Material not Exists / not Exists</strong> — check primary id mapping.</li>
+          </ul>
+        </div>
+
+        <h2>Troubleshooting flow</h2>
+        <ol>
+          <li>Open API History → set Transaction Type → filter by Status = Pending.</li>
+          <li>Read Processing Remarks; note PrimaryId values.</li>
+          <li>Fix source record (create missing item or correct unit), then reprocess.
+          </li>
+        </ol>
+
+        <h2>Useful tips</h2>
+        <ul>
+          <li>Keep unit codes consistent between systems.</li>
+          <li>Use a naming standard to avoid duplicates.</li>
+          <li>When importing, preview API History to catch errors early.</li>
+        </ul>
+      </aside>
+    </div>
+
+    <h2>Printable checklist</h2>
+    <div class="panel">
+      <ul>
+        <li>[ ] RM Name present</li>
+        <li>[ ] Category selected</li>
+        <li>[ ] Valid Measurement Unit</li>
+        <li>[ ] IsPurity set when required</li>
+        <li>[ ] No duplicates in table</li>
+      </ul>
+    </div>
+
+    <footer>Compact guide version — updated Nov 2025. Contact <span class="muted">sales@thetracker.in</span> for integration or data issues.</footer>
+  </div>
+</body>
+</html>
