@@ -40,7 +40,6 @@
 				<ul>
 					<li><a href="#Categories_Module">Step1</a></li>
 					<li><a href="#PM_RM_Master">Step2</a></li>
-					<li><a href="#PMRM_API_History">PM RM Master API History</a></li>
 					<li><a href="#Packing_Style_Name">Step3</a></li>
 					<li><a href="#Cost_Variable_Master">Step4</a></li>
 					<li><a href="#Formulation_Category_Master">Step5</a></li>
@@ -90,6 +89,28 @@
 				</ul>
 			</li>
 
+			<li><a href="#"></a></li>
+
+			<li class="accordion">
+				<input type="checkbox" id="marketing_cost_factor_toggle" class="accordion-toggle" />	
+				<label for="marketing_cost_factor_toggle" class="accordion-title" title="Marketing Cost Factor">Marketing Cost Factor<i class="feather-chevron-down"></i></label>
+				<ul>
+					<li><a href="#Product_Category">Product Category</a></li>
+					<li><a href="#Bulk_Company_Mapping">Bulk Company Mapping</a></li>
+					<li><a href="#Product_Cat_Bulk_Mapping_Marketing">Product Category Bulk Mapping</a></li>
+					<li><a href="#Trade_Master">Trade Master</a></li>
+					<li><a href="#Trade_Bulk_Mapping">Trade Bulk Mapping</a></li>
+					<li><a href="#Product_Type_Master">Product Type Master</a></li>
+					<li><a href="#Product_Type_Bulk_Mapping">Product Type Bulk Mapping</a></li>
+					<li><a href="#Factory_Expense">Factory Expense</a></li>
+					<li><a href="#Transportation_Cost_Master">Transportation Cost Master</a></li>
+					<li><a href="#Statewise_Cost_Factor">State Wise Cost Factor</a></li>
+					
+				</ul>
+			</li>
+
+
+            
 			
 			
 				
@@ -761,7 +782,7 @@
 				<h3>Packing, Labour & Final Cost</h3>
 				<p>This section breaks down the remaining costs:</p>
 				<ul>
-					<li><strong>PM Costing/Unit:</strong> Lists the cost of each individual packing material (e.g., Pouch, Shipper).</li>
+					<li><strong>PM Costing/Unit:</strong> Lists the cost of each individual packing material (e.g., Pouch).</li>
 					<li><strong>Other Costing/Unit:</strong> Shows costs for <strong>Labour</strong> and <strong>Packing Loss</strong>.</li>
 					<li><strong>Final Cost Packing Wise:</strong> This is the grand total, combining the bulk cost with packing and other costs to give you the final <strong>Per Unit Costing</strong>.</li>
 				</ul>
@@ -1106,17 +1127,260 @@
 				<hr />
 			</section>
 
-
-			
-			
-			
-			
-			
+			<br>
+			<hr>	
 			
 
-		<div class="footer">
-			<p>&copy; 2025 Costing Software Guide. All rights reserved.</p>	
-		</div>
+			<section id="Product_Category">
+				<div class="marketing-section-header" style="background-color: #f2f8ff; border-left: 5px solid #007bff; padding: 20px; margin-bottom: 20px; border-radius: 5px;">
+					<h1 style="color: #007bff;">Branding & Marketing</h1>
+					<p style="font-size: 1.1em;">This section focuses on tools that help you manage your product's market presence, pricing strategies, and brand identity.</p>
+				</div>
+	
+				<h1>Product Category</h1>
+				<p>
+					The <strong>Product Category</strong> master lets you create and manage categories for finished products — e.g., Classic, Premium, Royal. 
+					Categories help organise products and apply category-level pricing or reports.
+					
+				</p>
+	
+				<h2>How to Add the Product Category</h2>
+	
+				<ul>
+					<li> Navigate to <strong>Cost Factors ➜ Product Category</strong>.</li>
+					<li>In the "Product Category" input field, type the name of the new category (e.g., "Royal").</li>
+					<li>Click the <strong>Add</strong> button to save it. The new category will appear in the list below.</li>
+					<li>Clicking <strong>Cancel</strong> will clear the input field without saving.</li>
+				</ul>
+	
+				<h3><a href="assets/images/Marketing/Cost_Factor/1.Product_Category.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Product Category Master</a></h3>
+				<img src="assets/images/Marketing/Cost_Factor/1.Product_Category.jpg" alt="Product Category Master Screen">
+				<hr>
+			</section>
+
+			
+			<section id="Bulk_Company_Mapping">
+				<h1>Bulk Company Mapping</h1>
+				<p>
+					The <strong>Bulk Company Mapping</strong> module allows you to map specific bulk products with particular companies.					 
+				</p>
+
+				<h2>How to Create a Bulk Company Mapping</h2>
+				
+				<ul>
+					<li> Navigate to <strong>Cost Factors ➜ Bulk Company Mapping</strong>.</li>
+					<li>In the "Company Name" field, select the name of the company .</li>
+					<li>In the "Bulk Product", choose bulk products to associate with the selected company (e.g., "Lambda Cyhalothrin 5% EC").</li>
+					<li>Click the <strong>Add</strong> button to save the mapping. The new entry will appear in the table below.</li>
+					<li>Clicking <strong>Cancel</strong> will clear the input fields without saving.</li>
+				</ul>
+
+				
+				<h3><a href="assets/images/Marketing/Cost_Factor/2.Bulk_Company_Mapping.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Bulk Company Mapping Master</a></h3>
+				<img src="assets/images/Marketing/Cost_Factor/2.Bulk_Company_Mapping.jpg" alt="Bulk Company Mapping Master Screen">
+				<hr>
+			</section>
+
+			<section id="Product_Cat_Bulk_Mapping_Marketing">
+				<h1>Product Category Bulk Mapping</h1>
+				<p>
+					The <strong>Product Category Bulk Mapping</strong> module assigns bulk items to a product <strong>category</strong> for a chosen <strong>company</strong>. It bridges category-level packaging/recipes with supplier bulk items.
+					
+				</p>
+			
+
+				<h2>How to Create a Product Category Bulk Mapping</h2>
+				<p>
+					To establish a mapping between a company, a product category, and bulk products, follow these steps:
+				</p>
+				<ul>
+					<li>Navigate to <strong>Cost Factors ➜ Product Category Bulk Mapping</strong>.</li>
+					<li>In the "Company Name" field, select the name of the company.</li>
+					<li>From the "Product Category" dropdown, select the relevant category (e.g., "Premium").</li>
+					<li>In the "Bulk" multi-select box, choose  bulk products to associate with the selected company and category (e.g., "Lambda Cyhalothrin 5% EC").</li>
+					<li>Click the <strong>Add</strong> button to save the mapping. The new entry will appear in the table below.</li>
+					<li>Clicking <strong>Cancel</strong> will clear the input fields without saving.</li>
+				</ul>
+				
+
+				<h3><a href="assets/images/Marketing/Cost_Factor/3.Product_Cat_Bulk_Mapping.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Product Category Bulk Mapping Master</a></h3>
+				<img src="assets/images/Marketing/Cost_Factor/3.Product_Cat_Bulk_Mapping.jpg" alt="Product Category Bulk Mapping Master Screen">
+				<hr>
+			</section>
+
+			<section id="Trade_Master">
+				<h1>Trade Master</h1>
+				<p>
+					The <strong>Trade Master</strong> module allows you to create and manage trade names for products, associating them with a specific company. These trade names are used for branding and product identification in marketing and sales processes.
+				</p>
+			
+				<h2>How to Create a Trade Name</h2>
+				<ul>
+					<li>From the main menu, navigate to <strong>Cost Factors ➜ Trade Master</strong>.</li>
+					<li>In the "Company Name" field, select the company you want to associate with the trade name.</li>
+					<li>In the "Trade" input field, enter the desired trade name (e.g., "PCS Lambda").</li>
+					<li>Click the <strong>Add</strong> button to save the new trade name. The entry will appear in the table below.</li>
+					<li>Clicking <strong>Cancel</strong> will clear the input fields.</li>
+				</ul>
+			
+				<h3><a href="assets/images/Marketing/Cost_Factor/4.Trade_Master.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Trade Master</a></h3>
+				<img src="assets/images/Marketing/Cost_Factor/4.Trade_Master.jpg" alt="Trade Master Screen">
+				<hr>
+			</section>
+
+			<section id="Trade_Bulk_Mapping">
+				<h1>Trade Bulk Mapping</h1>
+				<p>
+					The <strong>Trade Bulk Mapping</strong> module enables you to associate specific bulk products with various trade names under a chosen company. This is essential for organizing products under different marketing strategies and branding.
+				</p>
+			
+				<h2>How to Create a Trade Bulk Mapping</h2>
+				<ul>
+					<li>From the main menu, navigate to <strong>Cost Factors ➜ Trade Bulk Mapping</strong>.</li>
+					<li>In the "Company Name" field, select the relevant company.</li>
+					<li>From the "Bulk Product" dropdown, choose the bulk product you wish to map.</li>
+					<li>In the "Trade" multi-select box, choose one or more trade names to associate with the selected bulk product for the chosen company.</li>
+					<li>Click the <strong>Add</strong> button to save the new mapping. The new entry will appear in the table below.</li>
+					<li>Clicking <strong>Cancel</strong> will clear the input fields.</li>
+				</ul>
+			
+				<h3><a href="assets/images/Marketing/Cost_Factor/5.Trade_Bulk_Mapping.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Trade Bulk Mapping Master</a></h3>
+				<img src="assets/images/Marketing/Cost_Factor/5.Trade_Bulk_Mapping.jpg" alt="Trade Bulk Mapping Master Screen">
+				<hr>
+			</section>
+
+			<section id="Product_Type_Master">
+				<h1>Product Type Master</h1>
+				<p>
+					The <strong>Product Type Master</strong> module allows you to define and manage various classifications for your products, such as INSECTICIDE, FUNGICIDES, HERBICIDES, or PGR. These product types are essential for organizing your product catalog and can be used for filtering, reporting, and other business logic.
+				</p>
+			
+				<h2>How to Add a Product Type</h2>
+				<ul>
+					<li>From the main menu, navigate to <strong>Cost Factors ➜ Product Type</strong>.</li>
+					<li>In the "Product Type" input field, enter the name of the new product type (e.g., "PGR").</li>
+					<li>Click the <strong>Add</strong> button to save the new product type. The new entry will appear in the table below.</li>
+					<li>Clicking <strong>Cancel</strong> will clear the input fields.</li>
+				</ul>
+			
+				
+				<h3><a href="assets/images/Marketing/Cost_Factor/6.Product_Type.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Product Type Master</a></h3>
+				<img src="assets/images/Marketing/Cost_Factor/6.Product_Type.jpg" alt="Product Type Master Screen">
+				<hr>
+			</section>
+
+			<section id="Product_Type_Bulk_Mapping">
+				<h1>Product Type Bulk Mapping</h1>
+				<p>
+					The <strong>Product Type Bulk Mapping</strong> module is used to associate specific bulk products with defined product types (e.g., HERBICIDES, INSECTICIDE) for a particular company. This mapping facilitates organized management and reporting of products based on their type.
+				</p>
+			
+				<h2>How to Create a Product Type Bulk Mapping</h2>
+				<ul>
+					<li>From the main menu, navigate to <strong>Cost Factors ➜ Product Type Bulk Mapping</strong>.</li>
+					<li>In the "Company Name" field, select the relevant company.</li>
+					<li>From the "Product Type" dropdown, choose the product type (e.g., "HERBICIDES") you wish to map.</li>
+					<li>In the "Bulk" multi-select box, choose one or more bulk products to associate with the selected product type for the chosen company.</li>
+					<li>Click the <strong>Add</strong> button to save the new mapping. The new entry will appear in the table below.</li>
+					<li>Clicking <strong>Cancel</strong> will clear the input fields.</li>
+				</ul>
+										
+				<h3><a href="assets/images/Marketing/Cost_Factor/7.Product_Type_Bulk_Mapping.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Product Type Bulk Mapping</a></h3>
+				<img src="assets/images/Marketing/Cost_Factor/7.Product_Type_Bulk_Mapping.jpg" alt="Product Type Bulk Mapping Screen">
+				<hr>
+			</section>
+
+			<section id="Factory_Expense">
+				<h1>Factory Expense</h1>
+				<p>
+					The <strong>Factory Expense</strong> module is used to calculate and apply various additional costs to bulk products. This includes factory overheads, marketed charges, and other expenses, ultimately determining the final factory cost per liter or unit for each product. This module also allows for the inclusion of a profit margin.
+				</p>
+			
+				<h2>How to Add/Update Factory Expenses for a Bulk Product</h2>
+				<ul>
+					<li>From the main menu, navigate to <strong>Cost Factors ➜ Factory Expense</strong>.</li>
+					<li><strong>Select Bulk Product:</strong> Choose the specific bulk product from the dropdown list. The system will automatically display its current <strong>Bulk Cost/Ltr</strong> and <strong>MasterPack</strong> information.</li>
+					<li><strong>Define Additional Costs:</strong>
+						<ul>
+							<li>Enter the percentage for <strong>Factory Expense (%)</strong>. The <strong>Factory Expense Amt</strong> will be auto-calculated.</li>
+							<li>Enter the percentage for <strong>Marketed Charges (%)</strong>. The <strong>Marketed Charges Amt</strong> will be auto-calculated.</li>
+							<li>Enter the percentage for <strong>Other (%)</strong> expenses. The <strong>Other Amt</strong> will be auto-calculated.</li>
+							<li>The <strong>Total Expense</strong> for the product will be automatically calculated based on the entered percentages.</li>
+							<li>Optionally, enter a <strong>Profit (%)</strong> to add a profit margin. The <strong>Profit Amt</strong> and the final <strong>Total Cost/Ltr</strong> will be adjusted accordingly.</li>
+						</ul>
+					</li>
+					<li>Click the <strong>Add</strong> button to save the new or updated expense calculation.</li>
+					<li>Clicking <strong>Cancel</strong> will clear the input fields.</li>
+					<li>Click the <strong>Report</strong> button to generate a detailed report for the selected bulk product's expenses.</li>
+				</ul>
+							
+			
+				<h3><a href="assets/images/Marketing/Cost_Factor/8.Company_Factory_Expense.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Company Factory Expense</a></h3>
+				<img src="assets/images/Marketing/Cost_Factor/8.Company_Factory_Expense.jpg" alt="Company Factory Expense Screen">
+				<hr>
+			</section>
+
+			<section id="Transportation_Cost_Master">
+				<h1>Transportation Cost Master</h1>
+				<p>
+					The <strong>Transportation Cost Master</strong> module allows you to define and manage all transportation-related costs on a state-by-state basis. This includes primary truckload charges and more detailed, weight-based charges for local transportation, unloading, and cartage.
+				</p>
+			
+				<h3>1. How to Add Main Transportation Costs</h3>
+				<ul>
+					<li>From the main menu, navigate to <strong>Cost Factors ➜ Trasportation Cost Master</strong>.</li>
+					<li>Select the <strong>State</strong> from the dropdown menu.</li>
+					<li>Enter the <strong>Truck Load Charge</strong> for a full shipment.</li>
+					<li>Enter the <strong>Approx No of Carton in 1 lot</strong> to help the system calculate the per-carton cost.</li>
+					<li>The <strong>Approx 1 carton Charge</strong> is automatically calculated and displayed.</li>
+					<li>Click the <strong>Add</strong> button to save the record for the state.</li>
+				</ul>
+				<h3><a href="assets/images/Marketing/Cost_Factor/9.Trasnportation_Cost_Master.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Transportation Cost Master</a></h3>
+				<img src="assets/images/Marketing/Cost_Factor/9.Trasnportation_Cost_Master.jpg" alt="Transportation Cost Master Screen">
+				<hr>
+
+				<h3>2. How to Add Range-Based Charges</h3>
+				<p>
+					For more detailed costing, you can add charges based on weight ranges for local transport, unloading, and cartage.
+				</p>
+				<ul>
+					<li>In the table, find the state you want to configure and click the <strong>Add Range</strong> button under the relevant column (e.g., "Average Local Transportation").</li>
+					<li>A pop-up window will appear, allowing you to define charges for specific weight ranges.</li>
+					<li>Enter the <strong>Start</strong> and <strong>End</strong> values of the range.</li>
+					<li>Select the <strong>Measurement</strong> (e.g., KG).</li>
+					<li>Enter the <strong>Amount</strong> for that specific range.</li>
+					<li>Click the <strong>Add</strong> button in the pop-up to save the range. You can add multiple ranges for each cost type.</li>
+				</ul>
+				<h3><a href="assets/images/Marketing/Cost_Factor/10.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Adding Range-Based Charges</a></h3>
+				<img src="assets/images/Marketing/Cost_Factor/10.jpg" alt="Adding Range-Based Charges">
+				<hr>
+			</section>
+
+			<section id="Statewise_Cost_Factor">
+				<h1>State Wise Cost Factor</h1>
+				<p>
+					The <strong>State Wise Cost Factor</strong> module allows you to define and manage specific cost factors that vary by state. This is crucial for accurate regional costing and pricing strategies.
+				</p>
+			
+				<h2>How to Add a State Wise Cost Factor</h2>
+				<ul>
+					<li>From the main menu, navigate to <strong>Cost Factors ➜ State Wise Cost Factor</strong>.</li>
+					<li>Enter the <strong>State Name</strong>.</li>
+					<li>Enter the relevant <strong>Cost Factor</strong> value for that state.</li>
+					<li>Click the <strong>Add</strong> button to save the new entry. The new record will appear in the table below.</li>
+					<li>Clicking <strong>Cancel</strong> will clear the input fields.</li>
+				</ul>
+			
+					
+				<h3><a href="assets/images/Marketing/Cost_Factor/11.Statewise_Cost_Factor.jpg" target="_blank" title="Click to view the image">📸 Screenshot – State Wise Cost Factor</a></h3>
+				<img src="assets/images/Marketing/Cost_Factor/11.Statewise_Cost_Factor.jpg" alt="State Wise Cost Factor Screen">
+				<hr>
+			</section>
+			
+              
+    		<div class="footer">
+    			<p>&copy; 2025 Costing Software Guide. All rights reserved.</p>	
+    		</div>
 
 			
 		</div>
