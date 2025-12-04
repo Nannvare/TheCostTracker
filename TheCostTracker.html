@@ -38,26 +38,85 @@
 				<input type="checkbox" id="master_setup_toggle" class="accordion-toggle" />
 				<label for="master_setup_toggle" class="accordion-title" title="Master Setup"> Master Setup <i class="feather-chevron-down"></i></label>
 				<ul>
-					<li><a href="#Categories_Module">Step1</a></li>
-					<li><a href="#PM_RM_Master">Step2</a></li>
-					<li><a href="#Packing_Style_Name">Step3</a></li>
-					<li><a href="#Cost_Variable_Master">Step4</a></li>
-					<li><a href="#Formulation_Category_Master">Step5</a></li>
-					<li><a href="#Formulation_Master">Step6</a></li>
-					<li><a href="#RM_Master">Step7</a></li>
-					<li><a href="#Bulk_Product_Master">Step8</a></li>
-					<li><a href="#Price_Master">Step9</a></li>
-						
+					<li class="nested-accordion">
+						<input type="checkbox" id="master_categories_toggle" class="nested-accordion-toggle" />
+						<label for="master_categories_toggle" class="nested-accordion-title">Categories <i class="feather-chevron-right"></i></label>
+						<ul>
+							<li><a href="#Categories_Module">Categories Module (Step 1)</a></li>
+						</ul>
+					</li>
+					<li class="nested-accordion">
+						<input type="checkbox" id="master_pm_rm_toggle" class="nested-accordion-toggle" />
+						<label for="master_pm_rm_toggle" class="nested-accordion-title">PM/RM Master <i class="feather-chevron-right"></i></label>
+						<ul>
+							<li><a href="#PM_RM_Master">PM/RM Master (Step 2)</a></li>
+						</ul>
+					</li>
+					<li class="nested-accordion">
+						<input type="checkbox" id="master_packing_style_toggle" class="nested-accordion-toggle" />
+						<label for="master_packing_style_toggle" class="nested-accordion-title">Packing Style <i class="feather-chevron-right"></i></label>
+						<ul>
+							<li><a href="#Packing_Style_Name">Packing Style Name (Step 3)</a></li>
+						</ul>
+					</li>
+					<li class="nested-accordion">
+						<input type="checkbox" id="master_cost_variable_toggle" class="nested-accordion-toggle" />
+						<label for="master_cost_variable_toggle" class="nested-accordion-title">Cost Variable <i class="feather-chevron-right"></i></label>
+						<ul>
+							<li><a href="#Cost_Variable_Master">Cost Variable Master (Step 4)</a></li>
+						</ul>
+					</li>
+					<li class="nested-accordion">
+						<input type="checkbox" id="master_formulation_toggle" class="nested-accordion-toggle" />
+						<label for="master_formulation_toggle" class="nested-accordion-title">Formulation <i class="feather-chevron-right"></i></label>
+						<ul>
+							<li><a href="#Formulation_Category_Master">Formulation Category Master (Step 5)</a></li>
+							<li><a href="#Formulation_Master">Formulation Master (Step 6)</a></li>
+						</ul>
+					</li>
+					<li class="nested-accordion">
+						<input type="checkbox" id="master_rm_toggle" class="nested-accordion-toggle" />
+						<label for="master_rm_toggle" class="nested-accordion-title">Raw Materials <i class="feather-chevron-right"></i></label>
+						<ul>
+							<li><a href="#RM_Master">RM Master (Step 7)</a></li>
+						</ul>
+					</li>
+					<li class="nested-accordion">
+						<input type="checkbox" id="master_products_toggle" class="nested-accordion-toggle" />
+						<label for="master_products_toggle" class="nested-accordion-title">Products <i class="feather-chevron-right"></i></label>
+						<ul>
+							<li><a href="#Bulk_Product_Master">Bulk Product Master (Step 8)</a></li>
+							<li><a href="#Price_Master">Price Master (Step 9)</a></li>
+						</ul>
+					</li>
 				</ul>
 			</li>	
 			<li class="accordion">
 				<input type="checkbox" id="finish_good_toggle" class="accordion-toggle" />
 				<label for="finish_good_toggle" class="accordion-title" title="Finish Good">How to Make Finish Good <i class="feather-chevron-down"></i></label>
 				<ul>
-					<li><a href="#BOM">Step10</a></li>
-					<li><a href="#Product_Packing_Material_Master">Step11</a></li>
-					<li><a href="#PackingStyle_LabourCosting_Master">Step12</a></li>
-					<li><a href="#Productwise_Labour_Cost">Step13</a></li>
+					<li class="nested-accordion">
+						<input type="checkbox" id="finish_bom_toggle" class="nested-accordion-toggle" />
+						<label for="finish_bom_toggle" class="nested-accordion-title">Bill of Materials <i class="feather-chevron-right"></i></label>
+						<ul>
+							<li><a href="#BOM">BOM (Step 10)</a></li>
+						</ul>
+					</li>
+					<li class="nested-accordion">
+						<input type="checkbox" id="finish_packing_toggle" class="nested-accordion-toggle" />
+						<label for="finish_packing_toggle" class="nested-accordion-title">Packing Materials <i class="feather-chevron-right"></i></label>
+						<ul>
+							<li><a href="#Product_Packing_Material_Master">Product Packing Material Master (Step 11)</a></li>
+							<li><a href="#PackingStyle_LabourCosting_Master">Packing Style Labour Costing Master (Step 12)</a></li>
+						</ul>
+					</li>
+					<li class="nested-accordion">
+						<input type="checkbox" id="finish_labour_toggle" class="nested-accordion-toggle" />
+						<label for="finish_labour_toggle" class="nested-accordion-title">Labour Costing <i class="feather-chevron-right"></i></label>
+						<ul>
+							<li><a href="#Productwise_Labour_Cost">Product-wise Labour Cost (Step 13)</a></li>
+						</ul>
+					</li>
 				</ul>
 			</li>
 			<li class="accordion">
@@ -89,11 +148,12 @@
 				</ul>
 			</li>
 
+
 			<li><a href="#"></a></li>
 
 			<li class="accordion">
 				<input type="checkbox" id="marketing_cost_factor_toggle" class="accordion-toggle" />	
-				<label for="marketing_cost_factor_toggle" class="accordion-title" title="Marketing Cost Factor">Marketing Cost Factor<i class="feather-chevron-down"></i></label>
+				<label for="marketing_cost_factor_toggle" class="accordion-title" title="Cost Factor">Cost Factors<i class="feather-chevron-down"></i></label>
 				<ul>
 					<li><a href="#Product_Category">Product Category</a></li>
 					<li><a href="#Bulk_Company_Mapping">Bulk Company Mapping</a></li>
@@ -108,11 +168,44 @@
 					
 				</ul>
 			</li>
+			<li class="accordion">
+				<input type="checkbox" id="price_type_toggle" class="accordion-toggle" />	
+				<label for="price_type_toggle" class="accordion-title" title="Price Type Master">Price Type <i class="feather-chevron-down"></i></label>
+				<ul>
+					<li><a href="#Price_Type_Master">Price Type Master</a></li>
+					<li><a href="#Product_PriceType_StateMapping_Master">Product Price Type & State Mapping Master</a></li>
+					<li><a href="#Price_Setup_State_Order">Price Setup State Order</a></li>
+				</ul>
+			</li>
 
-
-            
-			
-			
+			<li class="accordion">
+				<input type="checkbox" id="pricelist_settig_toggle" class="accordion-toggle"/>
+				<label for="pricelist_settig_toggle" class="accordion-title" title="Price List Setting">Price List Setting <i class="feather-chevron-down"></i></label>	
+				<ul>
+					<li><a href="#Statewise_Contact_Person">State Wise Contact Person Detail</a></li>
+					<li><a href="#PriceList_Terms">Price List Terms & Conditions</a></li>
+					<li><a href="#PriceList_Bank_Detail">Price List Bank Detail</a></li>
+					<li><a href="#PriceList_Lifting_Setting">Price List Lifting Setting</a></li>
+					<li><a href="#Statewise_Turnover_Incentive">State Wise Turnover Incentive</a></li>
+					<li><a href="#Statewise_Special_PriceList">State Wise Special Price List</a></li>
+					<li><a href="#Price_List_Brand_Display_Setting">Price List Brand/Technical Display Setting</a></li>
+					<li><a href="#Scheme_Active/InActive_Setting">Price List Scheme Active/InActive Setting</a></li>
+					<li><a href="#Product_Packing_Active/InActive_Settings">Price List Product With Packing Active/InActive Settings</a></li>
+					<li><a href="#Price_List_Banner">Price List Banner</a></li>
+					<li><a href="#Incentive_Setting">State Wise Focus Incentive Setting</a></li>
+					
+				</ul>	
+			</li>
+			<li class="accordion">
+				<input type="checkbox" id="report_toggle" class="accordion-toggle"/>
+				<label for="report_toggle" class="accordion-title" title="Reports">Reports <i class="feather-chevron-down"></i></label>
+				<ul>
+					<li><a href="#PriceList_Actual_Estimate">Price List Actual Estimate</a></li>
+					<li><a href="#PriceList-Report">Company Price List Report</a></li>
+					<li><a href="#Statewise_Scheme_Report">Statewise Scheme Report</a></li>
+					<li><a href="#Statewise_Incentive_Report"> Statewise Incentive Report</a></li>
+				</ul>
+			</li>
 				
 		</ul>
 		<div id="documenter_copyright">
@@ -782,7 +875,7 @@
 				<h3>Packing, Labour & Final Cost</h3>
 				<p>This section breaks down the remaining costs:</p>
 				<ul>
-					<li><strong>PM Costing/Unit:</strong> Lists the cost of each individual packing material (e.g., Pouch).</li>
+					<li><strong>PM Costing/Unit:</strong> Lists the cost of each individual packing material (e.g., Pouch, Shipper).</li>
 					<li><strong>Other Costing/Unit:</strong> Shows costs for <strong>Labour</strong> and <strong>Packing Loss</strong>.</li>
 					<li><strong>Final Cost Packing Wise:</strong> This is the grand total, combining the bulk cost with packing and other costs to give you the final <strong>Per Unit Costing</strong>.</li>
 				</ul>
@@ -1127,13 +1220,13 @@
 				<hr />
 			</section>
 
-			<br>
-			<hr>	
-			
+			<br><br>
+		
+
 
 			<section id="Product_Category">
 				<div class="marketing-section-header" style="background-color: #f2f8ff; border-left: 5px solid #007bff; padding: 20px; margin-bottom: 20px; border-radius: 5px;">
-					<h1 style="color: #007bff;">Branding & Marketing</h1>
+					<h1 style="color: #007bff;">Cost Factors</h1>
 					<p style="font-size: 1.1em;">This section focuses on tools that help you manage your product's market presence, pricing strategies, and brand identity.</p>
 				</div>
 	
@@ -1197,7 +1290,7 @@
 					<li>Navigate to <strong>Cost Factors ➜ Product Category Bulk Mapping</strong>.</li>
 					<li>In the "Company Name" field, select the name of the company.</li>
 					<li>From the "Product Category" dropdown, select the relevant category (e.g., "Premium").</li>
-					<li>In the "Bulk" multi-select box, choose  bulk products to associate with the selected company and category (e.g., "Lambda Cyhalothrin 5% EC").</li>
+					<li>In the "Bulk" select box, choose  bulk products to associate with the selected company and category (e.g., "Lambda Cyhalothrin 5% EC").</li>
 					<li>Click the <strong>Add</strong> button to save the mapping. The new entry will appear in the table below.</li>
 					<li>Clicking <strong>Cancel</strong> will clear the input fields without saving.</li>
 				</ul>
@@ -1216,7 +1309,7 @@
 			
 				<h2>How to Create a Trade Name</h2>
 				<ul>
-					<li>From the main menu, navigate to <strong>Cost Factors ➜ Trade Master</strong>.</li>
+					<li>Navigate to <strong>Cost Factors ➜ Trade Master</strong>.</li>
 					<li>In the "Company Name" field, select the company you want to associate with the trade name.</li>
 					<li>In the "Trade" input field, enter the desired trade name (e.g., "PCS Lambda").</li>
 					<li>Click the <strong>Add</strong> button to save the new trade name. The entry will appear in the table below.</li>
@@ -1236,7 +1329,7 @@
 			
 				<h2>How to Create a Trade Bulk Mapping</h2>
 				<ul>
-					<li>From the main menu, navigate to <strong>Cost Factors ➜ Trade Bulk Mapping</strong>.</li>
+					<li>Navigate to <strong>Cost Factors ➜ Trade Bulk Mapping</strong>.</li>
 					<li>In the "Company Name" field, select the relevant company.</li>
 					<li>From the "Bulk Product" dropdown, choose the bulk product you wish to map.</li>
 					<li>In the "Trade" multi-select box, choose one or more trade names to associate with the selected bulk product for the chosen company.</li>
@@ -1257,7 +1350,7 @@
 			
 				<h2>How to Add a Product Type</h2>
 				<ul>
-					<li>From the main menu, navigate to <strong>Cost Factors ➜ Product Type</strong>.</li>
+					<li>Navigate to <strong>Cost Factors ➜ Product Type</strong>.</li>
 					<li>In the "Product Type" input field, enter the name of the new product type (e.g., "PGR").</li>
 					<li>Click the <strong>Add</strong> button to save the new product type. The new entry will appear in the table below.</li>
 					<li>Clicking <strong>Cancel</strong> will clear the input fields.</li>
@@ -1277,7 +1370,7 @@
 			
 				<h2>How to Create a Product Type Bulk Mapping</h2>
 				<ul>
-					<li>From the main menu, navigate to <strong>Cost Factors ➜ Product Type Bulk Mapping</strong>.</li>
+					<li>Navigate to <strong>Cost Factors ➜ Product Type Bulk Mapping</strong>.</li>
 					<li>In the "Company Name" field, select the relevant company.</li>
 					<li>From the "Product Type" dropdown, choose the product type (e.g., "HERBICIDES") you wish to map.</li>
 					<li>In the "Bulk" multi-select box, choose one or more bulk products to associate with the selected product type for the chosen company.</li>
@@ -1298,7 +1391,7 @@
 			
 				<h2>How to Add/Update Factory Expenses for a Bulk Product</h2>
 				<ul>
-					<li>From the main menu, navigate to <strong>Cost Factors ➜ Factory Expense</strong>.</li>
+					<li>Navigate to <strong>Cost Factors ➜ Factory Expense</strong>.</li>
 					<li><strong>Select Bulk Product:</strong> Choose the specific bulk product from the dropdown list. The system will automatically display its current <strong>Bulk Cost/Ltr</strong> and <strong>MasterPack</strong> information.</li>
 					<li><strong>Define Additional Costs:</strong>
 						<ul>
@@ -1328,7 +1421,7 @@
 			
 				<h3>1. How to Add Main Transportation Costs</h3>
 				<ul>
-					<li>From the main menu, navigate to <strong>Cost Factors ➜ Trasportation Cost Master</strong>.</li>
+					<li>Navigate to <strong>Cost Factors ➜ Trasportation Cost Master</strong>.</li>
 					<li>Select the <strong>State</strong> from the dropdown menu.</li>
 					<li>Enter the <strong>Truck Load Charge</strong> for a full shipment.</li>
 					<li>Enter the <strong>Approx No of Carton in 1 lot</strong> to help the system calculate the per-carton cost.</li>
@@ -1359,13 +1452,20 @@
 			<section id="Statewise_Cost_Factor">
 				<h1>State Wise Cost Factor</h1>
 				<p>
-					The <strong>State Wise Cost Factor</strong> module allows you to define and manage specific cost factors that vary by state. This is crucial for accurate regional costing and pricing strategies.
+					The <strong>State Wise Cost Factor</strong> module allows you to define and manage specific cost factors that vary by state.
+					 This is crucial for accurate regional costing and pricing strategies.
 				</p>
+				<p>
+					The <strong>State Wise Cost Factor</strong> module helps you define state-level 
+					marketing and operational expense percentages. These cost factors are used 
+					during pricing to calculate region-specific product costs.
+   				</p>
 			
 				<h2>How to Add a State Wise Cost Factor</h2>
 				<ul>
-					<li>From the main menu, navigate to <strong>Cost Factors ➜ State Wise Cost Factor</strong>.</li>
+					<li>Navigate to <strong>Cost Factors ➜ State Wise Cost Factor</strong>.</li>
 					<li>Enter the <strong>State Name</strong>.</li>
+					 <li>Select the <strong>Product Category</strong> (e.g., Premium).</li>
 					<li>Enter the relevant <strong>Cost Factor</strong> value for that state.</li>
 					<li>Click the <strong>Add</strong> button to save the new entry. The new record will appear in the table below.</li>
 					<li>Clicking <strong>Cancel</strong> will clear the input fields.</li>
@@ -1376,15 +1476,551 @@
 				<img src="assets/images/Marketing/Cost_Factor/11.Statewise_Cost_Factor.jpg" alt="State Wise Cost Factor Screen">
 				<hr>
 			</section>
+			<br><br>
+
+			<div class="marketing-section-header" style="background-color: #f2f8ff; border-left: 5px solid #007bff; padding: 20px; margin-bottom: 20px; border-radius: 5px;">
+				<h1 style="color: #007bff;">Price Type Management</h1>
+				<p style="font-size: 1.1em;">This section focuses on modules that help you manage different price types, their state-wise applicability, and the order in which states are presented in pricing-related contexts.</p>
+			</div>
+
+			<section id="Price_Type_Master">
+				<h1>Price Type Master</h1>
+				 <p>
+					The <strong>Price Type Master</strong> module is used to define and manage 
+					various price types used in price list calculations.  
+					These price types are used in modules such as:
+				</p>
+				 <ul>
+					<li><strong>State Wise Cost Factor</strong></li>
+					<li><strong>Price List Generation</strong></li>
+					<li><strong>Scheme Calculations</strong></li>
+					<li><strong>Product Costing</strong> (as in <em>The Cost Tracker</em>)</li>
+				</ul>
+				<h2>How to Add a Price Type</h2>
+				<ul>
+					<li>Navigate to <strong>Price Type ➜ Price Type Master</strong>.</li>
+					<li>In the "Price Type" input field, type the name of the new price type (e.g., "RPL").</li>
+					<li>Click the <strong>Add</strong> button to save it. The new price type will appear in the list below.</li>					
+				</ul>	
+				<h3><a href="assets/images/Price_Type/1.Price_Type_Master.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Price Type Master</a></h3>
+				<img src="assets/images/Price_Type/1.Price_Type_Master.jpg" alt="Price Type Master Screen">
+				<hr>
+			</section>
+
+			<section id="Product_PriceType_StateMapping_Master">
+				<h1>Product Price Type & State Mapping Master</h1>
+				 	<p>
+					The <strong>Product Price Type & State Mapping Master</strong> module allows you to map products to their applicable price types across different states. This enables state-wise pricing strategies and ensures accurate price list generation based on regional requirements.
+				</p>
+
+								
+				<h2>How to Add a Product Price Type & State Mapping</h2>
+				<ul>
+					<li>Navigate to <strong>Price Type ➜ Product PriceType & State Mapping Master</strong>.</li>
+					<li>Use the "Search for product" field to find a specific product</li>
+					<li>The table will filter automatically as you type</li>
+					<li>
+						<strong>To enable a state:</strong> Check the checkbox under that state name
+						
+					</li>
+					<li>
+						<strong>To disable a state:</strong> Uncheck the checkbox under that state name
+					</li>
+					<li>Click <strong>All</strong> to enable all states for that price type.</li>
+        			<li>Click <strong>None</strong> to disable all states.</li>
+					<li>
+						<strong>Update (per row):</strong> Saves changes for only that specific product-price type combination
+					
+					</li>
+					<li>
+						<strong>Update All:</strong> Saves all changes made on the page at once
+						
+					</li>
+
+				</ul>
+				<h3><a href="assets/images/Price_Type/2.Product_PriceType _StateMapping .jpg" target="_blank" title="Click to view the image">📸 Screenshot – Product Price Type & State Mapping Master</a></h3>	
+				<img src="assets/images/Price_Type/2.Product_PriceType _StateMapping .jpg" alt="Product Price Type & State Mapping Master Screen">
+				<hr>
+			</section>
+
+			<section id="Price_Setup_State_Order">
+				<h1>State Order Setup</h1>
+				 <p>
+					The <strong>Price Setup State Order</strong> module allows the 
+					to define the sequence in which <strong>States</strong> will appear across all 
+					Price List–related screens, reports and printed price lists.
+				</p>
+				<h2>How to Add State Order Setup</h2>
+				<ul>
+					<li>Navigate to <strong>Price Type ➜ Price Setup State Order</strong>.</li>
+					<li><strong>To move a state up in the list:</strong>  Click the <strong>up arrow (↑)</strong> next to its serial number.</li>
+					<li><strong>To move a state down in the list: </strong>  Click the <strong>down arrow (↓) </strong> next to its serial number.</li>
+				</ul>
+				<h3><a href="assets/images/Price_Type/3.Price_Setup_StateOrder.jpg" target="_blank" title="Click to view the image">📸 Screenshot – State Order Screen</a></h3>
+				<img src="assets/images/Price_Type/3.Price_Setup_StateOrder.jpg" alt="State Order Setup Screen">
+				<hr>
+
+			</section>
+			<br><br>
+
+			<div class="marketing-section-header" style="background-color: #f2f8ff; border-left: 5px solid #007bff; padding: 20px; margin-bottom: 20px; border-radius: 5px;">
+				<h1 style="color: #007bff;">Price List Settings</h1>
+				<p style="font-size: 1.1em;">This section focuses on modules that help you manage the details and terms included in your product price lists.</p>
+			</div>
 			
-              
-    		<div class="footer">
-    			<p>&copy; 2025 Costing Software Guide. All rights reserved.</p>	
-    		</div>
+			<section id="Statewise_Contact_Person">
+				<h1>State Wise Contact Person</h1>
+				 <p>
+					The <strong>State Wise Contact Person Detail</strong> module is used to maintain 
+					the list of authorized sales or marketing representatives for each state. 
+					These details automatically appear in the <strong>Price List Report</strong> under the 
+					<em>“State-wise Contact Information / Sales Head Details”</em> section.
+   				 </p>
+				<h2>Purpose of This Module</h2>
+					<ul>
+						<li>To define sales contact details for each state.</li>
+						<li>To ensure accurate communication of contact names, designation, and branch address in the Price List PDF.</li>
+						<li>To help customers, distributors, and sales teams know the correct point-of-contact for each region.</li>
+						<li>To maintain multiple state-wise contact entries for large companies.</li>
+					</ul>
+				<h2>How to Add a New State Wise Contact Person</h2>
+				<ul>
+					<li>Navigate to <strong>Price List Settings ➜ State Wise Contact Person Detail</strong>.</li>
+					<li>From the <strong>State</strong> dropdown, select the state 
+						(e.g., <strong>Gujarat</strong>).
+					</li>
+					<li>In the <strong>Contact Person Name</strong> field, enter the name 
+						(e.g., <strong>Chinmoy Banerji</strong>).</li>
+					<li>Enter the <strong>Mobile No</strong> (optional).</li>
+					<li>Enter the <strong>Designation</strong> 
+						(e.g., <strong>Sales Head</strong>).</li>
+					<li>Enter the <strong>Branch Address</strong> 
+						(e.g., <strong>Ahmedabad</strong>).</li>
+					<li>Click the <strong>Add</strong> button to save the contact details.</li>
+					<li>Click <strong>Cancel</strong> to clear all input fields.</li>
+				</ul>	
+
+				<h3><a href="assets/images/Price_List_Setting/1.StateWise_Contact_PersonDetail.jpg" target="_blank" title="Click to view the image">📸 Screenshot – State Wise Contact Person</a></h3>
+				<img src="assets/images/Price_List_Setting/1.StateWise_Contact_PersonDetail.jpg" alt="State Wise Contact Person Screen">
+				<hr>
+			</section>
+
+			<section id="PriceList_Terms">
+				<h1>Price List Terms & Conditions</h1>				
+				<p>
+					The <strong>Price List Terms & Conditions</strong> module allows you to define 
+					and customize the general commercial terms that appear at the bottom of every 
+					generated <strong>Price List Report</strong>. These terms help specify important 
+					policies such as credit terms, taxes, shipment conditions, payment rules, and 
+					jurisdiction.
+				</p>
+				<h2>How to Add Terms & Conditions</h2>
+					<ul>
+						<li>Navigate to <strong>Price List Settings ➜ Price List Terms</strong>.</li>
+						<li>In the <strong>Terms & Condition</strong> text box, type or paste your desired T&C content.</li>
+						<li>In the <strong>Color Code</strong> field, choose the color for the text 
+							(e.g., <strong>#0000FF</strong> for blue). This color will appear in the Price List Report.
+						</li>
+						<li>Click <strong>Add</strong> to save the T&C.</li>
+						<li>Click <strong>Cancel</strong> to clear the input fields.</li>
+					</ul>
+				
+			
+				<h3><a href="assets/images/Price_List_Setting/2. Price_List_Terms.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Price List Terms & Conditions</a></h3>
+				<img src="assets/images/Price_List_Setting/2. Price_List_Terms.jpg" alt="Price List Terms & Conditions Screen">
+				<hr>
+			</section>
+
+			<section id="PriceList_Bank_Detail">
+				<h1>Price List Bank Detail</h1>
+				 <p>
+					The <strong>Price List Bank Detail</strong> module allows you to store and manage
+					state-wise banking information used in the footer of the <strong>Price List Report</strong>.
+					These bank details are essential for ensuring that customers have accurate payment
+					instructions such as account number, IFSC code, branch details, and the account holder name.
+				</p>
+				<h2>How to Add Bank Details for a State</h2>
+					<ul>
+						<li>Navigate to <strong>Price List Settings ➜ Price List Bank Details</strong>.</li>
+						<li>Select the appropriate <strong>State</strong> from the dropdown menu (e.g., Gujarat).</li>
+						<li>In the field <strong>Bank Terms Title Content</strong>, enter a suitable heading such as 
+							<strong>“Bank Details”</strong>. This will appear in the price list under banking information.</li>
+						<li>Fill in the following details:</li>
+
+						<ul>
+							<li><strong>Cheque in Favour Of:</strong> Enter the payee name (e.g., Emen Retail Infotech Pvt Ltd).</li>
+							<li><strong>IFSC Code:</strong> Enter the bank’s IFSC code (e.g., IFSC0001).</li>
+							<li><strong>Bank Name:</strong> Enter the name of the bank (e.g., ABC Bank).</li>
+							<li><strong>Branch Name:</strong> Enter the branch name (e.g., Ahmedabad).</li>
+							<li><strong>Account No:</strong> Enter the bank account number (e.g., 000000011).</li>
+							<li><strong>City:</strong> Enter the city of the bank branch (e.g., Ahmedabad).</li>
+						</ul>
+
+						<li>Click the <strong>Add</strong> button to save the bank details for the selected state.</li>
+						<li>Clicking <strong>Cancel</strong> will clear all the input fields.</li>
+					</ul>
+				<h3><a href="assets/images/Price_List_Setting/3.PriceList_BankDetail.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Price List Bank Detail</a></h3>
+				<img src="assets/images/Price_List_Setting/3.PriceList_BankDetail.jpg" alt="Price List Bank Detail Screen">
+				<hr>
+			</section>
+
+			<section id="PriceList_Lifting_Setting">
+				<h1>Price List Lifting Show / Hide Detail</h1>
+				<p>
+					The <strong>Price List Lifting Setting</strong> module allows you to control the visibility 
+					of each product in the <strong>Price List Report</strong> on a state-by-state basis.
+					This setting ensures that only relevant products appear in the price list generated 
+					for each state.
+				</p>	
+				<h2>Purpose of This Module</h2>
+				<ul>
+					<li>To show or hide specific products in state-wise price lists.</li>
+					<li>To manage product visibility for different markets and regions.</li>
+					<li>To customize the product selection for each state.</li>
+					<li>To give complete control over what each distributor or region sees.</li>
+				</ul>
+				  <h2>How to Use the Price List Lifting Setting</h2>
+				  <ul>
+					<li>Navigate to <strong>Price List Settings ➜ Price List Lifting Setting</strong>.</li>
+					<li>Use the <strong>Search for product</strong> bar to quickly find a specific product. The product list will filter automatically as you type.</li>	
+					<ul> <h3>Show/Hide Product State-wise :</h3>
+						<li>The table displays all products along with all available states.</li>
+						<li>Each row represents one product.</li>
+						<li>Each column (Gujarat, Uttar Pradesh, Haryana, etc.) represents a state.</li>
+						<li>
+							To <strong>show</strong> a product in the price list of a specific state,
+							check the Checkbox under that state.
+						</li>
+						<li>
+							To <strong>hide</strong> the product from a state’s price list, uncheck the box.
+						</li>
+					</ul>
+					<li><strong>Update</strong> (per row) → Saves show/hide settings for that specific product.</li>
+      				  <li><strong>Update All</strong> → Saves changes for all products at once.</li>	
+					<li><strong>All</strong> → Selects all states for a product (product will appear in all state price lists).</li>
+       				 <li><strong>None</strong> → Deselects all states (product will not appear in any state price list).</li>
+				<h3><a href="assets/images/Price_List_Setting/4.Price_List_Lifting_Show_Hide_Detail.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Price List Lifting Show / Hide Detail</a></h3>
+				<img src="assets/images/Price_List_Setting/4.Price_List_Lifting_Show_Hide_Detail.jpg" alt="Price List Lifting Show / Hide Detail Screen">
+				<hr>
+			</section>
+
+			<section id="Statewise_Turnover_Incentive">
+				<h1>State Wise Turnover Incentive</h1>
+				<p>
+					The <strong>State Wise Turnover Incentive Setting</strong> module allows you to configure 
+					incentive percentages based on the turnover for each state.  
+					These incentives are used in the <strong>Price List </strong> to calculate 
+					eligible benefits for distributors in that region.
+				</p>
+				 <h2>Purpose of This Module</h2>
+					<ul>
+						<li>To assign turnover-based incentive percentages for each state.</li>
+						<li>To manage state-wise promotional schemes or benefits.</li>
+						<li>To ensure correct incentive calculations in the final price list.</li>
+						<li>To maintain transparent and state-specific commercial policies.</li>
+					</ul>
+
+				<h2>How to Add a Turnover Incentive</h2>
+					<ul>
+						<li>Navigate to <strong>Price List Settings ➜ State Wise Turnover Incentive Setting</strong>.</li>
+						<li>From the <strong>State</strong> dropdown, select the state for which you want to apply an incentive.</li>
+						<li>In the <strong>Turnover Incentive Percentage (%)</strong> field, enter the incentive 
+							value (e.g., <strong>5%</strong>).</li>
+						<li>Click the <strong>Add</strong> button to save the incentive percentage.</li>
+						<li>The new entry will appear in the table below with State and Incentive Percentage details.</li>
+						<li>Clicking <strong>Cancel</strong> clears the input fields.</li>
+					</ul>
+				
+				<h3><a href="assets/images/Price_List_Setting/5.Statewise_Turnover_Incentive_setting.jpg" target="_blank" title="Click to view the image">📸 Screenshot – State Wise Turnover Incentive</a></h3>
+				<img src="assets/images/Price_List_Setting/5.Statewise_Turnover_Incentive_setting.jpg" alt="State Wise Turnover Incentive Screen">
+				<hr>	
+			</section>
+				
+			<section id="Statewise_Special_PriceList">
+				<h1>State Wise Special Price List Product Mapping</h1>
+
+			</section>
+
+			<section id="Price_List_Brand_Display_Setting">
+				<h1>Price List Brand / Technical Display Setting</h1>
+				
+				 <p>
+					The <strong>Price List Brand / Technical Display Setting</strong> module allows you to 
+					control what information is shown in the <strong>Price List Report</strong> for each product.  
+					You can choose whether to display:
+					<br>✔ Technical Name  
+					<br>✔ Brand (Trade) Name  
+					<br>✔ Or both
+					<br><br>
+					
+				</p>
+				<h2>How to Use the Brand / Technical Display Setting</h2>
+					<ul>
+						<li>Navigate to <strong>Price List Settings ➜ Price List Brand / Technical Display Setting</strong>.</li>
+						<li>The table displays all products along with options for brand and technical name display.</li>
+						<li>Each row represents one product.</li>
+						<li>
+							To <strong>show</strong> the brand name of a product in the price list, check the 
+							<strong>Brand Name</strong> checkbox.
+						</li>	
+						<li>
+							To <strong>show</strong> the technical name of a product in the price list, check the 
+							<strong>Technical Name</strong> checkbox.
+						</li>
+						<li><strong>Update</strong> (per row) → Saves display settings for that specific product.</li>
+	  					  <li><strong>Update All</strong> → Saves changes for all products at once.</li>	
+					</ul>
+				<h3><a href="assets/images/Price_List_Setting/7.Priclist_brandtechnical_display_setting.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Price List Brand / Technical Display Setting</a></h3>
+				<img src="assets/images/Price_List_Setting/7.Priclist_brandtechnical_display_setting.jpg" alt="Price List Brand / Technical Display Setting Screen">
+				<hr>
+			</section>
+
+			<section id="Scheme_Active/InActive_Setting">
+				<h1>Price List Scheme Active/InActive Setting</h1>
+				<p>
+					The <strong>Price List Scheme Active / InActive Setting</strong> module allows you to 
+					enable or disable various promotional schemes that affect product pricing in the 
+					<strong>Price List Report</strong>.  
+					Only the schemes marked as <strong>Active</strong> will be considered while generating 
+					price lists.
+				</p>
+				<h2>Purpose of This Module</h2>
+				<ul>
+					<li>To activate or deactivate promotional schemes for use in price lists.</li>
+					<li>To manage which schemes are applicable for a particular price list period.</li>
+					<li>To provide flexibility for seasonal, regional, or temporary promotional strategies.</li>
+					<li>To ensure pricing is accurate and consistent with company policy.</li>
+				</ul>
+				
+				<h2>How to Activate or Deactivate a Scheme</h2>
+
+				<ul>
+					<li>Navigate to <strong>Price List Settings ➜ Scheme Active/InActive Setting</strong>.</li>
+					<li>The screen displays all available schemes with checkboxes.</li>
+					<li>To <strong>Activate</strong> a scheme → Check the box in the 
+						<strong>Active/InActive Scheme?</strong> column.</li>
+					<li>To <strong>Deactivate</strong> a scheme → Uncheck the box.</li>
+					<li>Once updated, only active schemes are considered during price list generation.</li>
+				</ul>
+				<h3><a href="assets/images/Price_List_Setting/8.PriceList_Scheme_Active_InActive_Setting.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Price List Scheme Active/InActive Setting</a></h3>
+				<img src="assets/images/Price_List_Setting/8.PriceList_Scheme_Active_InActive_Setting.jpg" alt="Price List Scheme Active/InActive Setting Screen">
+				<hr>
+			</section>
+
+			<section id="Product_Packing_Active/InActive_Settings">
+				<h1>Price List Product With Packing Active/InActive Settings</h1>
+				  <p>
+					The <strong>Price List Product With Packing Active/InActive Settings</strong> module 
+					allows you to control whether a specific product <strong>along with its packing size</strong> 
+					should appear in the <strong>Price List Report</strong> for each state.
+				</p>
+				
+				<h2>How to Use the Packing Active/InActive Setting</h2>
+				<ul>
+					<li>Navigate to <strong>Price List Settings ➜ Product With Packing Active/InActive Settings</strong>.</li>
+					<li>The table displays all products along with their packing types.</li>
+					<li>Each row represents one product.</li>
+					<li>
+						To <strong>show</strong> a product with a specific packing type in the price list, check the 
+						<strong>Active/InActive</strong> checkbox.
+					</li>
+					<li>
+						To <strong>hide</strong> the product with that packing type from the price list, uncheck the box.
+					</li>
+					<li><strong>Update</strong> (per row) → Saves packing visibility settings for that specific product.</li>
+  					  <li><strong>Update All</strong> → Saves changes for all products at once.</li>	
+				</ul>
+				<h3><a href="assets/images/Price_List_Setting/9.PriceList_Product_With_Packing_Active_InActive_Settings.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Price List Product With Packing Active/InActive Settings</a></h3>
+				<img src="assets/images/Price_List_Setting/9.PriceList_Product_With_Packing_Active_InActive_Settings.jpg" alt="Price List Product With Packing Active/InActive Settings Screen">
+				<hr>
+
+			</section>
+
+			<section id="Price_List_Banner">
+				<h1>Price List Banner</h1>
+				<p>
+					The <strong>Price List Banner</strong> module allows you to upload and manage a custom banner image that appears at the top of the <strong>Price List Report</strong>. This banner can be used for branding, promotional messages, or important announcements.
+				</p>
+				<h2>How to Upload a Price List Banner</h2>
+				<ul>
+					<li>Navigate to <strong>Price List Settings ➜ Price List Banner</strong>.</li>
+					<li>Type the banner title or message in the <strong>Banner Text</strong> field.</li>
+					<li>Select an image from your computer (recommended size depends on price list layout).</li>
+					<li>Click the <strong>Choose File</strong> button to select an image from your computer. 
+					</li>
+					<li>After selecting the image, click the <strong>Upload</strong> button to save the banner.</li>
+					<li>The uploaded banner will be displayed at the top of the Price List Report.</li>
+					<li>Check the <strong>Active/InActive</strong> toggle to enable the banner.</li>
+       				 <li>Uncheck it to temporarily hide the banner from the price list report.</li>
+					<li>To remove or change the banner, simply upload a new image following the same steps.</li>
+				</ul>
+				<h3><a href="assets/images/Price_List_Setting/10.Price_List_Banner.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Price List Banner Screen</a></h3>
+				<img src="assets/images/Price_List_Setting/10.Price_List_Banner.jpg" alt="Price List Banner Screen">
+				<hr>
+			</section>
+
+			<section id="Incentive_Setting">
+				<h1>State Wise Focus Incentive Setting</h1>
+				
+				<p>
+					The <strong>State Wise Focus Incentive Setting</strong> module allows the admin to 
+					configure special incentive percentages for selected states based on company focus plans. 
+					These incentives are time-bound and are applied during price list calculations and 
+					scheme processing.
+				</p>
+
+				<h2>How to Add a Focus Incentive</h2>
+				<ul>
+					<li>Navigate to <strong>Price List Settings ➜ State Wise Focus Incentive Setting</strong>.</li>
+					<li>From the <strong>State</strong> dropdown, select the state for which you want to apply a focus incentive.</li>
+					<li>In the <strong>Focus Incentive Percentage (%)</strong> field, enter the incentive value (e.g., <strong>3%</strong>).</li>
+					<li><strong>Select Validity Period</strong>, Select the <strong>From Date</strong> (start) & <strong>To Date</strong>	.</li>
+					<li>Click the <strong>Add</strong> button to save the incentive percentage.</li>
+					<li>The new entry will appear in the table below with State and Incentive Percentage details.</li>
+					
+				</ul>
+				<h3><a href="assets/images/Price_List_Setting/11.Statewise_Focus_Incentive_Setting.jpg" target="_blank" title="Click to view the image">📸 Screenshot – State Wise Focus Incentive Setting</a></h3>
+				<img src="assets/images/Price_List_Setting/11.Statewise_Focus_Incentive_Setting.jpg" alt="State Wise Focus Incentive Setting Screen">
+				<hr>	
+			</section>
+			<br><br>
+
+			<div class="marketing-section-header" style="background-color: #f2f8ff; border-left: 5px solid #007bff; padding: 20px; margin-bottom: 20px; border-radius: 5px;">
+				<h1 style="color: #007bff;">Price List Generation & Reports</h1>
+				<p style="font-size: 1.1em;">This section focuses on modules that help you generate and manage product price lists for various states.</p>
+			</div>
+
+			<section id="PriceList_Actual_Estimate">
+				<h1>Price List Actual Estimate</h1>
+				<p>
+					The <strong>Price List (Actual & Estimate)</strong> module is used to add & update pricing for each product 
+					based on selected price types (RPL, NCR, ADVANCE), schemes, incentives, and transport charges.  
+					After updating product details, you can generate a state-wise or all-state PDF price list.
+				</p>
+				<h2>How to Add/Update Price List Actual & Estimate</h2>
+				<ul>
+					<li>Navigate to <strong>Report ➜ Price List Actual / Estimate</strong>.</li>
+					<li>The product list shown on the Price List page is fetched from the 
+					<strong>Product Price Type & State Mapping Master</strong>, where each product is assigned suitable Price Types and States.</li>
+					<li>Use the <strong>Search for product</strong> bar to quickly find a specific product. The product list will filter automatically as you type.</li>
+					<li>On the Price List screen, locate the product for which you want to add or update Actual/Estimate price and click the <strong>Edit</strong> button.</li>
+				</ul>
+				<h3><a href="assets/images/Report/1.ClickEdit_ToAddPrice.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Price List Actual Estimate</a></h3>
+				<img src="assets/images/Report/1.ClickEdit_ToAddPrice.jpg" alt="Price List Actual Estimate Screen">
+				<hr>	
+				<h2>Adding/Updating Price Details</h2>
+				<ul>
+					<li>After clicking Edit, the product detail pricing screen opens. Here you enter values for:</li>
+					<h3>Editable Fields</h3>
+						<ul>
+							<li><strong>TOD (Turnover Discount)</strong></li>
+							<li><strong>Lifting Scheme</strong></li>
+							<li><strong>Special Month Lifting</strong></li>
+							<li><strong>Quantity Discount</strong></li>
+							<li><strong>Point Scheme</strong></li>
+							<li><strong>Free Quantity</strong></li>
+							<li><strong>Combo / On Hand Scheme</strong></li>
+							<li><strong>Collection Incentive</strong></li>
+							<li><strong>Product Incentive</strong></li>
+							<li><strong>Tour Incentive</strong></li>
+							<li><strong>State Turnover Incentive</strong></li>
+							<li><strong>Focus Incentive</strong></li>
+							<li><strong>Profit (%)</strong></li>
+						</ul>
+					<p>
+						Once all values are entered, the system automatically calculates:
+					</p>
+					<ul>
+						<li><strong>Total Scheme Incentive</strong></li>
+						<li><strong>Suggested Price</strong></li>
+						<li><strong>Final Price</strong></li>
+						<li><strong>Gross Profit Amount (%)</strong></li>
+						<li><strong>Total Expense</strong></li>
+						<li><strong>Net Profit Amount (%)</strong></li>
+					</ul>
+					<li>Click the <strong>Update</strong> button to save the pricing details for that product.</li>
+				</ul>
+				<h3><a href="assets/images/Report/2.Add_Price&Update.jpg" target="_blank" title="Click to view the image">📸 Add Price & Update </a></h3>
+				<img src="assets/images/Report/2.Add_Price&Update.jpg" alt="Add Price & Update Screen">
+				<hr> 
+				<h2>Generating the Price List Report</h2>
+				<ul>
+					<li>After updating all required products, return to the main screen and before creating the final price list, select required filters.</li>
+					<li><strong>Select Report : </strong> Choose PDF or Excel output.</li>
+					<li><strong>Price List Name : </strong> Enter the desired name for the price list report.</li>
+					<li><strong>Effective From Date : </strong> Select the date from which the price list will be effective.</li>
+					<li><strong>State Selection : </strong> Choose a specific state or select "All States" to generate a comprehensive price list.</li>
+					<li>Click the <strong>Create Price List</strong> button to generate the report.</li>
+					<li>The system will compile the data and produce the price list in the selected format.</li>					
+				</ul>
+				<h3><a href="assets/images/Report/3.Click_Create_PriceList.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Generate Price List Screen</a></h3>
+				<img src="assets/images/Report/3.Click_Create_PriceList.jpg" alt="Generate Price List Screen">
+				<hr>
+
+			</section>
+
+			<section id="PriceList-Report">
+				<h1>Price List Report</h1>				
+				<p>
+					The Price List Report Screen displays a complete list of price lists generated through the <strong>Price List Actual/Estimate</strong> module.  					
+				</p>
+				<h2>How to View the Price List Report</h2>
+				<ul>
+					<li>Navigate to <strong>Report ➜ Price List Report</strong>.</li>
+					<li>The screen shows all previously generated price lists with details such as Price List Name,	
+						Effective From Date, Type, State,and options to Download or Delete the report.</li>
+					<li>To download the price list, click the <strong>Download</strong> button.</li>
+					<li>To delete a price list, click the <strong>Delete</strong> button. A confirmation prompt will appear before deletion.</li>
+				</ul>
+				<h3><a href="assets/images/Report/3.Price_List_Report.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Price List Report</a></h3>
+				<img src="assets/images/Report/3.Price_List_Report.jpg" alt="Price List Report Screen">
+				<hr>
+				
+			</section>
+			
+			<section id="Statewise_Scheme_Report">
+				<h1>StateWise Scheme Report</h1>
+				<p>
+					The <strong>StateWise Scheme Report</strong> module provides a detailed overview of all pricing schemes applied to each product for a selected state.  
+					
+				</p>
+				<h2>How to View the StateWise Scheme Report</h2>
+				<ul>
+					<li>Navigate to <strong>Report ➜ StateWise Scheme Report</strong>.</li>
+					<li>Select the desired <strong>State</strong> from the dropdown.</li>
+					<li>Click <strong>Get Report</strong>.</li>
+					<li>The system loads all products with RPL, NCR, and ADVANCE scheme values.</li>
+					<li>Use the <strong>Search</strong> bar to filter any product.</li>
+					<li>Click <strong>Excel</strong> to download the scheme report.</li>
+				</ul>
+				<h3><a href="assets/images/Report/4.Statewise_Scheme_Report.jpg" target="_blank" title="Click to view the image">📸 Screenshot – StateWise Scheme Report</a></h3>	
+				<img src="assets/images/Report/4.Statewise_Scheme_Report.jpg" alt="StateWise Scheme Report Screen">
+				<hr>
+			</section>
+
+			<section id="Statewise_Incentive_Report">
+				<h1>StateWise Incentive Report</h1>
+				<p>
+					The <strong>StateWise Incentive Report</strong> module provides a detailed overview of all incentives applied to each product across different Price Types 
+					(<strong>RPL, NCR, ADVANCE</strong>) for a selected state.
+				</p>
+				<h2>How to View the StateWise Incentive Report</h2>
+				<ul>
+					<li>Navigate to <strong>Report ➜ StateWise Incentive Report</strong>.</li>
+					<li>Select the desired <strong>State</strong> from the dropdown.</li>
+					<li>Click <strong>Get Report</strong>.</li>
+					<li>The system loads all products with RPL, NCR, and ADVANCE incentive values.</li>
+					<li>Use the <strong>Search</strong> bar to filter any product.</li>
+					<li>Click <strong>Excel</strong> to download the incentive report.</li>
+				</ul>
+				<h3><a href="assets/images/Report/5.Statewise_Incentive_Report.jpg" target="_blank" title="Click to view the image">📸 Screenshot – Statewise Incentive Report</a></h3>	
+				<img src="assets/images/Report/5.Statewise_Incentive_Report.jpg" alt="Statewise Incentive Report Screen">
+				<hr>	
+			</section>
+		
 
 			
+
+		<div class="footer">
+			<p>&copy; 2025 Costing Software Guide. All rights reserved.</p>	
 		</div>
-	</div>
-</body>
-
-</html>
